@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 4442ab139f7b61c42a9e712ac26c35a6
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266447
+  packageName: UTAGE4 for Unity Text Adventure Game Engine Version4
+  packageVersion: 4.3.0
+  assetPath: Assets/Utage/Sample/Scripts/SampleSaveExceptionHandler.cs
+  uploadId: 986990
