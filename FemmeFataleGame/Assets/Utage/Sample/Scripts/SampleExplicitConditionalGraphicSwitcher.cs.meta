@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 1500648d3efc4c9ebac8c0a955f08332
+timeCreated: 1771455522
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266447
+  packageName: UTAGE4 for Unity Text Adventure Game Engine Version4
+  packageVersion: 4.3.0
+  assetPath: Assets/Utage/Sample/Scripts/SampleExplicitConditionalGraphicSwitcher.cs
+  uploadId: 986990
