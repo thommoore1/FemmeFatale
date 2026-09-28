@@ -190,7 +190,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - I like Jazz too!
+      - This is the left button.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -205,7 +205,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You know, from Ledgerbound?
+      - Look, I'm nervous now.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -220,12 +220,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Hello, world!
+      - THIS TEXT WILL NOT DISPLAY
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Goodbye, world.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -241,7 +256,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Yes
     type: 1
-    textLength: 204
+    textLength: 235
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -362,7 +377,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - How did you get here? This text is a secret!
+      - This is the right button.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -377,7 +392,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You know, from Ledgerbound?
+      - Look, I'm nervous now.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -392,12 +407,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Hello, world!
+      - THIS TEXT WILL NOT DISPLAY
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Goodbye, world.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -413,7 +443,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Secret
     type: 1
-    textLength: 232
+    textLength: 236
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -1003,7 +1033,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - I like Jazz too!
+      - This is the left button.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1018,7 +1048,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You know, from Ledgerbound?
+      - Look, I'm nervous now.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1033,12 +1063,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Hello, world!
+      - THIS TEXT WILL NOT DISPLAY
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Goodbye, world.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -1054,7 +1099,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Yes
     type: 1
-    textLength: 204
+    textLength: 235
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -1171,7 +1216,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - How did you get here? This text is a secret!
+      - This is the right button.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1186,7 +1231,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You know, from Ledgerbound?
+      - Look, I'm nervous now.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1201,12 +1246,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Hello, world!
+      - THIS TEXT WILL NOT DISPLAY
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Goodbye, world.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -1222,6 +1282,6 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Secret
     type: 1
-    textLength: 232
+    textLength: 236
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
