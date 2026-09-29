@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerItemCollector : MonoBehaviour
 {
     [SerializeField] private InventoryController inventoryController;
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,10 +16,12 @@ public class PlayerItemCollector : MonoBehaviour
         }
 
         Item item = collision.GetComponent<Item>();
-        if (item != null && item.uiPrefab != null)
+        if (item == null || item.uiPrefab == null || item.collected) return;
+
+        if (inventoryController.AddItem(item.uiPrefab))
         {
-            if (inventoryController.AddItem(item.uiPrefab))
-                Destroy(collision.gameObject);
+            item.collected = true;
+            Destroy(collision.gameObject);
         }
     }
 }
