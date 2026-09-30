@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a4d087fc09142d882dcd244b96e10f, type: 3}
-  m_Name: PlayerConfig
-  m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.PlayerConfig
-  moveSpeed: 2
+  m_Script: {fileID: 11500000, guid: 558f7fc19f2a7485bb1f0fd77aa87e15, type: 3}
+  m_Name: MonsterConfig
+  m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.MonsterConfig
+  patrolSpeed: 2
+  chaseSpeed: 3.5
+  visionRange: 6
+  visionAngle: 90
+  searchDuration: 3

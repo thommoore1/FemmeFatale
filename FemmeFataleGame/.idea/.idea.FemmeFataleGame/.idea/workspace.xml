@@ -6,7 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="42f12bb1-1cbf-4c14-b8a0-9a9c53d05fc1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Config.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Config/MonsterConfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Config/MonsterConfig.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Config/PlayerMovementConfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Config/PlayerMovementConfig.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomPlayerTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomPlayerTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/PlayerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/PlayerConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/NavMeshAgent2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/NavMeshAgent2D.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatsConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatsConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatsConfigLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatsConfigLoader.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +32,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ai.assistant@ceb45b7b3ebd/Modules/Unity.AI.ModelSelector/Services/Stores/Actions/ModelSelectorSuperProxyActions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -92,7 +108,7 @@
       <workItem from="1790289731232" duration="934000" />
       <workItem from="1790375559098" duration="5425000" />
       <workItem from="1790646118623" duration="2539000" />
-      <workItem from="1790800668894" duration="1438000" />
+      <workItem from="1790800668894" duration="2446000" />
     </task>
     <servers />
   </component>

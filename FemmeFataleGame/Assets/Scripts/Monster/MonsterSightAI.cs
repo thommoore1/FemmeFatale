@@ -38,12 +38,13 @@ namespace FemmeFatale
 
         [Tooltip("How far from the player's last position we'll look for a valid NavMesh point.")] [SerializeField]
         private float navMeshSampleDistance = 2f;
-
-        [Tooltip("File inside Assets/StreamingAssets")] [SerializeField]
-        private string configFileName = "MonsterConfig.json";
-
+        
         [Header("Catch Events")] [Tooltip("Hook up methods in the Inspector to run when the player is caught.")]
         public UnityEvent onPlayerCaught;
+        
+        [Header("Monster Config")] [Tooltip("Monster stats scriptable object")]
+        [SerializeField]
+        private MonsterConfig config;
 
         // Subscribe from code: monster.PlayerCaught += MyMethod;</summary>
         public event Action PlayerCaught;
@@ -51,7 +52,6 @@ namespace FemmeFatale
         public MonsterState CurrentState { get; private set; } = MonsterState.Patrol;
 
         private NavMeshAgent agent;
-        private MonsterConfig config = new MonsterConfig();
         private Vector2 facing = Vector2.right;
         private Vector2 lastKnownPlayerPosition;
         private int patrolIndex;
@@ -65,8 +65,6 @@ namespace FemmeFatale
             
             agent.updateRotation = false;
             agent.updateUpAxis = false;
-
-            LoadConfig();
         }
 
         private void Update()
@@ -146,7 +144,7 @@ namespace FemmeFatale
             if (!HasReachedDestination()) return;
             
             searchTimer += Time.deltaTime;
-            if (searchTimer >= config.searchDuration)
+            if (searchTimer >= config.SearchDuration)
             {
                 ChangeState(MonsterState.Patrol);
             }
@@ -168,17 +166,17 @@ namespace FemmeFatale
             switch (newState)
             {
                 case MonsterState.Patrol:
-                    agent.speed = config.patrolSpeed;
+                    agent.speed = config.PatrolSpeed;
                     patrolDestinationSet = false;
                     break;
 
                 case MonsterState.Chase:
-                    agent.speed = config.chaseSpeed;
+                    agent.speed = config.ChaseSpeed;
                     patrolDestinationSet = false;
                     break;
 
                 case MonsterState.Search:
-                    agent.speed = config.chaseSpeed;
+                    agent.speed = config.ChaseSpeed;
                     SetDestinationOnNavMesh(lastKnownPlayerPosition);
                     break;
             }
@@ -191,10 +189,10 @@ namespace FemmeFatale
             Vector2 toPlayer = (Vector2)player.position - origin;
             float distance = toPlayer.magnitude;
 
-            if (distance > config.visionRange) return false;
+            if (distance > config.VisionRange) return false;
 
             // Cone check
-            if (Vector2.Angle(facing, toPlayer) > config.visionAngle * 0.5f) return false;
+            if (Vector2.Angle(facing, toPlayer) > config.VisionAngle * 0.5f) return false;
 
             // Line-of-sight check: anything on the obstacle mask between us and the player blocks vision.
             RaycastHit2D hit = Physics2D.Raycast(origin, toPlayer.normalized, distance, obstacleMask);
@@ -217,7 +215,7 @@ namespace FemmeFatale
         {
             hasCaughtPlayer = false;
             ChangeState(MonsterState.Patrol);
-            agent.speed = config.patrolSpeed;
+            agent.speed = config.PatrolSpeed;
             patrolDestinationSet = false;
         }
         
@@ -237,50 +235,19 @@ namespace FemmeFatale
                    agent.remainingDistance <= agent.stoppingDistance + arrivalTolerance;
         }
 
-        [ContextMenu("Reload Config")]
-        public void LoadConfig()
-        {
-            string path = Path.Combine(Application.streamingAssetsPath, configFileName);
-
-            try
-            {
-                if (File.Exists(path))
-                {
-                    config = JsonUtility.FromJson<MonsterConfig>(File.ReadAllText(path));
-                }
-                else
-                {
-                    Debug.LogWarning($"Monster config not found at {path}. Creating one with defaults.");
-                    Directory.CreateDirectory(Application.streamingAssetsPath);
-                    File.WriteAllText(path, JsonUtility.ToJson(config, true));
-                }
-            }
-            catch (Exception e)
-            {
-                Debug.LogError($"Failed to load monster config, using defaults. {e.Message}");
-                config = new MonsterConfig();
-            }
-
-            if (agent != null)
-            {
-                agent.speed = CurrentState == MonsterState.Patrol ? config.patrolSpeed : config.chaseSpeed;
-            }
-        }
-
         private void OnDrawGizmosSelected()
         {
-            MonsterConfig c = config ?? new MonsterConfig();
             Vector3 pos = transform.position;
             Vector3 f = facing.sqrMagnitude > 0f ? (Vector3)facing : Vector3.right;
 
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(pos, c.visionRange);
+            Gizmos.DrawWireSphere(pos, config.VisionRange);
 
-            Vector3 left = Quaternion.Euler(0, 0, c.visionAngle * 0.5f) * f;
-            Vector3 right = Quaternion.Euler(0, 0, -c.visionAngle * 0.5f) * f;
+            Vector3 left = Quaternion.Euler(0, 0, config.VisionAngle * 0.5f) * f;
+            Vector3 right = Quaternion.Euler(0, 0, -config.VisionAngle * 0.5f) * f;
             Gizmos.color = Color.red;
-            Gizmos.DrawLine(pos, pos + left * c.visionRange);
-            Gizmos.DrawLine(pos, pos + right * c.visionRange);
+            Gizmos.DrawLine(pos, pos + left * config.VisionRange);
+            Gizmos.DrawLine(pos, pos + right * config.VisionRange);
 
             if (patrolPoints == null) return;
             Gizmos.color = Color.cyan;

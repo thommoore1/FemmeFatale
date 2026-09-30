@@ -1,7 +1,0 @@
-{
-    "patrolSpeed": 2.0,
-    "chaseSpeed": 3.5,
-    "visionRange": 3.0,
-    "visionAngle": 45.0,
-    "searchDuration": 3.0
-}
