@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="42f12bb1-1cbf-4c14-b8a0-9a9c53d05fc1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomPlayerTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomPlayerTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomPlayerTest/NavMesh-NavMesh 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomPlayerTest/NavMesh-NavMesh 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ai.assistant@ceb45b7b3ebd/Modules/Unity.AI.ModelSelector/Services/Stores/Actions/ModelSelectorSuperProxyActions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4519ac6ca8eb4932a0518ff4c395f98b17000/03/9f772108/NavMeshAgent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -92,6 +92,7 @@
       <workItem from="1790289731232" duration="934000" />
       <workItem from="1790375559098" duration="5425000" />
       <workItem from="1790646118623" duration="2539000" />
+      <workItem from="1790800668894" duration="1438000" />
     </task>
     <servers />
   </component>

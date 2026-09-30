@@ -3,28 +3,26 @@ using UnityEngine;
 namespace FemmeFatale
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    [RequireComponent(typeof(PlayerStatsConfigLoader))]
     public class PlayerController : MonoBehaviour
     {
         public Rigidbody2D Rigidbody { get; private set; }
         public Vector2 CurrentMoveInput { get; private set; }
         public Vector2 FacingDirection { get; private set; } = Vector2.down;
-
-        private PlayerStatsConfigLoader _configLoader;
+        
+        
+        [SerializeField]
+        private PlayerConfig _playerConfig;
 
         private void Awake()
         {
             Rigidbody = GetComponent<Rigidbody2D>();
             Rigidbody.gravityScale = 0f;
             Rigidbody.freezeRotation = true;
-
-            _configLoader = GetComponent<PlayerStatsConfigLoader>();
         }
 
         private void FixedUpdate()
         {
-            PlayerStatsConfig config = _configLoader.Config;
-            Rigidbody.MovePosition(Rigidbody.position + CurrentMoveInput * config.moveSpeed * Time.fixedDeltaTime);
+            Rigidbody.MovePosition(Rigidbody.position + CurrentMoveInput * _playerConfig.MoveSpeed * Time.fixedDeltaTime);
         }
         
         public void SetMoveInput(Vector2 input)
