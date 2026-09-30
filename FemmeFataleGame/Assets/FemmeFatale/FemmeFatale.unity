@@ -18103,10 +18103,22 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Secret
+          m_StringArgument: TempEyeris
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1058704050}
+        m_TargetAssemblyTypeName: TestButtonFunctions, Assembly-CSharp
+        m_MethodName: HideButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1775748841}
         m_TargetAssemblyTypeName: TestButtonFunctions, Assembly-CSharp
         m_MethodName: HideButton
         m_Mode: 1
@@ -28663,10 +28675,22 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Yes
+          m_StringArgument: Start
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1775748841}
+        m_TargetAssemblyTypeName: TestButtonFunctions, Assembly-CSharp
+        m_MethodName: HideButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1058704050}
         m_TargetAssemblyTypeName: TestButtonFunctions, Assembly-CSharp
         m_MethodName: HideButton
         m_Mode: 1

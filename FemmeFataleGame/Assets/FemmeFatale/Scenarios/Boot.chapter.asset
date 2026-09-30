@@ -76,9 +76,41 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - Eyeris
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - .75
+      - 
+      - Eyeris/EyerisNeutralTemp.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - Player
+      - PlayerName
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Player/PlayerSideViewTemp.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Character
     type: 1
-    textLength: 234
+    textLength: 336
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -104,9 +136,24 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - TempLobby
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - TempHotelLobby.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Texture
     type: 1
-    textLength: 112
+    textLength: 141
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:

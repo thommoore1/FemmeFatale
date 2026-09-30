@@ -112,14 +112,14 @@ MonoBehaviour:
       debugIndex: 6
       strings:
       - Selection
-      - '*Yes'
+      - '*Iguess'
       - 
       - 
       - 
       - 
       - 
       - 
-      - Yes
+      - I guess
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -127,14 +127,14 @@ MonoBehaviour:
       debugIndex: 7
       strings:
       - Selection
-      - '*No'
+      - '*NotAtAll'
       - 
       - 
       - 
       - 
       - 
       - 
-      - No
+      - Not at all
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -142,20 +142,359 @@ MonoBehaviour:
       debugIndex: 8
       strings:
       - Selection
-      - '*Secret'
+      - '*Yeehaw'
       - 
       - 
       - 
       - 
       - 
       - 
-      - A secret third option
+      - Yeehaw or some shit
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 10
+      strings:
+      - '*Iguess'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 11
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I suppose so.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 12
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - It's fine or whatever
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 13
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 14
+      strings:
+      - '*NotAtAll'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 15
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I hate it.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 16
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - It sucks.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 17
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 18
+      strings:
+      - '*Yeehaw'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 19
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Yeehaw.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 20
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - My brother
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 21
+      strings:
+      - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Start
     type: 1
-    textLength: 285
+    textLength: 430
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "I\u2019m starting to feel watched."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Well, well. What have we here? Let me take a good look at you.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - Selection
+      - '*LookingIsNoCrime'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Looking isn't a crime. (Yes)
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - Selection
+      - '*NotAfraidToUseFlashlight'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I've got a flashlight and I'm not afraid to use it! (No)
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 7
+      strings:
+      - '*LookingIsNoCrime'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 8
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 'How cooperative, for such a little human! '
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 9
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "You know, why don\u2019t I have you for dinner?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 10
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "I get the feeling she\u2019s talking about some steak. She\u2019s got good taste."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 11
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 12
+      strings:
+      - '*NotAfraidToUseFlashlight'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 13
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Put that thing away, you wretch!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 14
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Be a gentleman now, don\u2019t hurt this lady\u2019s eyes. You\u2019ll give me a headache."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 15
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "A woman who drowns herself in booze until she\u2019s hungover till the next night. I\u2019ve found myself in many a bind like that, too."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:TempEyeris
+    type: 1
+    textLength: 790
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -509,9 +848,41 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - Eyeris
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - .75
+      - 
+      - Eyeris/EyerisNeutralTemp.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - Player
+      - PlayerName
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Player/PlayerSideViewTemp.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Character
     type: 1
-    textLength: 234
+    textLength: 336
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -537,9 +908,24 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - TempLobby
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - TempHotelLobby.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Texture
     type: 1
-    textLength: 112
+    textLength: 141
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -957,14 +1343,14 @@ MonoBehaviour:
       debugIndex: 6
       strings:
       - Selection
-      - '*Yes'
+      - '*Iguess'
       - 
       - 
       - 
       - 
       - 
       - 
-      - Yes
+      - I guess
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -972,14 +1358,14 @@ MonoBehaviour:
       debugIndex: 7
       strings:
       - Selection
-      - '*No'
+      - '*NotAtAll'
       - 
       - 
       - 
       - 
       - 
       - 
-      - No
+      - Not at all
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -987,20 +1373,369 @@ MonoBehaviour:
       debugIndex: 8
       strings:
       - Selection
-      - '*Secret'
+      - '*Yeehaw'
       - 
       - 
       - 
       - 
       - 
       - 
-      - A secret third option
+      - Yeehaw or some shit
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - '*Iguess'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I suppose so.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 12
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - It's fine or whatever
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 13
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
+      strings:
+      - '*NotAtAll'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I hate it.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - It sucks.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - '*Yeehaw'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 19
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Yeehaw.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - My brother
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings:
+      - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Start
     type: 1
-    textLength: 285
+    textLength: 430
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "I\u2019m starting to feel watched."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Well, well. What have we here? Let me take a good look at you.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - Selection
+      - '*LookingIsNoCrime'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Looking isn't a crime. (Yes)
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - Selection
+      - '*NotAfraidToUseFlashlight'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I've got a flashlight and I'm not afraid to use it! (No)
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - '*LookingIsNoCrime'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 'How cooperative, for such a little human! '
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "You know, why don\u2019t I have you for dinner?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "I get the feeling she\u2019s talking about some steak. She\u2019s got good taste."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 12
+      strings:
+      - '*NotAfraidToUseFlashlight'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 13
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Put that thing away, you wretch!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Be a gentleman now, don\u2019t hurt this lady\u2019s eyes. You\u2019ll give me a headache."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "A woman who drowns herself in booze until she\u2019s hungover till the next night. I\u2019ve found myself in many a bind like that, too."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:TempEyeris
+    type: 1
+    textLength: 790
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
