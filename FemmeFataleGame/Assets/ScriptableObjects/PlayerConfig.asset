@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a4d087fc09142d882dcd244b96e10f, type: 3}
   m_Name: PlayerConfig
   m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.PlayerConfig
-  moveSpeed: 2
+  moveSpeed: 6

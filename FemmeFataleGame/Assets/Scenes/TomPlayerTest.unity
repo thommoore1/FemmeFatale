@@ -523,10 +523,10 @@ MonoBehaviour:
   catchDistance: 0.6
   arrivalTolerance: 0.1
   navMeshSampleDistance: 2
-  configFileName: MonsterConfig.json
   onPlayerCaught:
     m_PersistentCalls:
       m_Calls: []
+  config: {fileID: 11400000, guid: 5330b1657274b4ce59a310a34ece6eeb, type: 2}
 --- !u!1 &550467577
 GameObject:
   m_ObjectHideFlags: 0
