@@ -4,14 +4,6 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 
-//TODO: Clean up code
-//TODO: Understand code
-//TODO: Figure out why JSON file reading doesn't work at runtime
-//TODO: Refactor to use ScriptableObject for config instead of JSON file???
-//TODO: Refactor to use a state machine instead of switch statements???
-//TODO: Consistent naming conventions (camelCase vs PascalCase, etc)
-//TODO: Why doesn't reload config work
-
 namespace FemmeFatale
 {
 
