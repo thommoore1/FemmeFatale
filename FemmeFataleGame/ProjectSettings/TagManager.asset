@@ -42,6 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 581238101
+    locked: 0
+  - name: Wall
+    uniqueID: 862322943
+    locked: 0
+  - name: Player
+    uniqueID: 3988134311
+    locked: 0
+  - name: Monster
+    uniqueID: 2803225457
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
