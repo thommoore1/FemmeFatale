@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,12 +132,12 @@ TextureImporter:
       name: TX Tileset Wall_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 351
-        width: 98
-        height: 130
+        x: 32
+        y: 352
+        width: 96
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -154,12 +154,12 @@ TextureImporter:
       name: TX Tileset Wall_1
       rect:
         serializedVersion: 2
-        x: 151
-        y: 375
-        width: 116
-        height: 106
+        x: 152
+        y: 376
+        width: 114
+        height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: TX Tileset Wall_2
       rect:
         serializedVersion: 2
-        x: 287
-        y: 383
-        width: 12
-        height: 98
+        x: 288
+        y: 384
+        width: 10
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: TX Tileset Wall_3
       rect:
         serializedVersion: 2
-        x: 343
-        y: 383
-        width: 10
-        height: 98
+        x: 344
+        y: 384
+        width: 8
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: TX Tileset Wall_4
       rect:
         serializedVersion: 2
-        x: 383
-        y: 471
-        width: 98
-        height: 10
+        x: 384
+        y: 472
+        width: 96
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: TX Tileset Wall_5
       rect:
         serializedVersion: 2
-        x: 383
-        y: 351
-        width: 66
-        height: 98
+        x: 384
+        y: 352
+        width: 64
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -264,12 +264,12 @@ TextureImporter:
       name: TX Tileset Wall_6
       rect:
         serializedVersion: 2
-        x: 31
-        y: 255
-        width: 130
-        height: 66
+        x: 32
+        y: 256
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: TX Tileset Wall_7
       rect:
         serializedVersion: 2
-        x: 191
-        y: 255
-        width: 34
-        height: 66
+        x: 192
+        y: 256
+        width: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: TX Tileset Wall_8
       rect:
         serializedVersion: 2
-        x: 31
-        y: 159
-        width: 66
-        height: 66
+        x: 32
+        y: 160
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -330,12 +330,12 @@ TextureImporter:
       name: TX Tileset Wall_9
       rect:
         serializedVersion: 2
-        x: 127
-        y: 159
-        width: 66
-        height: 66
+        x: 128
+        y: 160
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -352,7 +352,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 65ffc631604714c28a72ac015694a75a
     internalID: 0
     vertices: []
     indices: 
@@ -360,7 +360,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       TX Tileset Wall_0: -1733087341866461178
       TX Tileset Wall_1: 6957734447361721616
