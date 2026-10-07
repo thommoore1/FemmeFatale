@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f12bb1-1cbf-4c14-b8a0-9a9c53d05fc1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Palette/Floor Palette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palette/Floor Palette.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FemmeFatale/FemmeFatale.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FemmeFatale/FemmeFatale.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapMaking.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapMaking.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapMaking/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapMaking/NavMesh-NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Pixel Art Top Down - Basic v1.2.3/Texture/TX Tileset Grass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Pixel Art Top Down - Basic v1.2.3/Texture/TX Tileset Grass.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Pixel Art Top Down - Basic v1.2.3/Texture/TX Tileset Stone Ground.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Pixel Art Top Down - Basic v1.2.3/Texture/TX Tileset Stone Ground.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayTest_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayTest_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/TestButtonFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/TestButtonFunctions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Playtest/Restart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Playtest/Restart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,13 +29,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/InventoryController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/InventorySlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/ItemDragHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/PlayerItemCollector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ai.assistant@ceb45b7b3ebd/Modules/Unity.AI.ModelSelector/Services/Stores/Actions/ModelSelectorSuperProxyActions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4519ac6ca8eb4932a0518ff4c395f98b17000/03/9f772108/NavMeshAgent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -111,6 +114,9 @@
       <workItem from="1790555599837" duration="9070000" />
       <workItem from="1790710598082" duration="1949000" />
       <workItem from="1791342829423" duration="62000" />
+      <workItem from="1791342944784" duration="708000" />
+      <workItem from="1791406147118" duration="3000" />
+      <workItem from="1791406163664" duration="990000" />
     </task>
     <servers />
   </component>

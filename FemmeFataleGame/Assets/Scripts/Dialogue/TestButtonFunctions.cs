@@ -19,6 +19,8 @@ public class TestButtonFunctions : MonoBehaviour
     public void HideButton()
     {
         print("Hidden");
+        var stackTrace = new System.Diagnostics.StackTrace();
+        UnityEngine.Debug.Log("Called by: " + stackTrace.GetFrame(1).GetMethod().Name);
         Button.SetActive(false);
     }
 

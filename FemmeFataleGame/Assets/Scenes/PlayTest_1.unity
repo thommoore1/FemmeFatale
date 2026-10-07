@@ -13981,6 +13981,34 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[7]'
       value: 
       objectReference: {fileID: 1085273435}
+    - target: {fileID: 4732426864782820254, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: onPlayerCaught.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732426864782820254, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732426864782820254, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2004536460}
+    - target: {fileID: 4732426864782820254, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732426864782820254, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadDialogueScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732426864782820254, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FemmeFatale.Restart, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732426864782820254, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7916570755441779138, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: m_Name
       value: monster
@@ -13993,7 +14021,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1491741839
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 644244134622013133, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
