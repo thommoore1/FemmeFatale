@@ -23,7 +23,7 @@ namespace FemmeFatale
         [Tooltip(
             "Should be larger than the NavMeshAgent's Stopping Distance, or the monster may never get close enough to catch.")]
         [SerializeField]
-        private float catchDistance = 0.6f;
+        private float catchDistance = 2f;
 
         [Tooltip("Extra slack when deciding the monster has arrived at a destination.")] [SerializeField]
         private float arrivalTolerance = 0.1f;

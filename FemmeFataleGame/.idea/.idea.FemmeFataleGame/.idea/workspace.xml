@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f12bb1-1cbf-4c14-b8a0-9a9c53d05fc1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FemmeFataleGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Palette/Floor Palette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palette/Floor Palette.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FemmeFatale/FemmeFatale.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FemmeFatale/FemmeFatale.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapMaking.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapMaking.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayTest_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayTest_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/TestButtonFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/TestButtonFunctions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSightAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Playtest/Restart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Playtest/Restart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +139,9 @@
       <workItem from="1790555599837" duration="9070000" />
       <workItem from="1790710598082" duration="1949000" />
       <workItem from="1791342829423" duration="62000" />
-      <workItem from="1791394459473" duration="700000" />
+      <workItem from="1791342944784" duration="708000" />
+      <workItem from="1791406147118" duration="3000" />
+      <workItem from="1791406163664" duration="990000" />
     </task>
     <servers />
   </component>

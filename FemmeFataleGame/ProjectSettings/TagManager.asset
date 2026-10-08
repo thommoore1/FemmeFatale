@@ -54,6 +54,9 @@ TagManager:
   - name: Monster
     uniqueID: 2803225457
     locked: 0
+  - name: UI
+    uniqueID: 2396715701
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
