@@ -35,11 +35,19 @@ namespace FemmeFatale
             _invoker.Enqueue(new MoveCommand(input));
         }
 
-        public void OnInteract(InputAction.CallbackContext context)
+        public void OnUse(InputAction.CallbackContext context)
         {
             if (context.performed)
             {
-                _invoker.Enqueue(new InteractCommand());
+                _invoker.Enqueue(new UseCommand());
+            }
+        }
+        
+        public void OnPickUp(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                _invoker.Enqueue(new PickUpCommand());
             }
         }
     }

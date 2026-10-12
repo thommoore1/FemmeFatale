@@ -1,27 +1,59 @@
 using UnityEngine;
 
-public class PlayerItemCollector : MonoBehaviour
+namespace FemmeFatale
 {
-    [SerializeField] private InventoryController inventoryController;
-    
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class PlayerItemCollector : MonoBehaviour
     {
-        if (!collision.CompareTag("Item")) return;
+        [SerializeField] private InventoryController inventoryController;
+        private bool isOverlapping = false;
+        public bool IsOverlapping => isOverlapping;
 
-        if (inventoryController == null)
+
+        // private void OnTriggerEnter2D(Collider2D collision)
+        // {
+        //     if (!collision.CompareTag("Item")) return;
+        //
+        //     if (inventoryController == null)
+        //     {
+        //         Debug.LogError("Inventory Controller is not assigned on " + name, this);
+        //         return;
+        //     }
+        //
+        //     Item item = collision.GetComponent<Item>();
+        //     if (item == null || item.uiPrefab == null || item.collected) return;
+        //
+        //     if (inventoryController.AddItem(item.uiPrefab))
+        //     {
+        //         item.collected = true;
+        //         Destroy(collision.gameObject);
+        //     }
+        // }
+
+        private void OnTriggerEnter(Collider other)
         {
-            Debug.LogError("Inventory Controller is not assigned on " + name, this);
-            return;
+            isOverlapping = false;
         }
 
-        Item item = collision.GetComponent<Item>();
-        if (item == null || item.uiPrefab == null || item.collected) return;
-
-        if (inventoryController.AddItem(item.uiPrefab))
+        private void OnTriggerExit(Collider other)
         {
-            item.collected = true;
-            Destroy(collision.gameObject);
+            isOverlapping = true;
+        }
+
+        public void AddToInventory(Item item)
+        {
+            if (inventoryController == null)
+            {
+                Debug.LogError("Inventory Controller is not assigned on " + name, this);
+                return;
+            }
+
+            if (item == null || item.uiPrefab == null || item.collected) return;
+
+            if (inventoryController.AddItem(item.uiPrefab))
+            {
+                item.collected = true;
+                Destroy(item.gameObject);
+            }
         }
     }
 }

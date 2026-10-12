@@ -12,6 +12,8 @@ namespace FemmeFatale
         
         [SerializeField]
         private PlayerConfig _playerConfig;
+        private float checkRadius = 0.5f; //TODO: Make this configurable
+        public LayerMask targetLayer;
 
         private void Awake()
         {
@@ -35,9 +37,22 @@ namespace FemmeFatale
             }
         }
         
-        public void Interact()
+        public void Use()
         {
             Debug.Log($"{name} interacts, facing {FacingDirection}");
         }
+
+        public void PickUp()
+        {
+            Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, targetLayer);
+
+            if (hitCollider)
+            {
+                Debug.Log($"Tried to pick up {hitCollider.gameObject.name}");
+            }
+            
+        }
+        
+        
     }
 }
