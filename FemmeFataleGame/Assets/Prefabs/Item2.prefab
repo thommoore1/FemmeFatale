@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5772178239916628410}
   - component: {fileID: 5881188698308525237}
   - component: {fileID: -1786066156160633680}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Item2
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -64,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemName: 
   uiPrefab: {fileID: 6062677310912817994}
+  collected: 0
 --- !u!114 &3825776878603362751
 MonoBehaviour:
   m_ObjectHideFlags: 0

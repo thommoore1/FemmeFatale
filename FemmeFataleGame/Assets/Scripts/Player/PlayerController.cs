@@ -12,9 +12,14 @@ namespace FemmeFatale
         
         [SerializeField]
         private PlayerConfig _playerConfig;
+        [SerializeField]
+        private InventoryController _inventoryController;
+        
+        
         private float checkRadius = 0.5f; //TODO: Make this configurable
-        public LayerMask targetLayer;
-
+        [SerializeField]
+        private LayerMask targetLayer;
+        
         private void Awake()
         {
             Rigidbody = GetComponent<Rigidbody2D>();
@@ -48,11 +53,24 @@ namespace FemmeFatale
 
             if (hitCollider)
             {
-                Debug.Log($"Tried to pick up {hitCollider.gameObject.name}");
+                this.GetComponent<PlayerItemCollector>().AddToInventory(hitCollider.GetComponent<Item>());
             }
             
         }
+
+        public void Drop()
+        {
+            _inventoryController.Drop(this.transform.position);
+        }
         
+        public void SelectMoveRight()
+        {
+            _inventoryController.SelectNextSlot();
+        }
         
+        public void SelectMoveLeft()
+        {
+            _inventoryController.SelectPreviousSlot();;
+        }
     }
 }

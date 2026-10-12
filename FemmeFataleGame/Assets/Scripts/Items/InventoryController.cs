@@ -1,3 +1,6 @@
+using Unity.VisualScripting;
+using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class InventoryController : MonoBehaviour
@@ -9,6 +12,8 @@ public class InventoryController : MonoBehaviour
 
     public GameObject[] itemPrefabs;
 
+    private List<InventorySlot> _slots = new List<InventorySlot>();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +21,7 @@ public class InventoryController : MonoBehaviour
         {
             InventorySlot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<InventorySlot>();
             slot.controller = this;
+            _slots.Add(slot);
 
             if (i < itemPrefabs.Length)
             {
@@ -24,6 +30,7 @@ public class InventoryController : MonoBehaviour
                 slot.currentItem = item;
             }
         }
+        SelectSlot(_slots[0]);
     }
 
     public bool AddItem(GameObject itemPrefab)
@@ -68,5 +75,32 @@ public class InventoryController : MonoBehaviour
         selectedSlot.SetSelected(false);
         selectedSlot = null;
     }
+    
+    public void Drop(Vector2 dropPosition)
+    {
+        if (selectedSlot == null || selectedSlot.IsEmpty) return;
 
+        Debug.Log("Dropped: " + selectedSlot.currentItem.name);
+        Instantiate(selectedSlot.currentItem, dropPosition, Quaternion.identity);
+        Destroy(selectedSlot.currentItem);
+        selectedSlot.currentItem = null;
+    }
+    
+    public void SelectNextSlot()
+    {
+        if (_slots.Count == 0) return;
+
+        int currentIndex = _slots.IndexOf(selectedSlot);
+        int nextIndex = (currentIndex + 1) % _slots.Count;
+        SelectSlot(_slots[nextIndex]);
+    }
+    
+    public void SelectPreviousSlot()
+    {
+        if (_slots.Count == 0) return;
+
+        int currentIndex = _slots.IndexOf(selectedSlot);
+        int previousIndex = (currentIndex - 1 + _slots.Count) % _slots.Count;
+        SelectSlot(_slots[previousIndex]);
+    }
 }

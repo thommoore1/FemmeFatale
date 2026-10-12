@@ -50,5 +50,29 @@ namespace FemmeFatale
                 _invoker.Enqueue(new PickUpCommand());
             }
         }
+        
+        public void OnDrop(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                _invoker.Enqueue(new DropCommand());
+            }
+        }
+        
+        public void OnSelectMoveLeft(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                _invoker.Enqueue(new SelectMoveLeftCommand());
+            }
+        }
+        
+        public void OnSelectMoveRight(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                _invoker.Enqueue(new SelectMoveRightCommand());
+            }
+        }
     }
 }

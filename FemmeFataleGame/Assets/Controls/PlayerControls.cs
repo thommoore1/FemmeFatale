@@ -121,6 +121,36 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""Drop"",
+                    ""type"": ""Button"",
+                    ""id"": ""8e0cbc85-efce-4515-816d-e4e41c02128f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
+                },
+                {
+                    ""name"": ""SelectMoveLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""a3f599df-69a1-43ab-8ace-3f3b6d67afc0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
+                },
+                {
+                    ""name"": ""SelectMoveRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""81f96288-f3d4-41f1-a1fe-64a75bd59cb1"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -172,61 +202,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": ""right"",
                     ""id"": ""65420606-1b53-4e5d-aedd-0bf32dce53ae"",
                     ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Arrows"",
-                    ""id"": ""a01e7932-532f-4d3e-9f41-7eda9ec59de9"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""2d0d36a8-0bfa-4914-a9fa-db01bb464eac"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""5d6f0b2f-7c62-4677-8813-94362b7b8195"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""6a0d3f04-4e3f-4a38-9d26-899a40025b32"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""1fe06a8a-92f3-4323-bdd5-3917910f91e2"",
-                    ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -288,6 +263,72 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""PickUp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d92471a5-1b5d-4c44-b169-3146e39cbc7a"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bb710752-9424-41f7-9ab1-dc39148be2f4"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e6051f21-22cd-47cb-8c7b-ed86eb3ae146"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectMoveLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f3839cb1-4937-4ec1-b42c-f037ce8b421e"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectMoveLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b21174df-2b91-4e17-859d-c146dc466527"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectMoveRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a8cbb284-777f-4501-a23e-e4ea75850238"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectMoveRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -299,6 +340,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Use = m_Player.FindAction("Use", throwIfNotFound: true);
         m_Player_PickUp = m_Player.FindAction("PickUp", throwIfNotFound: true);
+        m_Player_Drop = m_Player.FindAction("Drop", throwIfNotFound: true);
+        m_Player_SelectMoveLeft = m_Player.FindAction("SelectMoveLeft", throwIfNotFound: true);
+        m_Player_SelectMoveRight = m_Player.FindAction("SelectMoveRight", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -382,6 +426,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Use;
     private readonly InputAction m_Player_PickUp;
+    private readonly InputAction m_Player_Drop;
+    private readonly InputAction m_Player_SelectMoveLeft;
+    private readonly InputAction m_Player_SelectMoveRight;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -405,6 +452,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/PickUp".
         /// </summary>
         public InputAction @PickUp => m_Wrapper.m_Player_PickUp;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Drop".
+        /// </summary>
+        public InputAction @Drop => m_Wrapper.m_Player_Drop;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/SelectMoveLeft".
+        /// </summary>
+        public InputAction @SelectMoveLeft => m_Wrapper.m_Player_SelectMoveLeft;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/SelectMoveRight".
+        /// </summary>
+        public InputAction @SelectMoveRight => m_Wrapper.m_Player_SelectMoveRight;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -440,6 +499,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @PickUp.started += instance.OnPickUp;
             @PickUp.performed += instance.OnPickUp;
             @PickUp.canceled += instance.OnPickUp;
+            @Drop.started += instance.OnDrop;
+            @Drop.performed += instance.OnDrop;
+            @Drop.canceled += instance.OnDrop;
+            @SelectMoveLeft.started += instance.OnSelectMoveLeft;
+            @SelectMoveLeft.performed += instance.OnSelectMoveLeft;
+            @SelectMoveLeft.canceled += instance.OnSelectMoveLeft;
+            @SelectMoveRight.started += instance.OnSelectMoveRight;
+            @SelectMoveRight.performed += instance.OnSelectMoveRight;
+            @SelectMoveRight.canceled += instance.OnSelectMoveRight;
         }
 
         /// <summary>
@@ -460,6 +528,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @PickUp.started -= instance.OnPickUp;
             @PickUp.performed -= instance.OnPickUp;
             @PickUp.canceled -= instance.OnPickUp;
+            @Drop.started -= instance.OnDrop;
+            @Drop.performed -= instance.OnDrop;
+            @Drop.canceled -= instance.OnDrop;
+            @SelectMoveLeft.started -= instance.OnSelectMoveLeft;
+            @SelectMoveLeft.performed -= instance.OnSelectMoveLeft;
+            @SelectMoveLeft.canceled -= instance.OnSelectMoveLeft;
+            @SelectMoveRight.started -= instance.OnSelectMoveRight;
+            @SelectMoveRight.performed -= instance.OnSelectMoveRight;
+            @SelectMoveRight.canceled -= instance.OnSelectMoveRight;
         }
 
         /// <summary>
@@ -521,5 +598,26 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnPickUp(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Drop" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnDrop(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SelectMoveLeft" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSelectMoveLeft(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SelectMoveRight" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSelectMoveRight(InputAction.CallbackContext context);
     }
 }

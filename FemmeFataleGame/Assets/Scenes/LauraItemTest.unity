@@ -648,6 +648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TopDown.PlayerController
   _playerConfig: {fileID: 11400000, guid: 4a3e542a1123542818d758efa6fa1bfd, type: 2}
+  _inventoryController: {fileID: 71061857}
   targetLayer:
     serializedVersion: 2
     m_Bits: 1024
