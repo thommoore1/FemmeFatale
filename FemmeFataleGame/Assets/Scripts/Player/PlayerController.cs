@@ -18,7 +18,9 @@ namespace FemmeFatale
         
         private float checkRadius = 0.5f; //TODO: Make this configurable
         [SerializeField]
-        private LayerMask targetLayer;
+        private LayerMask itemLayer;
+        [SerializeField]
+        private LayerMask puzzleElementLayer;
         
         private void Awake()
         {
@@ -45,11 +47,19 @@ namespace FemmeFatale
         public void Use()
         {
             Debug.Log($"{name} interacts, facing {FacingDirection}");
+            
+            Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, puzzleElementLayer);
+
+            if (hitCollider)
+            {
+                Debug.Log($"Interacted with puzzle element: {hitCollider.name}");
+                hitCollider.GetComponent<PuzzleElement>().Interact(_inventoryController.GetSelectedItem());
+            }
         }
 
         public void PickUp()
         {
-            Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, targetLayer);
+            Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, itemLayer);
 
             if (hitCollider)
             {

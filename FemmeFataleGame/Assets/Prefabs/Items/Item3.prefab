@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e97605bbfa58c429a9272d76cb01c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemName: 
+  itemName: KeyCat
   uiPrefab: {fileID: 6062677310912817994}
   collected: 0
 --- !u!114 &3825776878603362751

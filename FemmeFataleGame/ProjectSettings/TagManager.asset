@@ -17,7 +17,7 @@ TagManager:
   - 
   - 
   - Item
-  - 
+  - PuzzleElement
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Item
     uniqueID: 1104559203
+    locked: 0
+  - name: Interactable
+    uniqueID: 78800519
     locked: 0
   - name: Player
     uniqueID: 3988134311

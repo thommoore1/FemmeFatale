@@ -2,44 +2,48 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour, IPointerClickHandler
+namespace FemmeFatale
 {
-    public GameObject currentItem; //the item current held in this slot
-    [HideInInspector] public InventoryController controller;
-
-    Image background;
-    Color normalColor;
-
-    void Awake()
+    public class InventorySlot : MonoBehaviour, IPointerClickHandler
     {
-        background = GetComponent<Image>();
-        if (background != null) normalColor = background.color;
-    }
-    
-    public bool IsEmpty
-    {
-        get
+        public GameObject currentItem; //the item current held in this slot
+        [HideInInspector] public InventoryController controller;
+
+        Image background;
+        Color normalColor;
+
+        void Awake()
         {
-            // Empty if there's no item, it was destroyed, or it was moved out of this slot
-            if (currentItem == null || currentItem.transform.parent != transform)
-            {
-                currentItem = null;
-                return true;
-            }
-            return false;
+            background = GetComponent<Image>();
+            if (background != null) normalColor = background.color;
         }
-    }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        controller.SelectSlot(this);
-    }
+        public bool IsEmpty
+        {
+            get
+            {
+                // Empty if there's no item, it was destroyed, or it was moved out of this slot
+                if (currentItem == null || currentItem.transform.parent != transform)
+                {
+                    currentItem = null;
+                    return true;
+                }
 
-    public void SetSelected(bool selected)
-    {
-        if (background != null)
-            background.color = selected ? Color.pink : normalColor;
+                return false;
+            }
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            controller.SelectSlot(this);
+        }
+
+        public void SetSelected(bool selected)
+        {
+            if (background != null)
+                background.color = selected ? Color.pink : normalColor;
+        }
+
+
     }
-    
-    
 }

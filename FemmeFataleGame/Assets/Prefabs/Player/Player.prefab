@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7280782032314196123}
   - component: {fileID: 4665112104084097060}
   - component: {fileID: 6390716017045600110}
+  - component: {fileID: -2045581345697932892}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -182,6 +183,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TopDown.PlayerController
   _playerConfig: {fileID: 11400000, guid: 4a3e542a1123542818d758efa6fa1bfd, type: 2}
+  _inventoryController: {fileID: 0}
+  itemLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  puzzleElementLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!114 &6390716017045600110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,3 +202,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f790e4c552635451fa5f4c7b1c25dc9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TopDown.PlayerInputHandler
+--- !u!114 &-2045581345697932892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727307206393915634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df1dcd77e181f94b9f00daa6b9ba968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.PlayerItemCollector
+  inventoryController: {fileID: 0}
