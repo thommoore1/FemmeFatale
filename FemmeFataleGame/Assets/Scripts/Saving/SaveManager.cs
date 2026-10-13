@@ -11,6 +11,9 @@ namespace FemmeFatale.Save
         public static SaveManager Instance { get; private set; }
 
         [SerializeField] private PrefabRegistry prefabRegistry;
+
+        [Tooltip("Logs every entity captured on save and every one respawned on load. Handy for debugging; turn off when done.")]
+        [SerializeField] private bool logEntities = true;
         
         public static event Action OnBeforeSave;
         public static event Action OnAfterLoad;
@@ -23,8 +26,6 @@ namespace FemmeFatale.Save
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-
-        // ---------------------------------------------------------------- save
 
         public bool Save(int slot = 0)
         {
@@ -39,22 +40,24 @@ namespace FemmeFatale.Save
             };
 
             foreach (var entity in FindEntities())
+            {
+                if (logEntities)
+                    Debug.Log($"[Save] Capturing '{entity.name}' (prefabId '{entity.PrefabId}')", entity);
                 file.entities.Add(entity.Capture());
+            }
 
             bool ok = SaveFileIO.Write(slot, file);
             if (ok) Debug.Log($"[Save] Saved {file.entities.Count} entities to slot {slot}.");
             return ok;
         }
         
-        public void ButtonSave(int slot = 0)
+        public void SaveButton(int slot = 0)
         {
             if (Save(slot))
-                Debug.Log($"[Save] Saved to slot {slot}.");
+                Debug.Log($"[Save] Save successful in slot {slot}.");
             else
-                Debug.LogWarning($"[Save] Failed to save to slot {slot}.");
+                Debug.LogWarning($"[Save] Save failed in slot {slot}.");
         }
-
-        // ---------------------------------------------------------------- load
 
         public void Load(int slot = 0)
         {
@@ -87,7 +90,8 @@ namespace FemmeFatale.Save
             foreach (var e in FindEntities())
             {
                 if (string.IsNullOrEmpty(e.Id) || !inScene.TryAdd(e.Id, e))
-                    Debug.LogWarning($"[Save] '{e.name}' has a missing or duplicate id.", e);
+                    Debug.LogWarning($"[Save] '{e.name}' has a missing or DUPLICATE id ('{e.Id}'), so it will be skipped entirely: not restored and not destroyed. " +
+                                     "Right-click its SaveableEntity > Regenerate ID.", e);
             }
             
             var matched = new Dictionary<string, (SaveableEntity entity, EntityRecord record)>();
@@ -102,6 +106,8 @@ namespace FemmeFatale.Save
                         continue;
                     }
                     var instance = Instantiate(prefab);
+                    if (logEntities)
+                        Debug.Log($"[Save] Respawned '{instance.name}' from prefabId '{record.prefabId}' (it wasn't in the scene)", instance);
                     entity = instance.GetComponent<SaveableEntity>();
                     entity.SetId(record.id);
                     inScene[record.id] = entity;
@@ -113,7 +119,8 @@ namespace FemmeFatale.Save
             {
                 if (!matched.ContainsKey(pair.Key) && pair.Value.DestroyIfMissingFromSave)
                 {
-                    Debug.Log($"[Save] Destroying entity {pair.Key} because it was not found in the save file.");
+                    if (logEntities)
+                        Debug.Log($"[Save] Destroying '{pair.Value.name}' (not in the save file)", pair.Value);
                     Destroy(pair.Value.gameObject);
                 }
             }
@@ -124,8 +131,14 @@ namespace FemmeFatale.Save
             Debug.Log($"[Save] Loaded {matched.Count} entities.");
         }
 
-        private static SaveableEntity[] FindEntities() =>
-            FindObjectsByType<SaveableEntity>(FindObjectsInactive.Include);
+        private static List<SaveableEntity> FindEntities()
+        {
+            var all = FindObjectsByType<SaveableEntity>(FindObjectsInactive.Include);
+            var result = new List<SaveableEntity>(all.Length);
+            foreach (var e in all)
+                if (!e.Excluded) result.Add(e);
+            return result;
+        }
         
         public void ClearSlot(int slot = 0)
         {

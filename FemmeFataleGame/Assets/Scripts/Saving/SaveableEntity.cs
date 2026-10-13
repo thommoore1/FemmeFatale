@@ -21,6 +21,13 @@ namespace FemmeFatale.Save
         public string Id => id;
         public string PrefabId => prefabId;
         public bool DestroyIfMissingFromSave => destroyIfMissingFromSave;
+        
+        public bool Excluded
+        {
+            get => _excluded || GetComponentInParent<SaveExclusionZone>(true) != null;
+            set => _excluded = value;
+        }
+        private bool _excluded;
 
         private void Awake()
         {
@@ -28,8 +35,6 @@ namespace FemmeFatale.Save
         }
 
         internal void SetId(string newId) => id = newId;
-
-        // ---------------------------------------------------------------- capture / restore
 
         public EntityRecord Capture()
         {
@@ -54,8 +59,7 @@ namespace FemmeFatale.Save
                     saveable.RestoreState(comp.json);
             }
         }
-
-        // Key = type name (+ "#n" if the same type appears more than once on this object).
+        
         private Dictionary<string, ISaveable> BuildSaveableMap()
         {
             var map = new Dictionary<string, ISaveable>();
@@ -69,14 +73,12 @@ namespace FemmeFatale.Save
             }
             return map;
         }
-
-        // ---------------------------------------------------------------- editor ID handling
+        
 #if UNITY_EDITOR
         private void OnValidate()
         {
             if (Application.isPlaying) return;
-
-
+            
             if (PrefabUtility.IsPartOfPrefabAsset(this))
             {
                 bool changed = false;
@@ -86,7 +88,7 @@ namespace FemmeFatale.Save
                     string path = AssetDatabase.GetAssetPath(this);
                     if (!string.IsNullOrEmpty(path))
                     {
-                        prefabId = AssetDatabase.AssetPathToGUID(path);
+                        prefabId = AssetDatabase.AssetPathToGUID(path); // stable even if renamed/moved
                         changed = true;
                     }
                 }

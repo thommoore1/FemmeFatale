@@ -1,7 +1,9 @@
 using Unity.VisualScripting;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using JetBrains.Annotations;
 using UnityEngine;
+using FemmeFatale.Save;
 
 namespace FemmeFatale
 {
@@ -34,6 +36,10 @@ namespace FemmeFatale
             {
                 InventorySlot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<InventorySlot>();
                 slot.controller = this;
+                
+                if (slot.GetComponent<SaveExclusionZone>() == null)
+                    slot.gameObject.AddComponent<SaveExclusionZone>();
+
                 _slots.Add(slot);
 
                 if (i < itemPrefabs.Length)
@@ -46,12 +52,14 @@ namespace FemmeFatale
         private GameObject SpawnItemInSlot(GameObject itemPrefab, InventorySlot slot)
         {
             GameObject item = Instantiate(itemPrefab, slot.transform);
-            Debug.Log($"Created {item.name}");
             item.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
 
             var tag = item.GetComponent<InventoryItemId>();
             if (tag == null) tag = item.AddComponent<InventoryItemId>();
             tag.itemId = itemPrefab.name;
+            
+            var entity = item.GetComponent<SaveableEntity>();
+            if (entity != null) entity.Excluded = true;
 
             slot.currentItem = item;
             return item;
@@ -85,7 +93,8 @@ namespace FemmeFatale
             else
                 Debug.Log("Selected an empty slot");
         }
-        
+
+        // Hook this up to the trash image's button
         public void DeleteSelected()
         {
             if (selectedSlot == null || selectedSlot.IsEmpty) return;
@@ -144,7 +153,7 @@ namespace FemmeFatale
                 {
                     var tag = slot.currentItem.GetComponent<InventoryItemId>();
                     if (tag != null) id = tag.itemId;
-                    else Debug.LogWarning("[Inventory] Item '" + slot.currentItem.name + "' has no InventoryItemId and won't be saved.");
+                    else id = NormalizeItemName(slot.currentItem.name);
                 }
                 ids.Add(id);
             }
@@ -182,6 +191,11 @@ namespace FemmeFatale
 
             if (selectedIndex >= 0 && selectedIndex < _slots.Count)
                 SelectSlot(_slots[selectedIndex]);
+        }
+        
+        private static string NormalizeItemName(string itemName)
+        {
+            return Regex.Replace(itemName, @"(\(Clone\)|\s\(\d+\))+\s*$", "").Trim();
         }
 
         private void BuildPrefabLookup()
