@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 4965209754455000501}
   - component: {fileID: 5772178239916628410}
   - component: {fileID: 5881188698308525237}
-  - component: {fileID: -1786066156160633680}
-  m_Layer: 0
-  m_Name: Item2
+  - component: {fileID: -6172173044936596183}
+  m_Layer: 10
+  m_Name: Item
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,8 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e97605bbfa58c429a9272d76cb01c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemName: 
+  itemName: NAME_THIS
   uiPrefab: {fileID: 6062677310912817994}
+  collected: 0
 --- !u!114 &3825776878603362751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,9 +85,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1075993247170539406, guid: 6915dc1048508514892d4d96bf47e31c, type: 3}
+  m_Sprite: {fileID: 5654628658493434938, guid: e886670b7b3dbf642992bbcad9b80441, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -163,11 +164,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1104559203
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1075993247170539406, guid: 6915dc1048508514892d4d96bf47e31c, type: 3}
+  m_Sprite: {fileID: 5654628658493434938, guid: e886670b7b3dbf642992bbcad9b80441, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,7 +179,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!58 &-1786066156160633680
+--- !u!58 &-6172173044936596183
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,4 +214,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2.505
+  m_Radius: 1.325

@@ -1,9 +1,10 @@
 using UnityEngine;
+using FemmeFatale.Save;
 
 namespace FemmeFatale
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : SaveableTransform
     {
         public Rigidbody2D Rigidbody { get; private set; }
         public Vector2 CurrentMoveInput { get; private set; }
@@ -12,7 +13,16 @@ namespace FemmeFatale
         
         [SerializeField]
         private PlayerConfig _playerConfig;
-
+        [SerializeField]
+        private InventoryController _inventoryController;
+        
+        
+        private float checkRadius = 0.5f; //TODO: Make this configurable
+        [SerializeField]
+        private LayerMask itemLayer;
+        [SerializeField]
+        private LayerMask puzzleElementLayer;
+        
         private void Awake()
         {
             Rigidbody = GetComponent<Rigidbody2D>();
@@ -35,9 +45,43 @@ namespace FemmeFatale
             }
         }
         
-        public void Interact()
+        public void Use()
         {
             Debug.Log($"{name} interacts, facing {FacingDirection}");
+            
+            Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, puzzleElementLayer);
+
+            if (hitCollider)
+            {
+                Debug.Log($"Interacted with puzzle element: {hitCollider.name}");
+                hitCollider.GetComponent<PuzzleElement>().Interact(_inventoryController.GetSelectedItem());
+            }
+        }
+
+        public void PickUp()
+        {
+            Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, itemLayer);
+
+            if (hitCollider)
+            {
+                this.GetComponent<PlayerItemCollector>().AddToInventory(hitCollider.GetComponent<Item>());
+            }
+            
+        }
+
+        public void Drop()
+        {
+            _inventoryController.Drop(this.transform.position);
+        }
+        
+        public void SelectMoveRight()
+        {
+            _inventoryController.SelectNextSlot();
+        }
+        
+        public void SelectMoveLeft()
+        {
+            _inventoryController.SelectPreviousSlot();;
         }
     }
 }

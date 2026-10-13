@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using FemmeFatale.Save;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -8,7 +9,7 @@ namespace FemmeFatale
 {
 
     [RequireComponent(typeof(NavMeshAgent))]
-    public class MonsterAI : MonoBehaviour
+    public class MonsterAI : SaveableTransform
     {
         [Header("References")] [SerializeField]
         private Transform player;
