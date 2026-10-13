@@ -1,9 +1,10 @@
 using UnityEngine;
+using FemmeFatale.Save;
 
 namespace FemmeFatale
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : SaveableTransform
     {
         public Rigidbody2D Rigidbody { get; private set; }
         public Vector2 CurrentMoveInput { get; private set; }
