@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5772178239916628410}
   - component: {fileID: 5881188698308525237}
   - component: {fileID: -6172173044936596183}
+  - component: {fileID: 7166165165059543708}
   m_Layer: 10
   m_Name: Item
   m_TagString: Item
@@ -215,3 +216,18 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1.325
+--- !u!114 &7166165165059543708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062677310912817994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8466016d9a1004c7cb56c66ee3181b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.Save.SaveableEntity
+  id: 
+  prefabId: 
+  destroyIfMissingFromSave: 1
