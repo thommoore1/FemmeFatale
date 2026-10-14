@@ -17,11 +17,13 @@ namespace FemmeFatale
         private InventoryController _inventoryController;
         
         
-        private float checkRadius = 0.5f; //TODO: Make this configurable
+        private float checkRadius = 0.75f; //TODO: Make this configurable
         [SerializeField]
         private LayerMask itemLayer;
         [SerializeField]
         private LayerMask puzzleElementLayer;
+        [SerializeField]
+        private LayerMask directionalDoorElementLayer;
         
         private void Awake()
         {
@@ -55,6 +57,14 @@ namespace FemmeFatale
             {
                 Debug.Log($"Interacted with puzzle element: {hitCollider.name}");
                 hitCollider.GetComponent<PuzzleElement>().Interact(_inventoryController.GetSelectedItem());
+                return;
+            }
+
+            hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, directionalDoorElementLayer);
+            if (hitCollider)
+            {
+                Debug.Log($"Interacted with directional door");
+                hitCollider.GetComponent<DirectionalDoor>().Interact(this.transform.position);
             }
         }
 
