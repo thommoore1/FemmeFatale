@@ -314,6 +314,92 @@ MonoBehaviour:
     - rowIndex: 1
       debugIndex: 1
       strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 1945, a bleak December.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - The kind that makes you weak and weary, wanting to nod, nearly napping. My only companion was the empty bottle at my side.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - With all of its life drained, I see no other choice but to press on. A murder happened in this hotel a few weeks ago, but has since gone unsolved.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Our boys in blue deferred to me, claiming something about the hotel being haunted. I don\u2019t believe in ghosts, but I also didn\u2019t believe that my bottle could run dry until five minutes ago."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:IntroCutscene
+    type: 1
+    textLength: 589
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
       - Bg
       - TempLobby
       - 
@@ -1525,6 +1611,90 @@ MonoBehaviour:
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Start
     type: 1
     textLength: 430
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 1945, a bleak December.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - The kind that makes you weak and weary, wanting to nod, nearly napping. My only companion was the empty bottle at my side.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - With all of its life drained, I see no other choice but to press on. A murder happened in this hotel a few weeks ago, but has since gone unsolved.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Our boys in blue deferred to me, claiming something about the hotel being haunted. I don\u2019t believe in ghosts, but I also didn\u2019t believe that my bottle could run dry until five minutes ago."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:IntroCutscene
+    type: 1
+    textLength: 589
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
