@@ -23,7 +23,7 @@ namespace FemmeFatale
 
         public static void loadMapScene()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_1");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("AffectionTest");
         }
     }
 }
