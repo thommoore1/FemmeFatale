@@ -47,10 +47,28 @@ namespace FemmeFatale
         private NavMeshAgent agent;
         private Vector2 facing = Vector2.right;
         private Vector2 lastKnownPlayerPosition;
-        private int patrolIndex;
         private bool patrolDestinationSet;
         private float searchTimer;
         private bool hasCaughtPlayer;
+        
+        [SerializeField]
+        private int patrolIndex;
+
+        public int PatrolIndex
+        {
+            get => patrolIndex;
+            set
+            {
+                if (patrolPoints == null || patrolPoints.Length == 0)
+                {
+                    patrolIndex = 0;
+                    return;
+                }
+
+                patrolIndex = Mathf.Clamp(value, 0, patrolPoints.Length - 1);
+                patrolDestinationSet = false;
+            }
+        }
 
         private MonsterAffection affection; 
         
@@ -268,4 +286,8 @@ namespace FemmeFatale
             }
         }
     }
+    
+    
+    
+    
 }

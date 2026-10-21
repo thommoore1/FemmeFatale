@@ -9,10 +9,11 @@ namespace FemmeFatale.Save
         private const string AffectionKey = "MonsterAffection";
 
         [Serializable]
-        private class AffectionData
+        private class MonsterData
         {
             public string affectionId;
             public float value;
+            public int patrolIndex;
         }
 
         private MonsterAffection _affection;
@@ -23,10 +24,13 @@ namespace FemmeFatale.Save
         {
             var record = base.Capture();
 
-            var data = new AffectionData
+            var monsterAI = GetComponent<MonsterAI>();
+
+            var data = new MonsterData
             {
                 affectionId = Affection.AffectionId,
-                value = Affection.Affection
+                value = Affection.Affection,
+                patrolIndex = monsterAI != null ? monsterAI.PatrolIndex : 0
             };
 
             record.components.Add(new ComponentRecord
@@ -45,10 +49,17 @@ namespace FemmeFatale.Save
             {
                 if (comp.key != AffectionKey) continue;
 
-                var data = JsonUtility.FromJson<AffectionData>(comp.json);
+                var data = JsonUtility.FromJson<MonsterData>(comp.json);
                 if (data == null || string.IsNullOrEmpty(data.affectionId)) return;
 
                 AffectionManager.Instance.Set(data.affectionId, data.value);
+
+                var monsterAI = GetComponent<MonsterAI>();
+                if (monsterAI != null)
+                {
+                    monsterAI.PatrolIndex = data.patrolIndex;
+                }
+
                 return;
             }
         }
