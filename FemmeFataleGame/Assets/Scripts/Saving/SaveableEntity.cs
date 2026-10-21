@@ -36,7 +36,7 @@ namespace FemmeFatale.Save
 
         internal void SetId(string newId) => id = newId;
 
-        public EntityRecord Capture()
+        public virtual EntityRecord Capture()
         {
             var record = new EntityRecord { id = id, prefabId = prefabId };
             foreach (var pair in BuildSaveableMap())
@@ -50,7 +50,7 @@ namespace FemmeFatale.Save
             return record;
         }
 
-        public void Restore(EntityRecord record)
+        public virtual void Restore(EntityRecord record)
         {
             var map = BuildSaveableMap();
             foreach (var comp in record.components)

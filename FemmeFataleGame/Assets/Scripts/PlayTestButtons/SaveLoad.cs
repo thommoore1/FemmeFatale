@@ -1,32 +1,32 @@
-using System;
 using UnityEngine;
+using FemmeFatale.Save;
 
-public class SaveLoad : MonoBehaviour
+namespace FemmeFatale
 {
-    // public static event Action OnGameSaved;
-    // public static event Action OnGameLoaded; 
-    //
-    // private void OnApplicationQuit()
-    // {
-    //     SaveGameData();
-    // }
-    //
-    // private void AfterOnEnable()
-    // {
-    //     LoadGameData();
-    // }
-    // public void SaveGameData()
-    // {
-    //     Debug.Log("Game saved");
-    // }
-    //
-    // public void ResetGameData()
-    // {
-    //     Debug.Log("Game data reset");
-    // }
-    //
-    // public void LoadGameData()
-    // {
-    //     Debug.Log("Game loaded");
-    // }
+    public class SaveLoad : MonoBehaviour
+    {
+        public void SaveGame()
+        {
+            if (SaveManager.Instance != null)
+                SaveManager.Instance.SaveButton(0);
+            else
+                Debug.LogError("SaveManager.Instance is null!");
+        }
+
+        public void LoadGame()
+        {
+            if (SaveManager.Instance != null)
+                SaveManager.Instance.Load(0);
+            else
+                Debug.LogError("SaveManager.Instance is null!");
+        }
+
+        public void DeleteSave()
+        {
+            if (SaveManager.Instance != null)
+                SaveManager.Instance.ClearSlot(1);
+            else
+                Debug.LogError("SaveManager.Instance is null!");
+        }
+    }
 }
