@@ -40,7 +40,7 @@ namespace FemmeFatale
         private MonsterConfig config;
 
         // Subscribe from code: monster.PlayerCaught += MyMethod;</summary>
-        public event Action PlayerCaught;
+        //public event Action PlayerCaught;
 
         public MonsterState CurrentState { get; private set; } = MonsterState.Patrol;
 
@@ -51,13 +51,22 @@ namespace FemmeFatale
         private bool patrolDestinationSet;
         private float searchTimer;
         private bool hasCaughtPlayer;
+
+        private MonsterAffection affection; 
         
         private void Awake()
         {
+            affection = GetComponent<MonsterAffection>();
             agent = GetComponent<NavMeshAgent>();
             
             agent.updateRotation = false;
             agent.updateUpAxis = false;
+            
+            if(CurrentState == MonsterState.Patrol)
+                agent.speed = affection.PatrolModifier(config.PatrolSpeed);
+            else if(CurrentState == MonsterState.Chase || CurrentState == MonsterState.Search)
+                agent.speed = affection.ChaseModifier(config.ChaseSpeed);
+            
         }
 
         private void Update()
@@ -137,7 +146,7 @@ namespace FemmeFatale
             if (!HasReachedDestination()) return;
             
             searchTimer += Time.deltaTime;
-            if (searchTimer >= config.SearchDuration)
+            if (searchTimer >= config.SearchDuration) // Add search modifier if needed: affection.SearchModifier(config.SearchDuration)
             {
                 ChangeState(MonsterState.Patrol);
             }
@@ -159,17 +168,17 @@ namespace FemmeFatale
             switch (newState)
             {
                 case MonsterState.Patrol:
-                    agent.speed = config.PatrolSpeed;
+                    agent.speed = affection.PatrolModifier(config.PatrolSpeed);
                     patrolDestinationSet = false;
                     break;
 
                 case MonsterState.Chase:
-                    agent.speed = config.ChaseSpeed;
+                    agent.speed = affection.ChaseModifier(config.ChaseSpeed);
                     patrolDestinationSet = false;
                     break;
 
                 case MonsterState.Search:
-                    agent.speed = config.ChaseSpeed;
+                    agent.speed = affection.ChaseModifier(config.ChaseSpeed);
                     SetDestinationOnNavMesh(lastKnownPlayerPosition);
                     break;
             }
@@ -182,10 +191,10 @@ namespace FemmeFatale
             Vector2 toPlayer = (Vector2)player.position - origin;
             float distance = toPlayer.magnitude;
 
-            if (distance > config.VisionRange) return false;
+            if (distance > affection.RangeModifier(config.VisionRange)) return false;
 
             // Cone check
-            if (Vector2.Angle(facing, toPlayer) > config.VisionAngle * 0.5f) return false;
+            if (Vector2.Angle(facing, toPlayer) > affection.VisionAngleModifier(config.VisionAngle)) return false;
 
             // Line-of-sight check: anything on the obstacle mask between us and the player blocks vision.
             RaycastHit2D hit = Physics2D.Raycast(origin, toPlayer.normalized, distance, obstacleMask);
@@ -201,14 +210,14 @@ namespace FemmeFatale
             agent.velocity = Vector3.zero;
 
             onPlayerCaught?.Invoke();
-            PlayerCaught?.Invoke();
+            //PlayerCaught?.Invoke();
         }
 
         public void ResetAfterCatch()
         {
             hasCaughtPlayer = false;
             ChangeState(MonsterState.Patrol);
-            agent.speed = config.PatrolSpeed;
+            agent.speed = affection.PatrolModifier(config.PatrolSpeed);
             patrolDestinationSet = false;
         }
         
@@ -230,17 +239,23 @@ namespace FemmeFatale
 
         private void OnDrawGizmosSelected()
         {
+            
             Vector3 pos = transform.position;
             Vector3 f = facing.sqrMagnitude > 0f ? (Vector3)facing : Vector3.right;
+            
+            float range = affection.RangeModifier(config.VisionRange);
+            float angle = affection.VisionAngleModifier(config.VisionAngle);
+            
+            //Debug.Log($"{config.VisionAngle}{angle}{config.RangeModi}{}");
 
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(pos, config.VisionRange);
+            Gizmos.DrawWireSphere(pos, range);
 
-            Vector3 left = Quaternion.Euler(0, 0, config.VisionAngle * 0.5f) * f;
-            Vector3 right = Quaternion.Euler(0, 0, -config.VisionAngle * 0.5f) * f;
+            Vector3 left = Quaternion.Euler(0, 0, angle * 0.5f) * f;
+            Vector3 right = Quaternion.Euler(0, 0, -angle * 0.5f) * f;
             Gizmos.color = Color.red;
-            Gizmos.DrawLine(pos, pos + left * config.VisionRange);
-            Gizmos.DrawLine(pos, pos + right * config.VisionRange);
+            Gizmos.DrawLine(pos, pos + left * range);
+            Gizmos.DrawLine(pos, pos + right * range);
 
             if (patrolPoints == null) return;
             Gizmos.color = Color.cyan;

@@ -5,6 +5,8 @@ namespace FemmeFatale
     
     public class Restart : MonoBehaviour
     {
+        private string sceneName;
+        
         public static void RestartGame()
         {
             // Reload the current scene
@@ -13,7 +15,9 @@ namespace FemmeFatale
         
         public static void loadDialogueScene()
         {
+            Debug.Log("Method called by:\n" + System.Environment.StackTrace);
             // Load the dialogue scene
+            Debug.Log("adfsfdsadsf");
             UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_1_Dialogue");
         }
 
