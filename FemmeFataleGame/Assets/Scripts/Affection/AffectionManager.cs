@@ -17,6 +17,7 @@ public class AffectionManager : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Bootstrap()
     {
+        Debug.Log("Affection");
         if (Instance != null) return;
         var go = new GameObject("AffectionManager");
         go.AddComponent<AffectionManager>(); 
