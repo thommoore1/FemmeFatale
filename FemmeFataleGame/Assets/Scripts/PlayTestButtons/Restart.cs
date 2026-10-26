@@ -15,15 +15,12 @@ namespace FemmeFatale
         
         public static void loadDialogueScene()
         {
-            Debug.Log("Method called by:\n" + System.Environment.StackTrace);
-            // Load the dialogue scene
-            Debug.Log("adfsfdsadsf");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_1_Dialogue");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_2_Dialogue");
         }
 
         public static void loadMapScene()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("AffectionTest");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_2");
         }
     }
 }

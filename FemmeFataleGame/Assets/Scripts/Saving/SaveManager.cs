@@ -19,6 +19,16 @@ namespace FemmeFatale.Save
         public static event Action OnAfterLoad;
 
         public bool IsLoading { get; private set; }
+        
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        private static void Bootstrap()
+        {
+            Debug.Log("SaveManager");
+            if (Instance != null) return;
+            var go = new GameObject("SaveManager");
+            go.AddComponent<SaveManager>(); 
+        }
+        
 
         private void Awake()
         {
@@ -145,6 +155,11 @@ namespace FemmeFatale.Save
             if (IsLoading) return;
             SaveFileIO.Delete(slot);
             Debug.Log($"[Save] Cleared slot {slot}.");
+        }
+
+        public void loadGame()
+        {
+            return;
         }
     }
 }
