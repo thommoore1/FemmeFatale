@@ -3,54 +3,13 @@ using UnityEngine;
 
 public class DialogueScenarioSelector : MonoBehaviour
 {
-    //TODO: put all of the data into a separate static class so it persists between scenes
-    public float lowAffection = -10;
-    public float highAffection = 10;
 
     [SerializeField] private DialogueLoader dialogueLoader;
-
-    [SerializeField] private string firstEyerisConversation;
-    [SerializeField] private string firstBrambleConversation;
-    [SerializeField] private string firstFinniganConversation;
-    
-    [SerializeField] private List<string> lowAffectionEyerisConversationLabels = new List<string>();
-    [SerializeField] private List<string> neutralAffectionEyerisConversationLabels = new List<string>();
-    [SerializeField] private List<string> highAffectionEyerisConversationLabels = new List<string>();
-    
-    [SerializeField] private List<string> lowAffectionBrambleConversationLabels = new List<string>();
-    [SerializeField] private List<string> neutralAffectionBrambleConversationLabels = new List<string>();
-    [SerializeField] private List<string> highAffectionBrambleConversationLabels = new List<string>();
-    
-    [SerializeField] private List<string> lowAffectionFinniganConversationLabels = new List<string>();
-    [SerializeField] private List<string> neutralAffectionFinniganConversationLabels = new List<string>();
-    [SerializeField] private List<string> highAffectionFinniganConversationLabels = new List<string>();
-
-    private List<string> lowEyerisLabelsCopy = new List<string>();
-    private List<string> neutralEyerisLabelsCopy = new List<string>();
-    private List<string> highEyerisLabelsCopy = new List<string>();
-    
-    private List<string> lowBrambleLabelsCopy = new List<string>();
-    private List<string> neutralBrambleLabelsCopy = new List<string>();
-    private List<string> highBrambleLabelsCopy = new List<string>();
-    
-    private List<string> lowFinniganLabelsCopy = new List<string>();
-    private List<string> neutralFinniganLabelsCopy = new List<string>();
-    private List<string> highFinniganLabelsCopy = new List<string>();
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        lowEyerisLabelsCopy = lowAffectionEyerisConversationLabels;
-        neutralEyerisLabelsCopy = neutralAffectionEyerisConversationLabels;
-        highEyerisLabelsCopy = highAffectionEyerisConversationLabels;
-
-        lowBrambleLabelsCopy = lowAffectionBrambleConversationLabels;
-        neutralBrambleLabelsCopy = neutralAffectionBrambleConversationLabels;
-        highBrambleLabelsCopy = highAffectionBrambleConversationLabels;
-
-        lowFinniganLabelsCopy = lowAffectionFinniganConversationLabels;
-        neutralFinniganLabelsCopy = neutralAffectionFinniganConversationLabels;
-        highFinniganLabelsCopy = highAffectionFinniganConversationLabels;
+        dialogueLoader.Setup();
     }
 
     // Update is called once per frame
@@ -67,39 +26,39 @@ public class DialogueScenarioSelector : MonoBehaviour
                 switch (DetermineAffection(affectionNumber))
                 {
                     case "low":
-                        if (lowEyerisLabelsCopy.Count > 0)
+                        if (dialogueLoader.lowEyerisLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(lowEyerisLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.lowEyerisLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            lowEyerisLabelsCopy.Remove(randomElement);
+                            dialogueLoader.lowEyerisLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(lowAffectionEyerisConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.lowAffectionEyerisConversationLabels));
                         }
                         break;
                     case "high":
-                        if (highEyerisLabelsCopy.Count > 0)
+                        if (dialogueLoader.highEyerisLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(highEyerisLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.highEyerisLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            highEyerisLabelsCopy.Remove(randomElement);
+                            dialogueLoader.highEyerisLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(highAffectionEyerisConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.highAffectionEyerisConversationLabels));
                         }
                         break;
                     case "neutral":
-                        if (neutralEyerisLabelsCopy.Count > 0)
+                        if (dialogueLoader.neutralEyerisLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(neutralEyerisLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.neutralEyerisLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            neutralEyerisLabelsCopy.Remove(randomElement);
+                            dialogueLoader.neutralEyerisLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(neutralAffectionEyerisConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.neutralAffectionEyerisConversationLabels));
                         }
                         break;
                     default:
@@ -111,39 +70,39 @@ public class DialogueScenarioSelector : MonoBehaviour
                 switch (DetermineAffection(affectionNumber))
                 {
                     case "low":
-                        if (lowBrambleLabelsCopy.Count > 0)
+                        if (dialogueLoader.lowBrambleLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(lowBrambleLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.lowBrambleLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            lowBrambleLabelsCopy.Remove(randomElement);
+                            dialogueLoader.lowBrambleLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(lowAffectionBrambleConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.lowAffectionBrambleConversationLabels));
                         }
                         break;
                     case "high":
-                        if (highBrambleLabelsCopy.Count > 0)
+                        if (dialogueLoader.highBrambleLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(highBrambleLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.highBrambleLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            highBrambleLabelsCopy.Remove(randomElement);
+                            dialogueLoader.highBrambleLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(highAffectionBrambleConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.highAffectionBrambleConversationLabels));
                         }
                         break;
                     case "neutral":
-                        if (neutralBrambleLabelsCopy.Count > 0)
+                        if (dialogueLoader.neutralBrambleLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(neutralBrambleLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.neutralBrambleLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            neutralBrambleLabelsCopy.Remove(randomElement);
+                            dialogueLoader.neutralBrambleLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(neutralAffectionBrambleConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.neutralAffectionBrambleConversationLabels));
                         }
                         break;
                     default:
@@ -155,39 +114,39 @@ public class DialogueScenarioSelector : MonoBehaviour
                 switch (DetermineAffection(affectionNumber))
                 {
                     case "low":
-                        if (lowFinniganLabelsCopy.Count > 0)
+                        if (dialogueLoader.lowFinniganLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(lowFinniganLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.lowFinniganLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            lowFinniganLabelsCopy.Remove(randomElement);
+                            dialogueLoader.lowFinniganLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(lowAffectionFinniganConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.lowAffectionFinniganConversationLabels));
                         }
                         break;
                     case "high":
-                        if (highFinniganLabelsCopy.Count > 0)
+                        if (dialogueLoader.highFinniganLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(highFinniganLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.highFinniganLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            highFinniganLabelsCopy.Remove(randomElement);
+                            dialogueLoader.highFinniganLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(highAffectionFinniganConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.highAffectionFinniganConversationLabels));
                         }
                         break;
                     case "neutral":
-                        if (neutralFinniganLabelsCopy.Count > 0)
+                        if (dialogueLoader.neutralFinniganLabelsCopy.Count > 0)
                         {
-                            string randomElement = getRandomElement(neutralFinniganLabelsCopy);
+                            string randomElement = getRandomElement(dialogueLoader.neutralFinniganLabelsCopy);
                             dialogueLoader.UpdateScenarioLable(randomElement);
-                            neutralFinniganLabelsCopy.Remove(randomElement);
+                            dialogueLoader.neutralFinniganLabelsCopy.Remove(randomElement);
                         }
                         else
                         {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(neutralAffectionFinniganConversationLabels));
+                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.neutralAffectionFinniganConversationLabels));
                         }
                         break;
                     default:
@@ -203,11 +162,11 @@ public class DialogueScenarioSelector : MonoBehaviour
 
     private string DetermineAffection(float affectionNumber)
     {
-        if (affectionNumber <= lowAffection)
+        if (affectionNumber <= dialogueLoader.lowAffection)
         {
             return "low";
         }
-        else if (affectionNumber >= highAffection)
+        else if (affectionNumber >= dialogueLoader.highAffection)
         {
             return "high";
         }

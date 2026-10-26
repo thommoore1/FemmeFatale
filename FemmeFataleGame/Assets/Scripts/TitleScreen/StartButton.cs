@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class StartButton : MonoBehaviour
 {
     public bool PlayIntroCutscene;
+
+    public DialogueLoader Loader;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +22,7 @@ public class StartButton : MonoBehaviour
     {
         if (PlayIntroCutscene)
         {
+            Loader.UpdateScenarioLable("IntroCutscene");
             SceneManager.LoadScene("PlayTest_1_Dialogue");
         }
         else

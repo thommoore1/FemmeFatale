@@ -58512,24 +58512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cb2c68478f6e549b569b7ac8f6fc57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueScenarioSelector
-  lowAffection: -10
-  highAffection: 10
   dialogueLoader: {fileID: 11400000, guid: 1b0c896fb3be4c74eb04f1c38bfda2f4, type: 2}
-  firstEyerisConversation: 
-  firstBrambleConversation: 
-  firstFinniganConversation: 
-  lowAffectionEyerisConversationLabels:
-  - TempEyeris
-  neutralAffectionEyerisConversationLabels:
-  - TempEyeris
-  highAffectionEyerisConversationLabels:
-  - TempEyeris
-  lowAffectionBrambleConversationLabels: []
-  neutralAffectionBrambleConversationLabels: []
-  highAffectionBrambleConversationLabels: []
-  lowAffectionFinniganConversationLabels: []
-  neutralAffectionFinniganConversationLabels: []
-  highAffectionFinniganConversationLabels: []
 --- !u!4 &760091701
 Transform:
   m_ObjectHideFlags: 0

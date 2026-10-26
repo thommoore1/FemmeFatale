@@ -13,3 +13,29 @@ MonoBehaviour:
   m_Name: DialogueLoader
   m_EditorClassIdentifier: Assembly-CSharp::DialogueLoader
   scenarioLabelToPlay: IntroCutscene
+  lowAffection: -10
+  highAffection: 10
+  firstEyerisConversation: 
+  firstBrambleConversation: 
+  firstFinniganConversation: 
+  lowAffectionEyerisConversationLabels:
+  - TempEyeris
+  neutralAffectionEyerisConversationLabels:
+  - TempEyeris
+  highAffectionEyerisConversationLabels:
+  - TempEyeris
+  lowAffectionBrambleConversationLabels: []
+  neutralAffectionBrambleConversationLabels: []
+  highAffectionBrambleConversationLabels: []
+  lowAffectionFinniganConversationLabels: []
+  neutralAffectionFinniganConversationLabels: []
+  highAffectionFinniganConversationLabels: []
+  lowEyerisLabelsCopy: []
+  neutralEyerisLabelsCopy: []
+  highEyerisLabelsCopy: []
+  lowBrambleLabelsCopy: []
+  neutralBrambleLabelsCopy: []
+  highBrambleLabelsCopy: []
+  lowFinniganLabelsCopy: []
+  neutralFinniganLabelsCopy: []
+  highFinniganLabelsCopy: []

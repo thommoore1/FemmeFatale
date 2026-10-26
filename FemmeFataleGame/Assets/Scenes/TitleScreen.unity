@@ -1028,6 +1028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartButton
   PlayIntroCutscene: 1
+  Loader: {fileID: 11400000, guid: 1b0c896fb3be4c74eb04f1c38bfda2f4, type: 2}
 --- !u!1 &1839426058
 GameObject:
   m_ObjectHideFlags: 0
