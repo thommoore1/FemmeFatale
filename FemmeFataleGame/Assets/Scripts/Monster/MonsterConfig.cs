@@ -5,6 +5,7 @@ namespace FemmeFatale
     [CreateAssetMenu(fileName = "MonsterConfig", menuName = "Scriptable Objects/MonsterConfig")]
     public class MonsterConfig : ScriptableObject
     {
+        [SerializeField] public string monsterName = "Eyeris";
         [SerializeField] private float patrolSpeed = 2f;
         [SerializeField] private float chaseSpeed = 3.5f;
         [SerializeField] private float visionRange = 6f;

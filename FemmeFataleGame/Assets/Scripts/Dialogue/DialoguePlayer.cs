@@ -5,6 +5,8 @@ public class DialoguePlayer : MonoBehaviour
 {
     public AdvEngine AdvEngine;
 
+    public DialogueLoader DialogueLoader;
+
     public string ScenarioLabel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,6 +22,13 @@ public class DialoguePlayer : MonoBehaviour
 
     public void PlayScenario()
     {
-        AdvEngine.StartGame(ScenarioLabel);
+        if (!string.IsNullOrEmpty(ScenarioLabel))
+        {
+            AdvEngine.StartGame(ScenarioLabel);
+        }
+        else
+        {
+            AdvEngine.StartGame(DialogueLoader.scenarioLabelToPlay);
+        }
     }
 }
