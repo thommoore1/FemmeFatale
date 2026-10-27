@@ -149,7 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePlayer
   AdvEngine: {fileID: 392074102}
-  ScenarioLabel: TempEyeris
+  DialogueLoader: {fileID: 11400000, guid: 1b0c896fb3be4c74eb04f1c38bfda2f4, type: 2}
+  ScenarioLabel: 
 --- !u!4 &108168761
 Transform:
   m_ObjectHideFlags: 0

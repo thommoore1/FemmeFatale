@@ -5,10 +5,19 @@ namespace FemmeFatale
 {
     public class StartMenu : MonoBehaviour
     {
-        private Scene LevelScene;
+        [SerializeField] private bool PlayIntroCutscene;
+        [SerializeField] private DialogueLoader Loader;
+        [SerializeField] private string levelSceneName;
+
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
+        }
+
+        public void LoadStart()
+        {
+            Loader.UpdateScenarioLable("IntroCutscene");
+            LoadScene(levelSceneName);
         }
         
         public void QuitGame()
@@ -23,17 +32,5 @@ namespace FemmeFatale
             #endif
         }
         
-        public void LoadLevelScene()
-        {
-            LevelScene = SceneManager.GetSceneByName("Level");
-            if (LevelScene.IsValid())
-            {
-                SceneManager.LoadScene(LevelScene.name);
-            }
-            else
-            {
-                Debug.LogError("Level scene not found!");
-            }
-        }
     }
 }

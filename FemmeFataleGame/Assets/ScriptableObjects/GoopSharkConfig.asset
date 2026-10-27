@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558f7fc19f2a7485bb1f0fd77aa87e15, type: 3}
+  m_Name: GoopSharkConfig
+  m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.MonsterConfig
+  monsterName: GoopShark
+  patrolSpeed: 3
+  chaseSpeed: 6
+  visionRange: 3
+  visionAngle: 75
+  searchDuration: 3
