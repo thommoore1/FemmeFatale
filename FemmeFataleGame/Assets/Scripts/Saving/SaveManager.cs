@@ -20,25 +20,28 @@ namespace FemmeFatale.Save
 
         public bool IsLoading { get; private set; }
         
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-        private static void Bootstrap()
-        {
-            Debug.Log("SaveManager");
-            if (Instance != null) return;
-            var go = new GameObject("SaveManager");
-            go.AddComponent<SaveManager>(); 
-        }
-        
 
         private void Awake()
         {
             if (Instance != null && Instance != this) { Destroy(gameObject); return; }
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            ClearSlot(4);
+        }
+        
+        private void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
 
         public bool Save(int slot = 0)
         {
+            Debug.Log("SAVE ATTEMPT");
             if (IsLoading) return false;
 
             OnBeforeSave?.Invoke();
@@ -53,6 +56,14 @@ namespace FemmeFatale.Save
             {
                 if (logEntities)
                     Debug.Log($"[Save] Capturing '{entity.name}' (prefabId '{entity.PrefabId}')", entity);
+                
+                Debug.Log(
+                    $"[Save] Capturing: {entity.name}, " +
+                    $"ID: {entity.Id}, " +
+                    $"PrefabId: {entity.PrefabId}, " +
+                    $"Excluded: {entity.Excluded}"
+                );
+                
                 file.entities.Add(entity.Capture());
             }
 
@@ -63,6 +74,7 @@ namespace FemmeFatale.Save
         
         public void SaveButton(int slot = 0)
         {
+            Debug.Log("SAVE BUTTON BLAH BLAH");
             if (Save(slot))
                 Debug.Log($"[Save] Save successful in slot {slot}.");
             else
@@ -107,21 +119,43 @@ namespace FemmeFatale.Save
             var matched = new Dictionary<string, (SaveableEntity entity, EntityRecord record)>();
             foreach (var record in file.entities)
             {
+                Debug.Log(
+                    $"[Load] Looking for saved entity: " +
+                    $"ID={record.id}, PrefabId={record.prefabId}"
+                );
+
                 if (!inScene.TryGetValue(record.id, out var entity))
                 {
-                    var prefab = prefabRegistry != null ? prefabRegistry.Get(record.prefabId) : null;
+                    var prefab = prefabRegistry != null
+                        ? prefabRegistry.Get(record.prefabId)
+                        : null;
+
                     if (prefab == null)
                     {
-                        Debug.LogWarning($"[Save] Can't find or respawn entity {record.id} (prefabId '{record.prefabId}').");
+                        Debug.LogWarning(
+                            $"[Load] Cannot respawn entity. " +
+                            $"ID={record.id}, PrefabId={record.prefabId}"
+                        );
                         continue;
                     }
+
                     var instance = Instantiate(prefab);
-                    if (logEntities)
-                        Debug.Log($"[Save] Respawned '{instance.name}' from prefabId '{record.prefabId}' (it wasn't in the scene)", instance);
+                    instance.name = prefab.name;
                     entity = instance.GetComponent<SaveableEntity>();
                     entity.SetId(record.id);
+
                     inScene[record.id] = entity;
+
+                    Debug.Log(
+                        $"[Load] Respawned '{entity.name}' " +
+                        $"with ID={entity.Id}, PrefabId={entity.PrefabId}"
+                    );
                 }
+                else
+                {
+                    Debug.Log($"[Load] Matched existing entity '{entity.name}'");
+                }
+
                 matched[record.id] = (entity, record);
             }
             
@@ -156,10 +190,17 @@ namespace FemmeFatale.Save
             SaveFileIO.Delete(slot);
             Debug.Log($"[Save] Cleared slot {slot}.");
         }
-
-        public void loadGame()
+        
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            return;
+            Debug.Log("OnSceneLoaded");
+            if (scene.name == "PlayTest_2" && SaveFileIO.Exists(4))
+            {
+                Load(4);
+                ClearSlot(4);
+                Debug.Log("Finished loading save file from slot 4");
+            }
         }
+        
     }
 }

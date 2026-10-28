@@ -13,6 +13,7 @@ namespace FemmeFatale.Save
         {
             public string affectionId;
             public float value;
+            public bool isFrozen;
             public int patrolIndex;
         }
 
@@ -30,6 +31,7 @@ namespace FemmeFatale.Save
             {
                 affectionId = Affection.AffectionId,
                 value = Affection.Affection,
+                isFrozen = monsterAI.isFrozen,
                 patrolIndex = monsterAI != null ? monsterAI.PatrolIndex : 0
             };
 
@@ -59,6 +61,7 @@ namespace FemmeFatale.Save
                 {
                     monsterAI.PatrolIndex = data.patrolIndex;
                 }
+                monsterAI.isFrozen = data.isFrozen;
 
                 return;
             }

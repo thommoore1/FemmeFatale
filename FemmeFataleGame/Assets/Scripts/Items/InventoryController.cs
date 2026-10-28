@@ -49,21 +49,59 @@ namespace FemmeFatale
             SelectSlot(_slots[0]);
         }
         
+
         private GameObject SpawnItemInSlot(GameObject itemPrefab, InventorySlot slot)
         {
-            GameObject item = Instantiate(itemPrefab, slot.transform);
-            item.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+            // Remember the item's original scale before changing its size.
+            Vector3 originalScale = itemPrefab.transform.localScale;
 
+            GameObject item = Instantiate(itemPrefab, slot.transform);
+            item.name = itemPrefab.name;
+
+            RectTransform rect = item.GetComponent<RectTransform>();
+
+            if (rect != null)
+            {
+                // Make the item's UI rectangle fill the inventory slot.
+                rect.anchorMin = Vector2.zero;
+                rect.anchorMax = Vector2.one;
+                rect.offsetMin = Vector2.zero;
+                rect.offsetMax = Vector2.zero;
+                rect.anchoredPosition = Vector2.zero;
+                rect.localScale = Vector3.one;
+            }
+            else
+            {
+                item.transform.localScale = Vector3.one;
+            }
+
+            // Store the scale so it can be restored when dropped.
+            var scaleData = item.GetComponent<InventoryItemScale>();
+
+            if (scaleData == null)
+                scaleData = item.AddComponent<InventoryItemScale>();
+
+            scaleData.SetOriginalScale(originalScale);
+
+            // Ensure the item has an ID.
             var tag = item.GetComponent<InventoryItemId>();
-            if (tag == null) tag = item.AddComponent<InventoryItemId>();
+
+            if (tag == null)
+                tag = item.AddComponent<InventoryItemId>();
+
             tag.itemId = itemPrefab.name;
-            
+
+            // Inventory representations should not be saved as world entities.
             var entity = item.GetComponent<SaveableEntity>();
-            if (entity != null) entity.Excluded = true;
+
+            if (entity != null)
+                entity.Excluded = true;
 
             slot.currentItem = item;
+
             return item;
         }
+
 
         public bool AddItem(GameObject itemPrefab)
         {
@@ -107,15 +145,57 @@ namespace FemmeFatale
             selectedSlot = null;
         }
 
+
+        
         public void Drop(Vector2 dropPosition)
         {
-            if (selectedSlot == null || selectedSlot.IsEmpty) return;
+            if (selectedSlot == null || selectedSlot.IsEmpty)
+                return;
 
-            Debug.Log("Dropped: " + selectedSlot.currentItem.name);
-            Instantiate(selectedSlot.currentItem, dropPosition, Quaternion.identity);
-            Destroy(selectedSlot.currentItem);
+            GameObject inventoryItem = selectedSlot.currentItem;
+
+            var tag = inventoryItem.GetComponent<InventoryItemId>();
+
+            if (tag == null || string.IsNullOrEmpty(tag.itemId))
+            {
+                Debug.LogError("[Inventory] Cannot drop item: missing item ID.");
+                return;
+            }
+
+            BuildPrefabLookup();
+
+            if (!_prefabLookup.TryGetValue(tag.itemId, out GameObject prefab))
+            {
+                Debug.LogError(
+                    "[Inventory] Cannot find world prefab for item: " + tag.itemId
+                );
+                return;
+            }
+
+            var scaleData = inventoryItem.GetComponent<InventoryItemScale>();
+
+            Vector3 originalScale = scaleData != null
+                ? scaleData.OriginalScale
+                : prefab.transform.localScale;
+
+            // Instantiate the original prefab, not the toolbar representation.
+            GameObject droppedItem = Instantiate(
+                prefab,
+                dropPosition,
+                Quaternion.identity
+            );
+            
+            droppedItem.name = prefab.name;
+
+            droppedItem.transform.localScale = originalScale;
+
+            // Remove the item from the inventory.
+            Destroy(inventoryItem);
             selectedSlot.currentItem = null;
+
+            Debug.Log("[Inventory] Dropped world prefab: " + tag.itemId);
         }
+
 
         public void SelectNextSlot()
         {

@@ -38,6 +38,30 @@ namespace FemmeFatale.Save
                     Debug.LogWarning($"[PrefabRegistry] Duplicate prefabId on '{p.name}'.", p);
             }
         }
+        
+        public void DebugPrefabId(string prefabId)
+        {
+            if (lookup == null)
+                BuildLookup();
+
+            Debug.Log(
+                $"[PrefabRegistry] Registry: {name}, " +
+                $"Requested ID: '{prefabId}', " +
+                $"Found: {lookup.TryGetValue(prefabId, out var prefab)}, " +
+                $"Prefab: {(prefab != null ? prefab.name : "NULL")}"
+            );
+
+            foreach (var p in prefabs)
+            {
+                if (p != null)
+                {
+                    Debug.Log(
+                        $"[PrefabRegistry] Registered: '{p.name}', " +
+                        $"ID: '{p.PrefabId}'"
+                    );
+                }
+            }
+        }
 
 #if UNITY_EDITOR
         [ContextMenu("Collect All Saveable Prefabs")]
@@ -58,4 +82,6 @@ namespace FemmeFatale.Save
         }
 #endif
     }
+    
+    
 }
