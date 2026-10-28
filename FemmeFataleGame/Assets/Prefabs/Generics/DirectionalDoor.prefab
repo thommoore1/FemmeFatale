@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2840886942590002878}
   - component: {fileID: 4327941548990759206}
   - component: {fileID: 5606422010595616396}
+  - component: {fileID: 819429369081713830}
   m_Layer: 12
   m_Name: DirectionalDoor
   m_TagString: Untagged
@@ -152,4 +153,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a0df733593ce4342947e49000ecd27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.DirectionalDoor
-  unlockDirection: {x: -1, y: 0}
+  unlockDirection: 
+  feedbackText: {fileID: 0}
+--- !u!114 &819429369081713830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805778626952470853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8466016d9a1004c7cb56c66ee3181b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.Save.SaveableEntity
+  id: 
+  prefabId: 
+  destroyIfMissingFromSave: 1
