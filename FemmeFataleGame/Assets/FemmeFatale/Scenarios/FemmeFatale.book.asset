@@ -627,6 +627,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - passedConversation=false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - 
       - 
@@ -639,8 +649,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Eyeris
@@ -654,8 +664,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - Selection
       - '*PassEyerisNeutral1'
@@ -669,8 +679,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*FailEyerisNeutral1'
@@ -684,23 +694,23 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 8
+    - rowIndex: 8
+      debugIndex: 10
       strings:
       - '*PassEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 9
+    - rowIndex: 9
+      debugIndex: 11
       strings:
       - Param
       - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 9
-      debugIndex: 10
+    - rowIndex: 10
+      debugIndex: 12
       strings:
       - 
       - Eyeris
@@ -714,8 +724,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 11
+    - rowIndex: 11
+      debugIndex: 13
       strings:
       - 
       - Eyeris
@@ -729,22 +739,31 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 13
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 12
       debugIndex: 14
       strings:
-      - '*FailEyerisNeutral1'
+      - Jump
+      - '*EvaluateEyerisNeutral1'
+      - conversationChecker>0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 13
       debugIndex: 15
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 17
+      strings:
+      - '*FailEyerisNeutral1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 18
       strings:
       - 
       - Eyeris
@@ -758,8 +777,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 14
-      debugIndex: 16
+    - rowIndex: 16
+      debugIndex: 19
       strings:
       - 
       - Eyeris
@@ -773,9 +792,47 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 17
+      debugIndex: 20
+      strings:
+      - Jump
+      - '*EvaluateEyerisNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 21
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 23
+      strings:
+      - '*EvaluateEyerisNeutral1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 24
+      strings:
+      - Param
+      - passedConversation=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 25
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNeutral1
     type: 1
-    textLength: 447
+    textLength: 645
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -1074,6 +1131,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - passedConversation=false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - 
       - 
@@ -1086,8 +1153,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Finnigan
@@ -1101,8 +1168,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - Selection
       - '*PassFinniganNeutral1'
@@ -1116,8 +1183,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*FailFinniganNeutral1'
@@ -1131,23 +1198,23 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 8
+    - rowIndex: 8
+      debugIndex: 10
       strings:
       - '*PassFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 9
+    - rowIndex: 9
+      debugIndex: 11
       strings:
       - Param
       - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 9
-      debugIndex: 10
+    - rowIndex: 10
+      debugIndex: 12
       strings:
       - 
       - Finnigan
@@ -1161,8 +1228,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 11
+    - rowIndex: 11
+      debugIndex: 13
       strings:
       - 
       - Finnigan
@@ -1176,22 +1243,31 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 13
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 12
       debugIndex: 14
       strings:
-      - '*FailFinniganNeutral1'
+      - Jump
+      - '*EvaluateFinniganNeutral1'
+      - conversationChecker>0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 13
       debugIndex: 15
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 17
+      strings:
+      - '*FailFinniganNeutral1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 18
       strings:
       - 
       - Finnigan
@@ -1205,8 +1281,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 14
-      debugIndex: 16
+    - rowIndex: 16
+      debugIndex: 19
       strings:
       - 
       - Finnigan
@@ -1220,9 +1296,47 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 17
+      debugIndex: 20
+      strings:
+      - Jump
+      - '*EvaluateFinniganNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 21
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 23
+      strings:
+      - '*EvaluateFinniganNeutral1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 24
+      strings:
+      - Param
+      - passedConversation=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 25
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNeutral1
     type: 1
-    textLength: 467
+    textLength: 671
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -2642,6 +2756,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - passedConversation=false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - 
       - 
@@ -2654,8 +2778,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Eyeris
@@ -2669,8 +2793,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - Selection
       - '*PassEyerisNeutral1'
@@ -2684,8 +2808,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*FailEyerisNeutral1'
@@ -2699,29 +2823,35 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 8
+      debugIndex: 8
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
+    - rowIndex: 9
+      debugIndex: 9
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
       strings:
       - '*PassEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 9
-      debugIndex: 9
+    - rowIndex: 11
+      debugIndex: 11
       strings:
       - Param
       - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 10
+    - rowIndex: 12
+      debugIndex: 12
       strings:
       - 
       - Eyeris
@@ -2735,8 +2865,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 11
+    - rowIndex: 13
+      debugIndex: 13
       strings:
       - 
       - Eyeris
@@ -2750,28 +2880,37 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 12
-      debugIndex: 12
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 13
-      debugIndex: 13
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 14
       debugIndex: 14
       strings:
-      - '*FailEyerisNeutral1'
+      - Jump
+      - '*EvaluateEyerisNeutral1'
+      - conversationChecker>0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 15
       debugIndex: 15
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - '*FailEyerisNeutral1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
       strings:
       - 
       - Eyeris
@@ -2785,8 +2924,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
+    - rowIndex: 19
+      debugIndex: 19
       strings:
       - 
       - Eyeris
@@ -2800,9 +2939,53 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - Jump
+      - '*EvaluateEyerisNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 22
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 23
+      strings:
+      - '*EvaluateEyerisNeutral1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 24
+      strings:
+      - Param
+      - passedConversation=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNeutral1
     type: 1
-    textLength: 447
+    textLength: 645
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -3121,6 +3304,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - passedConversation=false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - 
       - 
@@ -3133,8 +3326,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Finnigan
@@ -3148,8 +3341,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - Selection
       - '*PassFinniganNeutral1'
@@ -3163,8 +3356,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*FailFinniganNeutral1'
@@ -3178,29 +3371,35 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 8
+      debugIndex: 8
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
+    - rowIndex: 9
+      debugIndex: 9
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
       strings:
       - '*PassFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 9
-      debugIndex: 9
+    - rowIndex: 11
+      debugIndex: 11
       strings:
       - Param
       - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 10
+    - rowIndex: 12
+      debugIndex: 12
       strings:
       - 
       - Finnigan
@@ -3214,8 +3413,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 11
+    - rowIndex: 13
+      debugIndex: 13
       strings:
       - 
       - Finnigan
@@ -3229,28 +3428,37 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 12
-      debugIndex: 12
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 13
-      debugIndex: 13
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 14
       debugIndex: 14
       strings:
-      - '*FailFinniganNeutral1'
+      - Jump
+      - '*EvaluateFinniganNeutral1'
+      - conversationChecker>0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 15
       debugIndex: 15
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - '*FailFinniganNeutral1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
       strings:
       - 
       - Finnigan
@@ -3264,8 +3472,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
+    - rowIndex: 19
+      debugIndex: 19
       strings:
       - 
       - Finnigan
@@ -3279,9 +3487,53 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - Jump
+      - '*EvaluateFinniganNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 22
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 23
+      strings:
+      - '*EvaluateFinniganNeutral1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 24
+      strings:
+      - Param
+      - passedConversation=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNeutral1
     type: 1
-    textLength: 467
+    textLength: 671
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:

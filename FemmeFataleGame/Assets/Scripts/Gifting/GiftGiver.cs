@@ -1,7 +1,11 @@
+using FemmeFatale;
 using UnityEngine;
 
 public class GiftGiver : MonoBehaviour
 {
+    public InventoryController inventory;
+
+    public CurrentMonsterBeingTalkedTo Monster;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,70 +18,83 @@ public class GiftGiver : MonoBehaviour
         
     }
 
-    public void GiftGiveTo(string monsterName, Gift gift)
+    public void GiftGiveTo()
     {
-        switch (monsterName)
+        if (inventory.GetSelectedItem() == null)
+        {
+            Debug.Log("You have no selected item!");
+            return;
+        }
+        
+        else if (inventory.GetSelectedItem().GetComponent<Gift>() == null)
+        {
+            Debug.Log("This is not a giftable item!");
+            return;
+        }
+        
+        switch (Monster.MonsterBeingTalkedToName)
         {
             case "Eyeris":
-                if (gift.likedByEyeris == 0)
+                if (inventory.GetSelectedItem().GetComponent<Gift>().likedByEyeris == 0)
                 {
                     print("Eyeris hates the gift! Decrease affection");
                 }
-                else if (gift.likedByEyeris == 1)
+                else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByEyeris == 1)
                 {
                     print("Eyeris is neutral about the gift. No change in affection");
                 }
-                else if (gift.likedByEyeris == 2)
+                else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByEyeris == 2)
                 {
                     print("Eyeris loves the gift! Increase affection");
                 }
                 else
                 {
-                    print("The likedByEyeris value is not set up properly. Value of " + gift.likedByEyeris + " is not supported.");
+                    print("The likedByEyeris value is not set up properly. Value of " + inventory.GetSelectedItem().GetComponent<Gift>().likedByEyeris + " is not supported.");
                 }
 
                 break;
             case "Bramble":
-                if (gift.likedByBramble == 0)
+                if (inventory.GetSelectedItem().GetComponent<Gift>().likedByBramble == 0)
                 {
                     print("Bramble hates the gift! Decrease affection");
                 }
-                else if (gift.likedByBramble == 1)
+                else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByBramble == 1)
                 {
                     print("Bramble is neutral about the gift. No change in affection");
                 }
-                else if (gift.likedByBramble == 2)
+                else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByBramble == 2)
                 {
                     print("Bramble loves the gift! Increase affection");
                 }
                 else
                 {
-                    print("The likedByBramble value is not set up properly. Value of " + gift.likedByBramble + " is not supported.");
+                    print("The likedByBramble value is not set up properly. Value of " + inventory.GetSelectedItem().GetComponent<Gift>().likedByBramble + " is not supported.");
                 }
 
                 break;
             case "Finnigan":
-                if (gift.likedByFinnigan == 0)
+                if (inventory.GetSelectedItem().GetComponent<Gift>().likedByFinnigan == 0)
                 {
                     print("Finnigan hates the gift! Decrease affection");
                 }
-                else if (gift.likedByFinnigan == 1)
+                else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByFinnigan == 1)
                 {
                     print("Finnigan is neutral about the gift. No change in affection");
                 }
-                else if (gift.likedByFinnigan == 2)
+                else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByFinnigan == 2)
                 {
                     print("Finnigan loves the gift! Increase affection");
                 }
                 else
                 {
-                    print("The likedByFinnigan value is not set up properly. Value of " + gift.likedByFinnigan + " is not supported.");
+                    print("The likedByFinnigan value is not set up properly. Value of " + inventory.GetSelectedItem().GetComponent<Gift>().likedByFinnigan + " is not supported.");
                 }
 
                 break;
             default:
-                Debug.LogError("Monster name " + monsterName + " is not accounted for.");
+                Debug.LogError("Monster name " + Monster.MonsterBeingTalkedToName + " is not accounted for.");
                 break;
         }
+        Destroy(inventory.GetSelectedItem());
     }
 }
