@@ -15,12 +15,13 @@ namespace FemmeFatale
         
         public static void loadDialogueScene()
         {
+            print("loaded dialogue scene");
             UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_2_Dialogue");
         }
 
         public static void loadMapScene()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_2");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_2Charlotte");
         }
     }
 }

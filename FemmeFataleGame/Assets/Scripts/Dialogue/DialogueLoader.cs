@@ -41,24 +41,59 @@ public class DialogueLoader : ScriptableObject
 
     public void UpdateScenarioLable(string newScenarioLabel)
     {
+        Debug.Log("updated label to : " + newScenarioLabel);
         scenarioLabelToPlay = newScenarioLabel;
     }
 
-    public void Setup()
+    public void Setup() //populate all of the copies lists with the labels from the scriptable object so that we can run each one once before getting repeats
     {
         if (!hasSetUp)
         {
-            lowEyerisLabelsCopy = lowAffectionEyerisConversationLabels;
-            neutralEyerisLabelsCopy = neutralAffectionEyerisConversationLabels;
-            highEyerisLabelsCopy = highAffectionEyerisConversationLabels;
+            foreach (string label in lowAffectionEyerisConversationLabels)
+            {
+                lowEyerisLabelsCopy.Add(label);
+            }
+            
+            foreach (string label in neutralAffectionEyerisConversationLabels)
+            {
+                neutralEyerisLabelsCopy.Add(label);
+            }
+            
+            foreach (string label in highAffectionEyerisConversationLabels)
+            {
+                highEyerisLabelsCopy.Add(label);
+            }
+            
+            foreach (string label in lowAffectionBrambleConversationLabels)
+            {
+                lowBrambleLabelsCopy.Add(label);
+            }
+            
+            foreach (string label in neutralAffectionBrambleConversationLabels)
+            {
+                neutralBrambleLabelsCopy.Add(label);
+            }
+            
+            foreach (string label in highAffectionBrambleConversationLabels)
+            {
+                highBrambleLabelsCopy.Add(label);
+            }
+            
+            foreach (string label in lowAffectionFinniganConversationLabels)
+            {
+                lowFinniganLabelsCopy.Add(label);
+            }
+            
+            foreach (string label in neutralAffectionFinniganConversationLabels)
+            {
+                neutralFinniganLabelsCopy.Add(label);
+            }
+            
+            foreach (string label in highAffectionFinniganConversationLabels)
+            {
+                highFinniganLabelsCopy.Add(label);
+            }
 
-            lowBrambleLabelsCopy = lowAffectionBrambleConversationLabels;
-            neutralBrambleLabelsCopy = neutralAffectionBrambleConversationLabels;
-            highBrambleLabelsCopy = highAffectionBrambleConversationLabels;
-
-            lowFinniganLabelsCopy = lowAffectionFinniganConversationLabels;
-            neutralFinniganLabelsCopy = neutralAffectionFinniganConversationLabels;
-            highFinniganLabelsCopy = highAffectionFinniganConversationLabels;
             hasSetUp = true;
         }
     }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558f7fc19f2a7485bb1f0fd77aa87e15, type: 3}
   m_Name: BatThing
   m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.MonsterConfig
-  monsterName: BatThing
+  monsterName: Bramble
   patrolSpeed: 1.5
   chaseSpeed: 2.5
   visionRange: 10
