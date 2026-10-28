@@ -24,7 +24,7 @@ namespace FemmeFatale
         public void DeleteSave()
         {
             if (SaveManager.Instance != null)
-                SaveManager.Instance.ClearSlot(1);
+                SaveManager.Instance.ClearSlot(0);
             else
                 Debug.LogError("SaveManager.Instance is null!");
         }

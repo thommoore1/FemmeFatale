@@ -107,12 +107,8 @@ namespace FemmeFatale
         
         private void OnAfterLoad()
         {
-            Debug.Log("SHould happen");
-            Debug.Log(isFrozen);
-
             if (isFrozen)
             {
-                Debug.Log("yifadsilbhfasonuifaw");
                 StartCoroutine(WaitForFrozen());
             }
         }

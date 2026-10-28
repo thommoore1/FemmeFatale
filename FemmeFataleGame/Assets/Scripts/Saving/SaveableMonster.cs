@@ -62,7 +62,6 @@ namespace FemmeFatale.Save
                     monsterAI.PatrolIndex = data.patrolIndex;
                 }
                 monsterAI.isFrozen = data.isFrozen;
-                Debug.Log("fahhhh");
 
                 return;
             }
