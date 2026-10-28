@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd83e8c1e9c7b14c919716f7eb0330b, type: 3}
   m_Name: CurrentMonsterBeingTalkedTo
   m_EditorClassIdentifier: Assembly-CSharp::CurrentMonsterBeingTalkedTo
-  MonsterBeingTalkedToName: Eyeris
+  MonsterBeingTalkedToName: Finnigan
