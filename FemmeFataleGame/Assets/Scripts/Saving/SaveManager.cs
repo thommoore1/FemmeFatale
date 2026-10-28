@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.MCP.Editor.Tools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,10 +24,9 @@ namespace FemmeFatale.Save
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Bootstrap()
         {
-            Debug.Log("SaveManager");
             if (Instance != null) return;
             var go = new GameObject("SaveManager");
-            go.AddComponent<SaveManager>(); 
+            go.AddComponent<SaveManager>();
         }
         
 
@@ -35,10 +35,22 @@ namespace FemmeFatale.Save
             if (Instance != null && Instance != this) { Destroy(gameObject); return; }
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            ClearSlot(4);
+        }
+        
+        private void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
 
         public bool Save(int slot = 0)
         {
+            Debug.Log("SAVE ATTEMPT");
             if (IsLoading) return false;
 
             OnBeforeSave?.Invoke();
@@ -63,6 +75,7 @@ namespace FemmeFatale.Save
         
         public void SaveButton(int slot = 0)
         {
+            Debug.Log("SAVE BUTTON BLAH BLAH");
             if (Save(slot))
                 Debug.Log($"[Save] Save successful in slot {slot}.");
             else
@@ -156,10 +169,17 @@ namespace FemmeFatale.Save
             SaveFileIO.Delete(slot);
             Debug.Log($"[Save] Cleared slot {slot}.");
         }
-
-        public void loadGame()
+        
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            return;
+            Debug.Log("OnSceneLoaded");
+            if (scene.name == "PlayTest_2" && SaveFileIO.Exists(4))
+            {
+                Load(4);
+                ClearSlot(4);
+                Debug.Log("Finished loading save file from slot 4");
+            }
         }
+        
     }
 }

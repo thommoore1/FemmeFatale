@@ -28,5 +28,29 @@ namespace FemmeFatale
             else
                 Debug.LogError("SaveManager.Instance is null!");
         }
+
+        public void SaveTemp()
+        {
+            if (SaveManager.Instance != null)
+                SaveManager.Instance.SaveButton(4);
+            else
+                Debug.LogError("SaveManager.Instance is null!");
+        }
+
+        public void LoadTemp()
+        {
+            if (SaveManager.Instance != null)
+                SaveManager.Instance.Load(4);
+            else
+                Debug.LogError("SaveManager.Instance is null!");
+        }
+
+        public void DeleteTemp()
+        {
+            if (SaveManager.Instance != null)
+                SaveManager.Instance.ClearSlot(4);
+            else
+                Debug.LogError("SaveManager.Instance is null!");
+        }
     }
 }

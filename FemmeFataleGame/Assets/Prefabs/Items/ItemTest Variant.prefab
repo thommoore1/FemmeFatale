@@ -118,5 +118,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.Save.SaveableEntity
   id: 
-  prefabId: 
+  prefabId: d3e9f3f0c6c2a48aea4edd983e1883c6
   destroyIfMissingFromSave: 1

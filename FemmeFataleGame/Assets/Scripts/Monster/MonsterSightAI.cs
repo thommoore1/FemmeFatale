@@ -1,9 +1,11 @@
 using System;
 using System.IO;
+using System.Collections;
 using FemmeFatale.Save;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace FemmeFatale
 {
@@ -35,9 +37,9 @@ namespace FemmeFatale
         [Header("Catch Events")] [Tooltip("Hook up methods in the Inspector to run when the player is caught.")]
         public UnityEvent onPlayerCaught;
 
-        [Header("Catch Events That Need Parameters")]
-        [Tooltip("Hook up methods with specific parameters to run when the player is caught.")]
-        public UnityEvent<string, float> onPlayerCaught2;
+        // [Header("Catch Events That Need Parameters")]
+        // [Tooltip("Hook up methods with specific parameters to run when the player is caught.")]
+        // public UnityEvent<string, float> onPlayerCaught2;
         
         [Header("Monster Config")] [Tooltip("Monster stats scriptable object")]
         [SerializeField]
@@ -54,6 +56,7 @@ namespace FemmeFatale
         private bool patrolDestinationSet;
         private float searchTimer;
         private bool hasCaughtPlayer;
+        public bool isFrozen = false;
         
         [SerializeField]
         private int patrolIndex;
@@ -90,11 +93,42 @@ namespace FemmeFatale
                 agent.speed = affection.ChaseModifier(config.ChaseSpeed);
             
         }
+        
+        private void OnEnable()
+        {
+            // Subscribing to the scene loaded event
+            SaveManager.OnAfterLoad += OnAfterLoad;
+        }
+
+        private void OnDisable()
+        {
+            SaveManager.OnAfterLoad -= OnAfterLoad;
+        }
+        
+        private void OnAfterLoad()
+        {
+            Debug.Log("SHould happen");
+            Debug.Log(isFrozen);
+
+            if (isFrozen)
+            {
+                Debug.Log("yifadsilbhfasonuifaw");
+                StartCoroutine(WaitForFrozen());
+            }
+        }
+        
+        IEnumerator WaitForFrozen()
+        {
+            Debug.Log("Monster is frozen, waiting for 3 seconds...");
+            agent.isStopped = true;
+            yield return new WaitForSeconds(3.0f);
+            isFrozen = false;
+            agent.isStopped = false;
+        }
 
         private void Update()
         {
-            if (hasCaughtPlayer || player == null) return;
-
+            if (isFrozen || hasCaughtPlayer || player == null) return;
             // Track facing from actual movement so the vision cone points where the monster is going.
             Vector2 velocity = agent.velocity;
             if (velocity.sqrMagnitude > 0.01f)
@@ -230,9 +264,11 @@ namespace FemmeFatale
 
             agent.ResetPath();
             agent.velocity = Vector3.zero;
-            print(config.monsterName);
+            Debug.Log(config.monsterName);
+
+            isFrozen = true;
             
-            onPlayerCaught2?.Invoke(config.monsterName, affection.Affection);
+            //onPlayerCaught2?.Invoke(config.monsterName, affection.Affection);
             onPlayerCaught?.Invoke();
             //PlayerCaught?.Invoke();
         }
