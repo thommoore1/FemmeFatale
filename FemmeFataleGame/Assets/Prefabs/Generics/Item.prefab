@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 975828725058527438}
   - component: {fileID: 1887821125081572413}
   - component: {fileID: 3825776878603362751}
-  - component: {fileID: 4965209754455000501}
   - component: {fileID: 5772178239916628410}
   - component: {fileID: 5881188698308525237}
   - component: {fileID: -6172173044936596183}
@@ -96,18 +95,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4965209754455000501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6062677310912817994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08e5125c0e7aa6a4c94b813ff13af8f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemDragHandler
 --- !u!225 &5772178239916628410
 CanvasGroup:
   m_ObjectHideFlags: 0
