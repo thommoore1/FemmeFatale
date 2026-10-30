@@ -272,6 +272,24 @@ namespace FemmeFatale
             if (selectedIndex >= 0 && selectedIndex < _slots.Count)
                 SelectSlot(_slots[selectedIndex]);
         }
+
+        public bool InventoryContainsGiftItems()
+        {
+            foreach (InventorySlot slot in _slots)
+            {
+                if (slot.currentItem != null)
+                {
+                    if(slot.currentItem.GetComponent<Gift>()!=null)
+                    {
+                        Debug.Log("found a gift!");
+                        return true;
+                    }
+                }
+            }
+
+            Debug.Log("no gifts found!");
+            return false;
+        }
         
         private static string NormalizeItemName(string itemName)
         {

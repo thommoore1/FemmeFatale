@@ -465,7 +465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d97b0d6755c93dd47b914963ae0c50b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GiftSceneSetup
-  Monster: {fileID: 11400000, guid: 82562e70a9b56eb459e003c3dc879b0a, type: 2}
   EyerisSprite: {fileID: 688547685}
   BrambleSprite: {fileID: 817038475}
   FinniganSprite: {fileID: 91097587}
@@ -928,7 +927,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GiftGiver
   inventory: {fileID: 301446149}
-  Monster: {fileID: 11400000, guid: 82562e70a9b56eb459e003c3dc879b0a, type: 2}
+  loader: {fileID: 11400000, guid: 1b0c896fb3be4c74eb04f1c38bfda2f4, type: 2}
+  mapSceneToLoad: PlayTest_2Charlotte
+  dialogueSceneToLoad: PlayTest_2_DialogueCharlotte
 --- !u!4 &1999997380
 Transform:
   m_ObjectHideFlags: 0

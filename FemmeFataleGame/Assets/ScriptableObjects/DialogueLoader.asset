@@ -37,6 +37,30 @@ MonoBehaviour:
   - FinniganNeutral1
   highAffectionFinniganConversationLabels:
   - FinniganNeutral1
+  positiveGiftReactionEyerisConversationLabels:
+  - EyerisPositiveReaction1
+  neutralGiftReactionEyerisConversationLabels:
+  - EyerisNeutralReaction1
+  negativeGiftReactionEyerisConversationLabels:
+  - EyerisNegativeReaction1
+  positiveGiftReactionBrambleConversationLabels:
+  - BramblePositiveReaction1
+  neutralGiftReactionBrambleConversationLabels:
+  - BrambleNeutralReaction1
+  negativeGiftReactionBrambleConversationLabels:
+  - BrambleNegativeReaction1
+  positiveGiftReactionFinniganConversationLabels:
+  - FinniganPositiveReaction1
+  neutralGiftReactionFinniganConversationLabels:
+  - FinniganNeutralReaction1
+  negativeGiftReactionFinniganConversationLabels:
+  - FinniganNegativeReaction1
+  noGiftReactionEyerisLabels:
+  - EyerisNoGiftReaction1
+  noGiftReactionBrambleLabels:
+  - BrambleNoGiftReaction1
+  noGiftReactionFinniganLabels:
+  - FinniganNoGiftReaction1
   lowEyerisLabelsCopy:
   - TempEyeris
   neutralEyerisLabelsCopy:

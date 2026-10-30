@@ -314,15 +314,10 @@ MonoBehaviour:
     - rowIndex: 1
       debugIndex: 1
       strings:
-      - 
-      - Abe Normale
-      - 
-      - 
+      - Param
+      - conversationNeedsEvaluation = false
       - 
       - 
-      - 
-      - 
-      - 1945, a bleak December.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -337,7 +332,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - The kind that makes you weak and weary, wanting to nod, nearly napping. My only companion was the empty bottle at my side.
+      - 1945, a bleak December.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -352,12 +347,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - With all of its life drained, I see no other choice but to press on. A murder happened in this hotel a few weeks ago, but has since gone unsolved.
+      - The kind that makes you weak and weary, wanting to nod, nearly napping. My only companion was the empty bottle at my side.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - With all of its life drained, I see no other choice but to press on. A murder happened in this hotel a few weeks ago, but has since gone unsolved.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Abe Normale
@@ -373,7 +383,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:IntroCutscene
     type: 1
-    textLength: 589
+    textLength: 629
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -618,7 +628,7 @@ MonoBehaviour:
       debugIndex: 2
       strings:
       - Param
-      - conversationChecker=0
+      - conversationNeedsEvaluation = true
       - 
       - 
       isEmpty: 0
@@ -628,7 +638,7 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - Param
-      - passedConversation=false
+      - conversationChecker=0
       - 
       - 
       isEmpty: 0
@@ -636,6 +646,16 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - Param
+      - passedConversation=false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -649,8 +669,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - 
       - Eyeris
@@ -664,8 +684,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*PassEyerisNeutral1'
@@ -679,8 +699,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - Selection
       - '*FailEyerisNeutral1'
@@ -694,33 +714,18 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 10
-      strings:
-      - '*PassEyerisNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 9
       debugIndex: 11
       strings:
-      - Param
-      - conversationChecker+=1
+      - '*PassEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 10
       debugIndex: 12
       strings:
-      - 
-      - Eyeris
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - You passed the conversation.
+      - Param
+      - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -735,35 +740,12 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Congratulations.
+      - You passed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 12
       debugIndex: 14
-      strings:
-      - Jump
-      - '*EvaluateEyerisNeutral1'
-      - conversationChecker>0
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 13
-      debugIndex: 15
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 14
-      debugIndex: 17
-      strings:
-      - '*FailEyerisNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 18
       strings:
       - 
       - Eyeris
@@ -773,7 +755,30 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You failed the conversation.
+      - Congratulations.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 15
+      strings:
+      - Jump
+      - '*EvaluateEyerisNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 16
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 18
+      strings:
+      - '*FailEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -788,12 +793,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Oops.
+      - You failed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 17
       debugIndex: 20
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Oops.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 21
       strings:
       - Jump
       - '*EvaluateEyerisNeutral1'
@@ -801,30 +821,30 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 18
-      debugIndex: 21
+    - rowIndex: 19
+      debugIndex: 22
       strings:
       - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 19
-      debugIndex: 23
-      strings:
-      - '*EvaluateEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 20
       debugIndex: 24
       strings:
-      - Param
-      - passedConversation=true
+      - '*EvaluateEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 21
       debugIndex: 25
+      strings:
+      - Param
+      - passedConversation=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 26
       strings:
       - EndScenario
       isEmpty: 0
@@ -832,7 +852,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNeutral1
     type: 1
-    textLength: 645
+    textLength: 684
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -870,7 +890,7 @@ MonoBehaviour:
       debugIndex: 2
       strings:
       - Param
-      - conversationChecker=0
+      - conversationNeedsEvaluation = true
       - 
       - 
       isEmpty: 0
@@ -880,7 +900,7 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - Param
-      - passedConversation=false
+      - conversationChecker = 0
       - 
       - 
       isEmpty: 0
@@ -888,6 +908,16 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - Param
+      - passedConversation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -901,8 +931,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - 
       - Bramble
@@ -916,8 +946,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*PassBrambleNeutral1'
@@ -931,8 +961,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - Selection
       - '*FailBrambleNeutral1'
@@ -946,33 +976,18 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 10
-      strings:
-      - '*PassBrambleNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 9
       debugIndex: 11
       strings:
-      - Param
-      - conversationChecker+=1
+      - '*PassBrambleNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 10
       debugIndex: 12
       strings:
-      - 
-      - Bramble
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - You passed the conversation.
+      - Param
+      - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -987,35 +1002,12 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Congratulations.
+      - You passed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 12
       debugIndex: 14
-      strings:
-      - Jump
-      - '*EvaluateBrambleNeutral1'
-      - conversationChecker>0
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 13
-      debugIndex: 15
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 14
-      debugIndex: 17
-      strings:
-      - '*FailBrambleNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 18
       strings:
       - 
       - Bramble
@@ -1025,7 +1017,30 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You failed the conversation.
+      - Congratulations.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 15
+      strings:
+      - Jump
+      - '*EvaluateBrambleNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 16
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 18
+      strings:
+      - '*FailBrambleNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1040,12 +1055,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Oops.
+      - You failed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 17
       debugIndex: 20
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Oops.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 21
       strings:
       - Jump
       - '*EvaluateBrambleNeutral1'
@@ -1053,30 +1083,30 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 18
-      debugIndex: 21
+    - rowIndex: 19
+      debugIndex: 22
       strings:
       - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 19
-      debugIndex: 23
-      strings:
-      - '*EvaluateBrambleNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 20
       debugIndex: 24
       strings:
-      - Param
-      - passedConversation=true
+      - '*EvaluateBrambleNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 21
       debugIndex: 25
+      strings:
+      - Param
+      - passedConversation=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 26
       strings:
       - EndScenario
       isEmpty: 0
@@ -1084,7 +1114,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNeutral1
     type: 1
-    textLength: 658
+    textLength: 701
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -1122,7 +1152,7 @@ MonoBehaviour:
       debugIndex: 2
       strings:
       - Param
-      - conversationChecker=0
+      - conversationNeedsEvaluation = true
       - 
       - 
       isEmpty: 0
@@ -1132,7 +1162,7 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - Param
-      - passedConversation=false
+      - conversationChecker=0
       - 
       - 
       isEmpty: 0
@@ -1140,6 +1170,16 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - Param
+      - passedConversation=false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -1153,8 +1193,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - 
       - Finnigan
@@ -1168,8 +1208,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*PassFinniganNeutral1'
@@ -1183,8 +1223,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - Selection
       - '*FailFinniganNeutral1'
@@ -1198,33 +1238,18 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 10
-      strings:
-      - '*PassFinniganNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 9
       debugIndex: 11
       strings:
-      - Param
-      - conversationChecker+=1
+      - '*PassFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 10
       debugIndex: 12
       strings:
-      - 
-      - Finnigan
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - You passed the conversation.
+      - Param
+      - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1239,35 +1264,12 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Congratulations.
+      - You passed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 12
       debugIndex: 14
-      strings:
-      - Jump
-      - '*EvaluateFinniganNeutral1'
-      - conversationChecker>0
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 13
-      debugIndex: 15
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 14
-      debugIndex: 17
-      strings:
-      - '*FailFinniganNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 18
       strings:
       - 
       - Finnigan
@@ -1277,7 +1279,30 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You failed the conversation.
+      - Congratulations.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 15
+      strings:
+      - Jump
+      - '*EvaluateFinniganNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 16
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 18
+      strings:
+      - '*FailFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1292,12 +1317,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Oops.
+      - You failed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 17
       debugIndex: 20
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Oops.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 21
       strings:
       - Jump
       - '*EvaluateFinniganNeutral1'
@@ -1305,30 +1345,30 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 18
-      debugIndex: 21
+    - rowIndex: 19
+      debugIndex: 22
       strings:
       - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 19
-      debugIndex: 23
-      strings:
-      - '*EvaluateFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 20
       debugIndex: 24
       strings:
-      - Param
-      - passedConversation=true
+      - '*EvaluateFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 21
       debugIndex: 25
+      strings:
+      - Param
+      - passedConversation=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 26
       strings:
       - EndScenario
       isEmpty: 0
@@ -1336,7 +1376,1003 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNeutral1
     type: 1
-    textLength: 671
+    textLength: 710
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Eyeris's 1st neutral gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - The gift is just okay.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNeutralReaction1
+    type: 1
+    textLength: 212
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Eyeris's 1st positive gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Thank you for the nice gift!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisPositiveReaction1
+    type: 1
+    textLength: 219
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Eyeris's 1st negative gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I fucking hated it, you suck.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNegativeReaction1
+    type: 1
+    textLength: 220
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Bramble's 1st neutral gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - The gift is just okay.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNeutralReaction1
+    type: 1
+    textLength: 215
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Bramble's 1st positive gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Thank you for the nice gift!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BramblePositiveReaction1
+    type: 1
+    textLength: 222
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Bramble's 1st negative gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I fucking hated it, you suck.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNegativeReaction1
+    type: 1
+    textLength: 223
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Finnigan's 1st neutral gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - The gift is just okay.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNeutralReaction1
+    type: 1
+    textLength: 218
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Finnigan's 1st positive gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Thank you for the nice gift!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganPositiveReaction1
+    type: 1
+    textLength: 225
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Finnigan's 1st negative gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I fucking hated it, you suck.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNegativeReaction1
+    type: 1
+    textLength: 226
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - You have no gift for me?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - How rude! To pot jail with you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNoGiftReaction1
+    type: 1
+    textLength: 202
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - You have no gift for me?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - How rude! To pot jail with you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNoGiftReaction1
+    type: 1
+    textLength: 204
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - You have no gift for me?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - How rude! To pot jail with you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNoGiftReaction1
+    type: 1
+    textLength: 206
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -2053,9 +3089,18 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - conversationNeedsEvaluation
+      - Bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Param
     type: 1
-    textLength: 100
+    textLength: 136
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -2441,15 +3486,10 @@ MonoBehaviour:
     - rowIndex: 1
       debugIndex: 1
       strings:
-      - 
-      - Abe Normale
-      - 
-      - 
+      - Param
+      - conversationNeedsEvaluation = false
       - 
       - 
-      - 
-      - 
-      - 1945, a bleak December.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -2464,7 +3504,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - The kind that makes you weak and weary, wanting to nod, nearly napping. My only companion was the empty bottle at my side.
+      - 1945, a bleak December.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -2479,12 +3519,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - With all of its life drained, I see no other choice but to press on. A murder happened in this hotel a few weeks ago, but has since gone unsolved.
+      - The kind that makes you weak and weary, wanting to nod, nearly napping. My only companion was the empty bottle at my side.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - With all of its life drained, I see no other choice but to press on. A murder happened in this hotel a few weeks ago, but has since gone unsolved.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Abe Normale
@@ -2500,7 +3555,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:IntroCutscene
     type: 1
-    textLength: 589
+    textLength: 629
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -2747,7 +3802,7 @@ MonoBehaviour:
       debugIndex: 2
       strings:
       - Param
-      - conversationChecker=0
+      - conversationNeedsEvaluation = true
       - 
       - 
       isEmpty: 0
@@ -2757,7 +3812,7 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - Param
-      - passedConversation=false
+      - conversationChecker=0
       - 
       - 
       isEmpty: 0
@@ -2765,6 +3820,16 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - Param
+      - passedConversation=false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -2778,8 +3843,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - 
       - Eyeris
@@ -2793,8 +3858,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*PassEyerisNeutral1'
@@ -2808,8 +3873,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - Selection
       - '*FailEyerisNeutral1'
@@ -2823,12 +3888,6 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 9
       debugIndex: 9
       strings: []
@@ -2837,31 +3896,22 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 10
       debugIndex: 10
-      strings:
-      - '*PassEyerisNeutral1'
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 11
       debugIndex: 11
       strings:
-      - Param
-      - conversationChecker+=1
+      - '*PassEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 12
       debugIndex: 12
       strings:
-      - 
-      - Eyeris
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - You passed the conversation.
+      - Param
+      - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -2876,41 +3926,12 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Congratulations.
+      - You passed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 14
       debugIndex: 14
-      strings:
-      - Jump
-      - '*EvaluateEyerisNeutral1'
-      - conversationChecker>0
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 15
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
-      strings:
-      - '*FailEyerisNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 18
-      debugIndex: 18
       strings:
       - 
       - Eyeris
@@ -2920,7 +3941,36 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You failed the conversation.
+      - Congratulations.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - Jump
+      - '*EvaluateEyerisNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - '*FailEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -2935,12 +3985,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Oops.
+      - You failed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 20
       debugIndex: 20
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Oops.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
       strings:
       - Jump
       - '*EvaluateEyerisNeutral1'
@@ -2948,36 +4013,36 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 21
-      debugIndex: 21
+    - rowIndex: 22
+      debugIndex: 22
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 22
-      debugIndex: 22
+    - rowIndex: 23
+      debugIndex: 23
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 23
-      debugIndex: 23
+    - rowIndex: 24
+      debugIndex: 24
       strings:
       - '*EvaluateEyerisNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 24
-      debugIndex: 24
+    - rowIndex: 25
+      debugIndex: 25
       strings:
       - Param
       - passedConversation=true
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 25
-      debugIndex: 25
+    - rowIndex: 26
+      debugIndex: 26
       strings:
       - EndScenario
       isEmpty: 0
@@ -2985,7 +4050,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNeutral1
     type: 1
-    textLength: 645
+    textLength: 684
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -3021,7 +4086,7 @@ MonoBehaviour:
       debugIndex: 2
       strings:
       - Param
-      - conversationChecker=0
+      - conversationNeedsEvaluation = true
       - 
       - 
       isEmpty: 0
@@ -3031,7 +4096,7 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - Param
-      - passedConversation=false
+      - conversationChecker = 0
       - 
       - 
       isEmpty: 0
@@ -3039,6 +4104,16 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - Param
+      - passedConversation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -3052,8 +4127,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - 
       - Bramble
@@ -3067,8 +4142,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*PassBrambleNeutral1'
@@ -3082,8 +4157,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - Selection
       - '*FailBrambleNeutral1'
@@ -3097,12 +4172,6 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 9
       debugIndex: 9
       strings: []
@@ -3111,31 +4180,22 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 10
       debugIndex: 10
-      strings:
-      - '*PassBrambleNeutral1'
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 11
       debugIndex: 11
       strings:
-      - Param
-      - conversationChecker+=1
+      - '*PassBrambleNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 12
       debugIndex: 12
       strings:
-      - 
-      - Bramble
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - You passed the conversation.
+      - Param
+      - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -3150,41 +4210,12 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Congratulations.
+      - You passed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 14
       debugIndex: 14
-      strings:
-      - Jump
-      - '*EvaluateBrambleNeutral1'
-      - conversationChecker>0
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 15
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
-      strings:
-      - '*FailBrambleNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 18
-      debugIndex: 18
       strings:
       - 
       - Bramble
@@ -3194,7 +4225,36 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You failed the conversation.
+      - Congratulations.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - Jump
+      - '*EvaluateBrambleNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - '*FailBrambleNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -3209,12 +4269,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Oops.
+      - You failed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 20
       debugIndex: 20
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Oops.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
       strings:
       - Jump
       - '*EvaluateBrambleNeutral1'
@@ -3222,36 +4297,36 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 21
-      debugIndex: 21
+    - rowIndex: 22
+      debugIndex: 22
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 22
-      debugIndex: 22
+    - rowIndex: 23
+      debugIndex: 23
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 23
-      debugIndex: 23
+    - rowIndex: 24
+      debugIndex: 24
       strings:
       - '*EvaluateBrambleNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 24
-      debugIndex: 24
+    - rowIndex: 25
+      debugIndex: 25
       strings:
       - Param
       - passedConversation=true
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 25
-      debugIndex: 25
+    - rowIndex: 26
+      debugIndex: 26
       strings:
       - EndScenario
       isEmpty: 0
@@ -3259,7 +4334,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNeutral1
     type: 1
-    textLength: 658
+    textLength: 701
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -3295,7 +4370,7 @@ MonoBehaviour:
       debugIndex: 2
       strings:
       - Param
-      - conversationChecker=0
+      - conversationNeedsEvaluation = true
       - 
       - 
       isEmpty: 0
@@ -3305,7 +4380,7 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - Param
-      - passedConversation=false
+      - conversationChecker=0
       - 
       - 
       isEmpty: 0
@@ -3313,6 +4388,16 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - Param
+      - passedConversation=false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -3326,8 +4411,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - 
       - Finnigan
@@ -3341,8 +4426,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Selection
       - '*PassFinniganNeutral1'
@@ -3356,8 +4441,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - Selection
       - '*FailFinniganNeutral1'
@@ -3371,12 +4456,6 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 9
       debugIndex: 9
       strings: []
@@ -3385,31 +4464,22 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 10
       debugIndex: 10
-      strings:
-      - '*PassFinniganNeutral1'
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 11
       debugIndex: 11
       strings:
-      - Param
-      - conversationChecker+=1
+      - '*PassFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 12
       debugIndex: 12
       strings:
-      - 
-      - Finnigan
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - You passed the conversation.
+      - Param
+      - conversationChecker+=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -3424,41 +4494,12 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Congratulations.
+      - You passed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 14
       debugIndex: 14
-      strings:
-      - Jump
-      - '*EvaluateFinniganNeutral1'
-      - conversationChecker>0
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 15
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
-      strings:
-      - '*FailFinniganNeutral1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 18
-      debugIndex: 18
       strings:
       - 
       - Finnigan
@@ -3468,7 +4509,36 @@ MonoBehaviour:
       - 
       - 
       - 
-      - You failed the conversation.
+      - Congratulations.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - Jump
+      - '*EvaluateFinniganNeutral1'
+      - conversationChecker>0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - '*FailFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -3483,12 +4553,27 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Oops.
+      - You failed the conversation.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 20
       debugIndex: 20
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Oops.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
       strings:
       - Jump
       - '*EvaluateFinniganNeutral1'
@@ -3496,36 +4581,36 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 21
-      debugIndex: 21
+    - rowIndex: 22
+      debugIndex: 22
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 22
-      debugIndex: 22
+    - rowIndex: 23
+      debugIndex: 23
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 23
-      debugIndex: 23
+    - rowIndex: 24
+      debugIndex: 24
       strings:
       - '*EvaluateFinniganNeutral1'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 24
-      debugIndex: 24
+    - rowIndex: 25
+      debugIndex: 25
       strings:
       - Param
       - passedConversation=true
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 25
-      debugIndex: 25
+    - rowIndex: 26
+      debugIndex: 26
       strings:
       - EndScenario
       isEmpty: 0
@@ -3533,7 +4618,979 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNeutral1
     type: 1
-    textLength: 671
+    textLength: 710
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Eyeris's 1st neutral gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - The gift is just okay.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNeutralReaction1
+    type: 1
+    textLength: 212
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Eyeris's 1st positive gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Thank you for the nice gift!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisPositiveReaction1
+    type: 1
+    textLength: 219
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Eyeris's 1st negative gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I fucking hated it, you suck.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNegativeReaction1
+    type: 1
+    textLength: 220
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Bramble's 1st neutral gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - The gift is just okay.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNeutralReaction1
+    type: 1
+    textLength: 215
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Bramble's 1st positive gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Thank you for the nice gift!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BramblePositiveReaction1
+    type: 1
+    textLength: 222
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Bramble's 1st negative gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I fucking hated it, you suck.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNegativeReaction1
+    type: 1
+    textLength: 223
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Finnigan's 1st neutral gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - The gift is just okay.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNeutralReaction1
+    type: 1
+    textLength: 218
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Finnigan's 1st positive gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Thank you for the nice gift!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganPositiveReaction1
+    type: 1
+    textLength: 225
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This is Finnigan's 1st negative gift reaction!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I fucking hated it, you suck.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNegativeReaction1
+    type: 1
+    textLength: 226
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - You have no gift for me?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - How rude! To pot jail with you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNoGiftReaction1
+    type: 1
+    textLength: 202
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - You have no gift for me?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - How rude! To pot jail with you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNoGiftReaction1
+    type: 1
+    textLength: 204
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - You have no gift for me?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - How rude! To pot jail with you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNoGiftReaction1
+    type: 1
+    textLength: 206
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:

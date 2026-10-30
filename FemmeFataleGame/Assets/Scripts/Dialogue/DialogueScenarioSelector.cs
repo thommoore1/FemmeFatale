@@ -1,10 +1,12 @@
 using System.Collections.Generic;
+using FemmeFatale;
 using UnityEngine;
 
 public class DialogueScenarioSelector : MonoBehaviour
 {
 
     [SerializeField] private DialogueLoader dialogueLoader;
+    [SerializeField] private InventoryController inventory;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,6 +18,32 @@ public class DialogueScenarioSelector : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ChooseConversationBasedOnGifts(string monsterName, float affectionNumber)
+    {
+        if (inventory.InventoryContainsGiftItems())
+        {
+            ChooseConversation(monsterName,affectionNumber);
+        }
+        else
+        {
+            switch (monsterName)
+            {
+                case "Eyeris":
+                    dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.noGiftReactionEyerisLabels));
+                    break;
+                case "Bramble":
+                    dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.noGiftReactionBrambleLabels));
+                    break;
+                case "Finnigan":
+                    dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.noGiftReactionFinniganLabels));
+                    break;
+                default:
+                    Debug.LogError("Monster name [" + monsterName + "] is not recognized");
+                    break;
+            }
+        }
     }
 
     public void ChooseConversation(string monsterName, float affectionNumber)

@@ -1,12 +1,11 @@
 using UnityEngine;
-
-[CreateAssetMenu(fileName = "CurrentMonsterBeingTalkedTo", menuName = "Scriptable Objects/CurrentMonsterBeingTalkedTo")]
-public class CurrentMonsterBeingTalkedTo : ScriptableObject
+public static class CurrentMonsterBeingTalkedTo
 {
-    public string MonsterBeingTalkedToName;
+    public static string MonsterBeingTalkedToName = "";
 
-    public void UpdateMonster(string newMonsterName)
+    public static void UpdateMonster(string newMonsterName)
     {
+        Debug.Log("Updated monster talking to " + newMonsterName);
         MonsterBeingTalkedToName = newMonsterName;
     }
 }
