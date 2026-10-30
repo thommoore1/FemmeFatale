@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcced459e4ec444f97a0e2a48fd6a9a, type: 3}
   m_Name: DialogueLoader
   m_EditorClassIdentifier: Assembly-CSharp::DialogueLoader
-  scenarioLabelToPlay: IntroCutscene
+  scenarioLabelToPlay: BrambleNeutral1
   lowAffection: -10
   highAffection: 10
   firstEyerisConversation: 
@@ -22,20 +22,36 @@ MonoBehaviour:
   - TempEyeris
   neutralAffectionEyerisConversationLabels:
   - TempEyeris
+  - EyerisNeutral1
   highAffectionEyerisConversationLabels:
   - TempEyeris
-  lowAffectionBrambleConversationLabels: []
-  neutralAffectionBrambleConversationLabels: []
-  highAffectionBrambleConversationLabels: []
-  lowAffectionFinniganConversationLabels: []
-  neutralAffectionFinniganConversationLabels: []
-  highAffectionFinniganConversationLabels: []
-  lowEyerisLabelsCopy: []
-  neutralEyerisLabelsCopy: []
-  highEyerisLabelsCopy: []
-  lowBrambleLabelsCopy: []
+  lowAffectionBrambleConversationLabels:
+  - BrambleNeutral1
+  neutralAffectionBrambleConversationLabels:
+  - BrambleNeutral1
+  highAffectionBrambleConversationLabels:
+  - BrambleNeutral1
+  lowAffectionFinniganConversationLabels:
+  - FinniganNeutral1
+  neutralAffectionFinniganConversationLabels:
+  - FinniganNeutral1
+  highAffectionFinniganConversationLabels:
+  - FinniganNeutral1
+  lowEyerisLabelsCopy:
+  - TempEyeris
+  neutralEyerisLabelsCopy:
+  - TempEyeris
+  - EyerisNeutral1
+  highEyerisLabelsCopy:
+  - TempEyeris
+  lowBrambleLabelsCopy:
+  - BrambleNeutral1
   neutralBrambleLabelsCopy: []
-  highBrambleLabelsCopy: []
-  lowFinniganLabelsCopy: []
-  neutralFinniganLabelsCopy: []
-  highFinniganLabelsCopy: []
+  highBrambleLabelsCopy:
+  - BrambleNeutral1
+  lowFinniganLabelsCopy:
+  - FinniganNeutral1
+  neutralFinniganLabelsCopy:
+  - FinniganNeutral1
+  highFinniganLabelsCopy:
+  - FinniganNeutral1
