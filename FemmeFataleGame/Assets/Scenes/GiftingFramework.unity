@@ -401,10 +401,10 @@ MonoBehaviour:
   - {fileID: 6681966688253307043, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
   itemDatabase:
   - {fileID: 6644404031110909794, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7010251152820646428, guid: dd03c8b6f8117534c8f4dac07592c44c, type: 3}
+  - {fileID: 3421563222502552063, guid: 347682bc8dbec3c4dbfbdf837e6e79f1, type: 3}
+  - {fileID: 4331272276989340042, guid: 00487371d41914ea9ae4fe22a3d13f1c, type: 3}
+  - {fileID: 6681966688253307043, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
   - {fileID: 0}
 --- !u!114 &301446150
 MonoBehaviour:
