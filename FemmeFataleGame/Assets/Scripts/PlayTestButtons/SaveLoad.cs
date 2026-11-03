@@ -52,5 +52,21 @@ namespace FemmeFatale
             else
                 Debug.LogError("SaveManager.Instance is null!");
         }
+        
+        public void SaveInventory()
+        {
+            if (SaveManager.Instance != null)
+                SaveManager.Instance.SaveInventoryToSlot4();
+            else
+                Debug.LogError("SaveManager.Instance is null!");
+        }
+        
+        public void LoadInventory()
+        {
+            if (SaveManager.Instance != null)
+                SaveManager.Instance.LoadInventoryFromSlot();
+            else
+                Debug.LogError("SaveManager.Instance is null!");
+        }
     }
 }

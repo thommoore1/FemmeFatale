@@ -17,18 +17,19 @@ namespace FemmeFatale
         public GameObject[] itemPrefabs;
         
         public GameObject[] itemDatabase;
-
+        
         private List<InventorySlot> _slots = new List<InventorySlot>();
         private Dictionary<string, GameObject> _prefabLookup;
         private bool _initialized;
 
-        void Start()
+        void Awake()
         {
             Initialize();
         }
         
         private void Initialize()
         {
+            Debug.Log("Initializing InventoryController...");
             if (_initialized) return;
             _initialized = true;
 

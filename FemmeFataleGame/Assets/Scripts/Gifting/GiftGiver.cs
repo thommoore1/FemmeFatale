@@ -9,18 +9,6 @@ public class GiftGiver : MonoBehaviour
     public string mapSceneToLoad;
     public string dialogueSceneToLoad;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     
 
     public void GiftGiveTo()
@@ -122,7 +110,7 @@ public class GiftGiver : MonoBehaviour
                 UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
                 break;
         }
-        Destroy(inventory.GetSelectedItem());
+        inventory.DeleteSelected();
     }
     
     private string getRandomElement(List<string> conversationList)

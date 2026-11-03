@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 93a6435db38c06d4787323999caee61e
   - enabled: 1
-    path: Assets/Scenes/PlayTest_2.unity
+    path: Assets/Scenes/OldScenes/PlayTest_2.unity
     guid: f6fc449c72375456d9d60cfe35345844
   - enabled: 1
-    path: Assets/Scenes/PlayTest_2_Dialogue.unity
+    path: Assets/Scenes/OldScenes/PlayTest_2_Dialogue.unity
     guid: 93c79920014ca4f70a3b6ae7e529c7d4
   - enabled: 1
     path: Assets/Scenes/PlayTest_2Charlotte.unity

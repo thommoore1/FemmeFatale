@@ -51,6 +51,17 @@ namespace FemmeFatale.Save
                 sceneName = SceneManager.GetActiveScene().name,
                 savedAtUtc = DateTime.UtcNow.ToString("o")
             };
+            
+            var inventoryController = FindAnyObjectByType<InventoryController>(FindObjectsInactive.Include);
+            if (inventoryController != null)
+            {
+                file.inventory = new InventorySaveData
+                {
+                    itemIds = inventoryController.CaptureSlotItemIds(),
+                    selectedIndex = inventoryController.GetSelectedIndex()
+                };
+                Debug.Log($"[Save] Captured {file.inventory.itemIds.Count} inventory items.");
+            }
 
             foreach (var entity in FindEntities())
             {
@@ -171,6 +182,23 @@ namespace FemmeFatale.Save
             
             foreach (var pair in matched.Values)
                 pair.entity.Restore(pair.record);
+            
+            foreach (var pair in matched.Values)
+                pair.entity.Restore(pair.record);
+
+            if (file.inventory != null)
+            {
+                var inventoryController = FindAnyObjectByType<InventoryController>(FindObjectsInactive.Include);
+                if (inventoryController != null)
+                {
+                    inventoryController.RestoreSlotItemIds(
+                        file.inventory.itemIds ?? new List<string>(),
+                        file.inventory.selectedIndex);
+                    Debug.Log($"[Load] Restored {file.inventory.itemIds?.Count ?? 0} inventory items.");
+                }
+                else
+                    Debug.LogWarning("[Load] No InventoryController found to restore inventory into.");
+            }
 
             Debug.Log($"[Save] Loaded {matched.Count} entities.");
         }
@@ -200,6 +228,81 @@ namespace FemmeFatale.Save
                 ClearSlot(4);
                 Debug.Log("Finished loading save file from slot 4");
             }
+        }
+        
+        public bool LoadInventoryFromSlot(int sourceSlot = 4)
+        {
+            if (!SaveFileIO.TryRead(sourceSlot, out SaveFile file))
+            {
+                Debug.LogWarning($"[Save] Could not read save slot {sourceSlot}.");
+                return false;
+            }
+
+            if (file.inventory == null)
+            {
+                Debug.LogWarning($"[Save] Slot {sourceSlot} does not contain inventory data.");
+                return false;
+            }
+
+            InventoryController inventoryController =
+                FindObjectOfType<InventoryController>();
+
+            if (inventoryController == null)
+            {
+                Debug.LogError("[Save] Could not find InventoryController.");
+                return false;
+            }
+            
+            var all = FindObjectsByType<InventoryController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            Debug.Log($"[Save] Controllers in scene: {all.Length}. Using: {inventoryController.name} " +
+                      $"(scene '{inventoryController.gameObject.scene.name}'). " +
+                      $"Saved items: {file.inventory.itemIds?.Count ?? -1}, ids: [{string.Join(", ", file.inventory.itemIds ?? new List<string>())}]");
+            
+            inventoryController.RestoreSlotItemIds(
+                file.inventory.itemIds ?? new List<string>(),
+                file.inventory.selectedIndex
+            );
+
+            Debug.Log($"[Save] Loaded inventory from slot {sourceSlot}.");
+
+            return true;
+        }
+        
+        public bool SaveInventoryToSlot4()
+        {
+            const int targetSlot = 4;
+            
+            if (!SaveFileIO.TryRead(targetSlot, out SaveFile file))
+            {
+                Debug.LogWarning(
+                    "[Save] Cannot save inventory: save slot 4 does not exist or could not be read."
+                );
+                return false;
+            }
+
+            InventoryController inventoryController =
+                FindObjectOfType<InventoryController>();
+
+            if (inventoryController == null)
+            {
+                Debug.LogError("[Save] Could not find InventoryController.");
+                return false;
+            }
+            
+            file.inventory = new InventorySaveData
+            {
+                itemIds = inventoryController.CaptureSlotItemIds(),
+                selectedIndex = inventoryController.GetSelectedIndex()
+            };
+            
+            bool success = SaveFileIO.Write(targetSlot, file);
+
+            if (success)
+            {
+                Debug.Log("[Save] Inventory saved to slot 4.");
+            }
+
+            return success;
         }
         
     }
