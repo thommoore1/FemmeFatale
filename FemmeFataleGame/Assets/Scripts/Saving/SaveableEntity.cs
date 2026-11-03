@@ -56,7 +56,11 @@ namespace FemmeFatale.Save
             foreach (var comp in record.components)
             {
                 if (map.TryGetValue(comp.key, out var saveable))
+                {
                     saveable.RestoreState(comp.json);
+                    Debug.Log($"RESTORING ENTITY: {gameObject.name}");
+                    Debug.Log($"PARENT: {transform.parent?.name ?? "None"}");
+                }
             }
         }
         

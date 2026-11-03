@@ -8,6 +8,7 @@ namespace FemmeFatale
         [SerializeField] private bool PlayIntroCutscene;
         [SerializeField] private DialogueLoader Loader;
         [SerializeField] private string levelSceneName;
+        [SerializeField] private string dialogueSceneName;
 
         public void LoadScene(string sceneName)
         {
@@ -17,7 +18,14 @@ namespace FemmeFatale
         public void LoadStart()
         {
             Loader.UpdateScenarioLable("IntroCutscene");
-            LoadScene(levelSceneName);
+            if(PlayIntroCutscene)
+            {
+                LoadScene(dialogueSceneName);
+            }
+            else
+            {
+                LoadScene(levelSceneName);
+            }
         }
         
         public void QuitGame()

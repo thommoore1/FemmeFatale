@@ -16,7 +16,7 @@ namespace FemmeFatale
         public static void loadDialogueScene()
         {
             print("loaded dialogue scene");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_2_Dialogue");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("PlayTest_2_DialogueCharlotte");
         }
 
         public static void loadMapScene()

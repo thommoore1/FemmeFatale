@@ -298,7 +298,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.StartMenu
   PlayIntroCutscene: 1
   Loader: {fileID: 11400000, guid: 1b0c896fb3be4c74eb04f1c38bfda2f4, type: 2}
-  levelSceneName: PlayTest_2
+  levelSceneName: PlayTest_2Charlotte
+  dialogueSceneName: PlayTest_2_DialogueCharlotte
 --- !u!1 &274388954
 GameObject:
   m_ObjectHideFlags: 0

@@ -37,9 +37,9 @@ namespace FemmeFatale
         [Header("Catch Events")] [Tooltip("Hook up methods in the Inspector to run when the player is caught.")]
         public UnityEvent onPlayerCaught;
 
-        // [Header("Catch Events That Need Parameters")]
-        // [Tooltip("Hook up methods with specific parameters to run when the player is caught.")]
-        // public UnityEvent<string, float> onPlayerCaught2;
+         [Header("Catch Events That Need Parameters")]
+         [Tooltip("Hook up methods with specific parameters to run when the player is caught.")]
+         public UnityEvent<string, float> onPlayerCaught2;
         
         [Header("Monster Config")] [Tooltip("Monster stats scriptable object")]
         [SerializeField]
@@ -264,7 +264,7 @@ namespace FemmeFatale
 
             isFrozen = true;
             
-            //onPlayerCaught2?.Invoke(config.monsterName, affection.Affection);
+            onPlayerCaught2?.Invoke(config.monsterName, affection.Affection);
             onPlayerCaught?.Invoke();
             //PlayerCaught?.Invoke();
         }

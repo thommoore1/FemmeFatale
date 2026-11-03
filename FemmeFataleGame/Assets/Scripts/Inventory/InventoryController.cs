@@ -17,18 +17,19 @@ namespace FemmeFatale
         public GameObject[] itemPrefabs;
         
         public GameObject[] itemDatabase;
-
+        
         private List<InventorySlot> _slots = new List<InventorySlot>();
         private Dictionary<string, GameObject> _prefabLookup;
         private bool _initialized;
 
-        void Start()
+        void Awake()
         {
             Initialize();
         }
         
         private void Initialize()
         {
+            Debug.Log("Initializing InventoryController...");
             if (_initialized) return;
             _initialized = true;
 
@@ -271,6 +272,24 @@ namespace FemmeFatale
 
             if (selectedIndex >= 0 && selectedIndex < _slots.Count)
                 SelectSlot(_slots[selectedIndex]);
+        }
+
+        public bool InventoryContainsGiftItems()
+        {
+            foreach (InventorySlot slot in _slots)
+            {
+                if (slot.currentItem != null)
+                {
+                    if(slot.currentItem.GetComponent<Gift>()!=null)
+                    {
+                        Debug.Log("found a gift!");
+                        return true;
+                    }
+                }
+            }
+
+            Debug.Log("no gifts found!");
+            return false;
         }
         
         private static string NormalizeItemName(string itemName)
