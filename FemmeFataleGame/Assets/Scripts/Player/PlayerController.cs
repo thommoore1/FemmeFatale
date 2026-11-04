@@ -24,6 +24,8 @@ namespace FemmeFatale
         private LayerMask puzzleElementLayer;
         [SerializeField]
         private LayerMask directionalDoorElementLayer;
+
+        [SerializeField] private LayerMask affectionBarrierElementLayer;
         
         private void Awake()
         {
@@ -65,6 +67,20 @@ namespace FemmeFatale
             {
                 Debug.Log($"Interacted with directional door");
                 hitCollider.GetComponent<DirectionalDoor>().Interact(this.transform.position);
+            }
+            
+            hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, affectionBarrierElementLayer);
+            if (hitCollider)
+            {
+                Debug.Log($"Interacted with affection barrier");
+                if (hitCollider.GetComponent<AffectionBarrier>() == null)
+                {
+                    hitCollider.GetComponentInParent<AffectionBarrier>().Interact();
+                }
+                else
+                {
+                    hitCollider.GetComponent<AffectionBarrier>().Interact();
+                }
             }
         }
 

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: PrefabRegistry
   m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.Save.PrefabRegistry
   prefabs:
+  - {fileID: -4536808833216330959, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
   - {fileID: 819429369081713830, guid: 1328a18dcf2f6e64aa67f6bac7fe66a0, type: 3}
   - {fileID: 444288319344714271, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
   - {fileID: 7166165165059543708, guid: fa180ee939cf241f989ba8e63eab98cc, type: 3}

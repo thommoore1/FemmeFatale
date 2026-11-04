@@ -2399,6 +2399,172 @@ MonoBehaviour:
     - rowIndex: 1
       debugIndex: 1
       strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Sure, I'll help you break that barrier!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - '*working bat noises*'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleAffectionBarrierYes1
+    type: 1
+    textLength: 208
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - No, I won't help you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I don't have the right affection!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleAffectionBarrierNo1
+    type: 1
+    textLength: 203
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
       - 
       - Goober
       - Neutral
@@ -5591,6 +5757,168 @@ MonoBehaviour:
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNoGiftReaction1
     type: 1
     textLength: 206
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Sure, I'll help you break that barrier!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - '*working bat noises*'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleAffectionBarrierYes1
+    type: 1
+    textLength: 208
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Bramble
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - No, I won't help you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Bramble
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I don't have the right affection!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleAffectionBarrierNo1
+    type: 1
+    textLength: 203
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
