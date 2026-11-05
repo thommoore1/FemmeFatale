@@ -403,10 +403,19 @@ MonoBehaviour:
   - {fileID: 7010251152820646428, guid: dd03c8b6f8117534c8f4dac07592c44c, type: 3}
   - {fileID: 3421563222502552063, guid: 347682bc8dbec3c4dbfbdf837e6e79f1, type: 3}
   - {fileID: 4331272276989340042, guid: 00487371d41914ea9ae4fe22a3d13f1c, type: 3}
-  - {fileID: 6681966688253307043, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4053306259923547521, guid: dc27a70744cb2664e97ff263e475b979, type: 3}
+  - {fileID: 2321387210838471472, guid: 0a219c4484db5c242ab8792dcb83130c, type: 3}
+  - {fileID: 3810975546138132746, guid: 672fa29eaea360b469580531b27932c2, type: 3}
+  - {fileID: 5823837922353023254, guid: b81e6bd4487750b4fb84bb32214afe25, type: 3}
+  - {fileID: 4111703460444278168, guid: e43cc318b5e91c243b7d23ddb725d6a2, type: 3}
+  - {fileID: 5408917905520767562, guid: a1318e17030b9bf4ba8c4a5bca03a2b7, type: 3}
+  - {fileID: 2093490222183380641, guid: 65dbcbaddb195b44ab46d4db1202d824, type: 3}
+  - {fileID: 7152009626209726420, guid: 52be31ce64e40f649a74130ef5b2b8e3, type: 3}
+  - {fileID: 2327410715628047902, guid: 035026e9324d13f479bf089f74bcf26b, type: 3}
+  - {fileID: 3825900220885203016, guid: a791c7b651d10f34c8d8c453252f983e, type: 3}
+  - {fileID: 7863087682624167885, guid: eecca0837e1deda40b1e94f88ba1069f, type: 3}
+  - {fileID: 1248763198301017022, guid: e6e41f848b133bc40a1e23f80a1be8fc, type: 3}
+  - {fileID: 3177876568821981073, guid: 00f27a884d52dcd40a5380e58ac162f7, type: 3}
 --- !u!114 &301446150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,7 +994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GiftGiver
   inventory: {fileID: 301446149}
   loader: {fileID: 11400000, guid: 1b0c896fb3be4c74eb04f1c38bfda2f4, type: 2}
-  mapSceneToLoad: PlayTest_2Charlotte
+  mapSceneToLoad: PlayTest_4CharlotteMap
   dialogueSceneToLoad: PlayTest_2_DialogueCharlotte
 --- !u!4 &1999997380
 Transform:

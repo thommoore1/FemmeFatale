@@ -222,7 +222,7 @@ namespace FemmeFatale.Save
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             Debug.Log("OnSceneLoaded");
-            if (scene.name == "PlayTest_2Charlotte" && SaveFileIO.Exists(4))
+            if (scene.name == "PlayTest_4CharlotteMap" && SaveFileIO.Exists(4))
             {
                 Load(4);
                 ClearSlot(4);
