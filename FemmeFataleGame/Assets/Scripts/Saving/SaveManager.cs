@@ -222,7 +222,7 @@ namespace FemmeFatale.Save
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             Debug.Log("OnSceneLoaded");
-            if (scene.name == "PlayTest_4CharlotteMap" && SaveFileIO.Exists(4))
+            if (scene.name.Contains("level") && SaveFileIO.Exists(4))
             {
                 Load(4);
                 ClearSlot(4);
@@ -245,7 +245,7 @@ namespace FemmeFatale.Save
             }
 
             InventoryController inventoryController =
-                FindObjectOfType<InventoryController>();
+                FindAnyObjectByType<InventoryController>();
 
             if (inventoryController == null)
             {
@@ -253,7 +253,9 @@ namespace FemmeFatale.Save
                 return false;
             }
             
-            var all = FindObjectsByType<InventoryController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            //var all = FindObjectsByType<InventoryController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            var all = FindObjectsByType<InventoryController>(FindObjectsInactive.Exclude);
+
             Debug.Log($"[Save] Controllers in scene: {all.Length}. Using: {inventoryController.name} " +
                       $"(scene '{inventoryController.gameObject.scene.name}'). " +
                       $"Saved items: {file.inventory.itemIds?.Count ?? -1}, ids: [{string.Join(", ", file.inventory.itemIds ?? new List<string>())}]");
@@ -281,7 +283,7 @@ namespace FemmeFatale.Save
             }
 
             InventoryController inventoryController =
-                FindObjectOfType<InventoryController>();
+                FindAnyObjectByType<InventoryController>();
 
             if (inventoryController == null)
             {

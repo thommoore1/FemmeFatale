@@ -1,4 +1,5 @@
 using FemmeFatale;
+using FemmeFatale.Save;
 using UnityEngine;
 using Utage;
 
@@ -31,12 +32,14 @@ public class ConversationEvaluator : MonoBehaviour
             else
             {
                 print("You failed!");
-                UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
+                //UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
+                SaveManager.Instance.Load(4);
             }
         }
         else
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
+            //UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
+            SaveManager.Instance.Load(4);
         }
     }
 }
