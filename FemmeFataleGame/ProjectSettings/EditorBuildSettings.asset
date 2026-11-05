@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/OldScenes/PlayTest_2_Dialogue.unity
     guid: 93c79920014ca4f70a3b6ae7e529c7d4
   - enabled: 1
-    path: Assets/Scenes/PlayTest_2Charlotte.unity
+    path: Assets/Scenes/OldScenes/PlayTest_2Charlotte.unity
     guid: 9950531b268533c419d266992d47771c
   - enabled: 1
     path: Assets/Scenes/GiftingFramework.unity
