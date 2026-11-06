@@ -60523,7 +60523,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 279f427aec0bc4b47aecdcd0a90e8980, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71007,6 +71007,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7727307206393915634, guid: b4935b4045cd1499dbb249d6be3d43a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1852261200}
+    - targetCorrespondingSourceObject: {fileID: 7727307206393915634, guid: b4935b4045cd1499dbb249d6be3d43a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1852261207}
   m_SourcePrefab: {fileID: 100100000, guid: b4935b4045cd1499dbb249d6be3d43a1, type: 3}
 --- !u!1 &1852261198 stripped
 GameObject:
@@ -71033,6 +71036,29 @@ MonoBehaviour:
   id: 46dc380418954656808e473815848fda
   prefabId: 
   destroyIfMissingFromSave: 0
+--- !u!114 &1852261207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852261198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9b6b42737e746799bc61be6e951bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FogOfWarVision
+  visionBlockers:
+    serializedVersion: 2
+    m_Bits: 47104
+  viewRadius: 5
+  raysPerDegree: 1
+  blockerPadding: 0.3
+  eyeOffset: {x: 0, y: 0}
+  mainCamera: {fileID: 1582156890}
+  maskMaterial: {fileID: 2100000, guid: d6c8692395ba24dbcb5c273eef75f5c8, type: 2}
+  maskResolution: 0.5
+  maskLayer: 31
 --- !u!1 &1858941215
 GameObject:
   m_ObjectHideFlags: 0
