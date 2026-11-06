@@ -7,6 +7,9 @@
 // Global texture published by FogOfWarVision: white = visible, black = fogged.
 sampler2D _FogMask;
 
+// 1 while the game camera is rendering, 0 for the Scene view / any other camera / edit mode.
+float _FogEnabled;
+
 struct FogAppData
 {
     float4 vertex   : POSITION;
@@ -46,7 +49,8 @@ FogV2F FogVert(FogAppData IN)
 
 float SampleFogVisibility(float4 screenPos)
 {
-    return tex2D(_FogMask, screenPos.xy / screenPos.w).r;
+    float mask = tex2D(_FogMask, screenPos.xy / screenPos.w).r;
+    return lerp(1.0, mask, _FogEnabled);
 }
 
 #endif

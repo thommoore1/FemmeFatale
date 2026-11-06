@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 /// <summary>
 /// Put this on the player. Every frame it raycasts a 360 degree line-of-sight polygon,
@@ -43,6 +44,16 @@ public class FogOfWarVision : MonoBehaviour
     const int EdgeIterations = 5;
     const float EdgeDistanceThreshold = 0.5f;
     static readonly int FogMaskId = Shader.PropertyToID("_FogMask");
+    static readonly int FogEnabledId = Shader.PropertyToID("_FogEnabled");
+
+    // Fog is only applied while the game camera renders (not the Scene view, previews, etc.)
+    void OnBeginCameraRendering(ScriptableRenderContext context, Camera cam) => SetFogFor(cam);
+    void OnCameraPreRender(Camera cam) => SetFogFor(cam); // built-in pipeline
+
+    void SetFogFor(Camera cam)
+    {
+        Shader.SetGlobalFloat(FogEnabledId, cam == mainCamera ? 1f : 0f);
+    }
 
     struct RayInfo
     {
@@ -109,10 +120,17 @@ public class FogOfWarVision : MonoBehaviour
 
         // The main camera must never draw the mask mesh
         mainCamera.cullingMask &= ~(1 << maskLayer);
+
+        RenderPipelineManager.beginCameraRendering += OnBeginCameraRendering;
+        Camera.onPreRender += OnCameraPreRender;
     }
 
     void OnDisable()
     {
+        RenderPipelineManager.beginCameraRendering -= OnBeginCameraRendering;
+        Camera.onPreRender -= OnCameraPreRender;
+        Shader.SetGlobalFloat(FogEnabledId, 0f);
+
         if (maskCam != null) Destroy(maskCam.gameObject);
         if (meshObject != null) Destroy(meshObject);
         if (mesh != null) Destroy(mesh);
