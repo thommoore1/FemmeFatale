@@ -15,28 +15,27 @@ MonoBehaviour:
   scenarioLabelToPlay: BrambleNeutral1
   lowAffection: -10
   highAffection: 10
-  firstEyerisConversation: 
-  firstBrambleConversation: 
-  firstFinniganConversation: 
+  firstEyerisConversation: FirstEyeris
+  firstBrambleConversation: FirstBramble
+  firstFinniganConversation: FirstFinnigan
   lowAffectionEyerisConversationLabels:
-  - TempEyeris
+  - EyerisNegative1
   neutralAffectionEyerisConversationLabels:
-  - TempEyeris
   - EyerisNeutral1
   highAffectionEyerisConversationLabels:
-  - TempEyeris
+  - EyerisPositive1
   lowAffectionBrambleConversationLabels:
-  - BrambleNeutral1
+  - BrambleNegative1
   neutralAffectionBrambleConversationLabels:
   - BrambleNeutral1
   highAffectionBrambleConversationLabels:
-  - BrambleNeutral1
+  - BramblePositive1
   lowAffectionFinniganConversationLabels:
-  - FinniganNeutral1
+  - FinniganNegative1
   neutralAffectionFinniganConversationLabels:
   - FinniganNeutral1
   highAffectionFinniganConversationLabels:
-  - FinniganNeutral1
+  - FinniganPositive1
   positiveGiftReactionEyerisConversationLabels:
   - EyerisPositiveReaction1
   neutralGiftReactionEyerisConversationLabels:
@@ -62,20 +61,24 @@ MonoBehaviour:
   noGiftReactionFinniganLabels:
   - FinniganNoGiftReaction1
   lowEyerisLabelsCopy:
-  - TempEyeris
+  - EyerisNegative1
   neutralEyerisLabelsCopy:
   - TempEyeris
   - EyerisNeutral1
   highEyerisLabelsCopy:
-  - TempEyeris
+  - EyerisPositive1
   lowBrambleLabelsCopy:
-  - BrambleNeutral1
+  - BrambleNegative1
   neutralBrambleLabelsCopy: []
   highBrambleLabelsCopy:
-  - BrambleNeutral1
+  - BramblePositive1
   lowFinniganLabelsCopy:
-  - FinniganNeutral1
+  - FinniganNegative1
   neutralFinniganLabelsCopy:
   - FinniganNeutral1
   highFinniganLabelsCopy:
-  - FinniganNeutral1
+  - FinniganPositive1
+  hasTalkedToEyeris: 0
+  hasTalkedToBramble: 1
+  hasTalkedToFinnigan: 0
+  hasSetUp: 0

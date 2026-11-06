@@ -7,6 +7,8 @@ public class DialogueScenarioSelector : MonoBehaviour
 
     [SerializeField] private DialogueLoader dialogueLoader;
     [SerializeField] private InventoryController inventory;
+
+    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +24,7 @@ public class DialogueScenarioSelector : MonoBehaviour
 
     public void ChooseConversationBasedOnGifts(string monsterName, float affectionNumber)
     {
+       
         if (inventory.InventoryContainsGiftItems())
         {
             ChooseConversation(monsterName,affectionNumber);
@@ -51,136 +54,182 @@ public class DialogueScenarioSelector : MonoBehaviour
         switch (monsterName)
         {
             case "Eyeris":
-                switch (DetermineAffection(affectionNumber))
+                if (!dialogueLoader.hasTalkedToEyeris)
                 {
-                    case "low":
-                        if (dialogueLoader.lowEyerisLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.lowEyerisLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.lowEyerisLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.lowAffectionEyerisConversationLabels));
-                        }
-                        break;
-                    case "high":
-                        if (dialogueLoader.highEyerisLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.highEyerisLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.highEyerisLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.highAffectionEyerisConversationLabels));
-                        }
-                        break;
-                    case "neutral":
-                        if (dialogueLoader.neutralEyerisLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.neutralEyerisLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.neutralEyerisLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.neutralAffectionEyerisConversationLabels));
-                        }
-                        break;
-                    default:
-                        Debug.LogError("Affection level not handled correctly");
-                        break;
+                    dialogueLoader.UpdateScenarioLable(dialogueLoader.firstEyerisConversation);
+                    dialogueLoader.hasTalkedToEyeris = true;
                 }
+                else
+                {
+                    switch (DetermineAffection(affectionNumber))
+                    {
+                        case "low":
+                            if (dialogueLoader.lowEyerisLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.lowEyerisLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.lowEyerisLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.lowAffectionEyerisConversationLabels));
+                            }
+
+                            break;
+                        case "high":
+                            if (dialogueLoader.highEyerisLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.highEyerisLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.highEyerisLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.highAffectionEyerisConversationLabels));
+                            }
+
+                            break;
+                        case "neutral":
+                            if (dialogueLoader.neutralEyerisLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.neutralEyerisLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.neutralEyerisLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.neutralAffectionEyerisConversationLabels));
+                            }
+
+                            break;
+                        default:
+                            Debug.LogError("Affection level not handled correctly");
+                            break;
+                    }
+                }
+
                 break;
             case "Bramble":
-                switch (DetermineAffection(affectionNumber))
+                if (!dialogueLoader.hasTalkedToBramble)
                 {
-                    case "low":
-                        if (dialogueLoader.lowBrambleLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.lowBrambleLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.lowBrambleLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.lowAffectionBrambleConversationLabels));
-                        }
-                        break;
-                    case "high":
-                        if (dialogueLoader.highBrambleLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.highBrambleLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.highBrambleLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.highAffectionBrambleConversationLabels));
-                        }
-                        break;
-                    case "neutral":
-                        if (dialogueLoader.neutralBrambleLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.neutralBrambleLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.neutralBrambleLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.neutralAffectionBrambleConversationLabels));
-                        }
-                        break;
-                    default:
-                        Debug.LogError("Affection level not handled correctly");
-                        break;
+                    Debug.Log("haven't talked to Bramble");
+                    dialogueLoader.UpdateScenarioLable(dialogueLoader.firstBrambleConversation);
+                    dialogueLoader.hasTalkedToBramble = true;
                 }
+                else
+                {
+                    switch (DetermineAffection(affectionNumber))
+                    {
+                        case "low":
+                            if (dialogueLoader.lowBrambleLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.lowBrambleLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.lowBrambleLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.lowAffectionBrambleConversationLabels));
+                            }
+
+                            break;
+                        case "high":
+                            if (dialogueLoader.highBrambleLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.highBrambleLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.highBrambleLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.highAffectionBrambleConversationLabels));
+                            }
+
+                            break;
+                        case "neutral":
+                            if (dialogueLoader.neutralBrambleLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.neutralBrambleLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.neutralBrambleLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.neutralAffectionBrambleConversationLabels));
+                            }
+
+                            break;
+                        default:
+                            Debug.LogError("Affection level not handled correctly");
+                            break;
+                    }
+                }
+
                 break;
             case "Finnigan":
-                switch (DetermineAffection(affectionNumber))
+                if (!dialogueLoader.hasTalkedToFinnigan)
                 {
-                    case "low":
-                        if (dialogueLoader.lowFinniganLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.lowFinniganLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.lowFinniganLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.lowAffectionFinniganConversationLabels));
-                        }
-                        break;
-                    case "high":
-                        if (dialogueLoader.highFinniganLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.highFinniganLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.highFinniganLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.highAffectionFinniganConversationLabels));
-                        }
-                        break;
-                    case "neutral":
-                        if (dialogueLoader.neutralFinniganLabelsCopy.Count > 0)
-                        {
-                            string randomElement = getRandomElement(dialogueLoader.neutralFinniganLabelsCopy);
-                            dialogueLoader.UpdateScenarioLable(randomElement);
-                            dialogueLoader.neutralFinniganLabelsCopy.Remove(randomElement);
-                        }
-                        else
-                        {
-                            dialogueLoader.UpdateScenarioLable(getRandomElement(dialogueLoader.neutralAffectionFinniganConversationLabels));
-                        }
-                        break;
-                    default:
-                        Debug.LogError("Affection level not handled correctly");
-                        break;
+                    dialogueLoader.UpdateScenarioLable(dialogueLoader.firstFinniganConversation);
+                    dialogueLoader.hasTalkedToFinnigan = true;
                 }
+                else
+                {
+                    switch (DetermineAffection(affectionNumber))
+                    {
+                        case "low":
+                            if (dialogueLoader.lowFinniganLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.lowFinniganLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.lowFinniganLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.lowAffectionFinniganConversationLabels));
+                            }
+
+                            break;
+                        case "high":
+                            if (dialogueLoader.highFinniganLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.highFinniganLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.highFinniganLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.highAffectionFinniganConversationLabels));
+                            }
+
+                            break;
+                        case "neutral":
+                            if (dialogueLoader.neutralFinniganLabelsCopy.Count > 0)
+                            {
+                                string randomElement = getRandomElement(dialogueLoader.neutralFinniganLabelsCopy);
+                                dialogueLoader.UpdateScenarioLable(randomElement);
+                                dialogueLoader.neutralFinniganLabelsCopy.Remove(randomElement);
+                            }
+                            else
+                            {
+                                dialogueLoader.UpdateScenarioLable(
+                                    getRandomElement(dialogueLoader.neutralAffectionFinniganConversationLabels));
+                            }
+
+                            break;
+                        default:
+                            Debug.LogError("Affection level not handled correctly");
+                            break;
+                    }
+                }
+
                 break;
             default:
                 Debug.LogError("Monster Name " + name + " not identified");
