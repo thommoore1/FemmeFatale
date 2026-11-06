@@ -56,7 +56,7 @@ public class DialogueLoader : ScriptableObject
     public List<string> noGiftReactionFinniganLabels = new List<string>();
     
 
-    //PRIVATE LISTS TO PREVENT REPEATS UNTIL NECESSARY//
+    //LISTS TO PREVENT REPEATS UNTIL NECESSARY//
     [HideInInspector] public List<string> lowEyerisLabelsCopy = new List<string>();
     [HideInInspector] public List<string> neutralEyerisLabelsCopy = new List<string>();
     [HideInInspector] public List<string> highEyerisLabelsCopy = new List<string>();
@@ -68,8 +68,13 @@ public class DialogueLoader : ScriptableObject
     [HideInInspector] public List<string> lowFinniganLabelsCopy = new List<string>();
     [HideInInspector] public List<string> neutralFinniganLabelsCopy = new List<string>();
     [HideInInspector] public List<string> highFinniganLabelsCopy = new List<string>();
+    
+    //BOOLEANS TO DETERMINE IF THE FIRST CONVERSATION HAS BEEN PLAYED
+    [HideInInspector] public bool hasTalkedToEyeris;
+    [HideInInspector] public bool hasTalkedToBramble;
+    [HideInInspector] public bool hasTalkedToFinnigan;
 
-    private bool hasSetUp = false;
+    public bool hasSetUp = false;
 
     public void UpdateScenarioLable(string newScenarioLabel)
     {
@@ -81,6 +86,11 @@ public class DialogueLoader : ScriptableObject
     {
         if (!hasSetUp)
         {
+            Debug.Log("setting up dialogue loader");
+            hasTalkedToFinnigan = false;
+            hasTalkedToBramble = false;
+            hasTalkedToEyeris = false;
+            
             lowEyerisLabelsCopy.Clear();
             foreach (string label in lowAffectionEyerisConversationLabels)
             {
