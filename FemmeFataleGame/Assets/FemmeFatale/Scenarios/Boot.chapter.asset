@@ -86,7 +86,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - .75
+      - .8
       - 
       - Eyeris/EyerisNeutralTemp.png
       isEmpty: 0
@@ -94,6 +94,22 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings:
+      - Eyeris
+      - Eyeris
+      - Blushing
+      - 
+      - 
+      - 
+      - 
+      - .8
+      - 
+      - Eyeris/EyerisBlushTemp.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - Player
       - PlayerName
@@ -108,13 +124,13 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - Bramble
       - Bramble
       - Neutral
-      - 
+      - 150
       - 
       - 
       - 
@@ -124,8 +140,24 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - Bramble
+      - Bramble
+      - Blushing
+      - 150
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Bramble/BrambleBlushTemp.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - Finnigan
       - Finnigan
@@ -140,9 +172,25 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - Finnigan
+      - Finnigan
+      - Blushing
+      - 
+      - 
+      - 
+      - 
+      - .9
+      - 
+      - Finnigan/FinniganBlushTemp.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Character
     type: 1
-    textLength: 444
+    textLength: 603
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
