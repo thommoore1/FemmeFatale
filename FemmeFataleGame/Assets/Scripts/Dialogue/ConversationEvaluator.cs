@@ -46,7 +46,14 @@ public class ConversationEvaluator : MonoBehaviour
         }
         else
         {
+            if (SaveFileIO.Exists(4))
+            {
                 SaveManager.Instance.Load(4);
+            }
+            else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
+            }
               //  UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
         }
     }

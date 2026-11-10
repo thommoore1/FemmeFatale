@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConversationEvaluator
   engine: {fileID: 392074102}
   giftSceneToLoad: GiftingFramework
-  mapSceneToLoad: PlayTest_4CharlotteMap
+  mapSceneToLoad: Level1_PlayTest_4CharlotteMap
 --- !u!4 &626656447
 Transform:
   m_ObjectHideFlags: 0

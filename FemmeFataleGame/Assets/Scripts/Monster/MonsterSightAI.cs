@@ -118,10 +118,11 @@ namespace FemmeFatale
                 Debug.Log("POT JAIL");
                 SendToPotJail();
                 AffectionManager.Instance.PotJail();
+                isFrozen = false;
+                agent.isStopped = false;
             }
-            else
+            else if (isFrozen)
             {
-                isFrozen = true;
                 StartCoroutine(WaitForFrozen());
             }
             isDialogue = false;
