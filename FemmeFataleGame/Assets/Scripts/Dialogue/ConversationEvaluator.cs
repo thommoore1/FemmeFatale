@@ -34,12 +34,20 @@ public class ConversationEvaluator : MonoBehaviour
                 print("You failed!");
                 //UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
                 SaveManager.Instance.Load(4);
+                AffectionManager.Instance.PotJail();
             }
+        }
+        else if (engine.Param.GetParameterBoolean("noGiftReaction"))
+        {
+            Debug.Log("You had no gift for the monster");
+            AffectionManager.Instance.PotJail();
+            SaveManager.Instance.Load(4);
+            engine.Param.SetParameterBoolean("noGiftReaction", false);
         }
         else
         {
-            //UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
-            SaveManager.Instance.Load(4);
+                SaveManager.Instance.Load(4);
+              //  UnityEngine.SceneManagement.SceneManager.LoadScene(mapSceneToLoad);
         }
     }
 }
