@@ -14,6 +14,8 @@ public class AffectionManager : MonoBehaviour
 
     private readonly Dictionary<string, float> _values = new Dictionary<string, float>();
 
+    public bool _potJail { get; private set; } = false;
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Bootstrap()
     {
@@ -21,6 +23,20 @@ public class AffectionManager : MonoBehaviour
         if (Instance != null) return;
         var go = new GameObject("AffectionManager");
         go.AddComponent<AffectionManager>(); 
+    }
+
+    public void PotJail()
+    {
+        Debug.Log("Pot jail");
+        if (_potJail)
+        {
+            _potJail = false;
+        }
+        else
+        {
+            Debug.Log("Pot jail true");
+            _potJail = true;
+        }
     }
 
     private void Awake()

@@ -7801,6 +7801,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - noGiftReaction = true
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - Eyeris
       - Neutral
@@ -7813,8 +7823,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Eyeris
@@ -7828,8 +7838,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - EndScenario
       isEmpty: 0
@@ -7837,7 +7847,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNoGiftReaction1
     type: 1
-    textLength: 202
+    textLength: 228
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -7884,6 +7894,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - noGiftReaction = true
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - Bramble
       - Neutral
@@ -7896,8 +7916,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Bramble
@@ -7911,8 +7931,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - EndScenario
       isEmpty: 0
@@ -7920,7 +7940,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNoGiftReaction1
     type: 1
-    textLength: 204
+    textLength: 230
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -7967,6 +7987,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - noGiftReaction = true
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - Finnigan
       - Neutral
@@ -7979,8 +8009,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Finnigan
@@ -7994,8 +8024,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - EndScenario
       isEmpty: 0
@@ -8003,7 +8033,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNoGiftReaction1
     type: 1
-    textLength: 206
+    textLength: 232
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -8271,6 +8301,20 @@ MonoBehaviour:
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Yes
     type: 1
     textLength: 235
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Sheet1
+    type: 1
+    textLength: 0
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -8943,9 +8987,18 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - noGiftReaction
+      - Bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Param
     type: 1
-    textLength: 136
+    textLength: 159
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -17408,6 +17461,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - noGiftReaction = true
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - Eyeris
       - Neutral
@@ -17420,8 +17483,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Eyeris
@@ -17435,8 +17498,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - EndScenario
       isEmpty: 0
@@ -17444,7 +17507,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisNoGiftReaction1
     type: 1
-    textLength: 202
+    textLength: 228
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -17489,6 +17552,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - noGiftReaction = true
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - Bramble
       - Neutral
@@ -17501,8 +17574,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Bramble
@@ -17516,8 +17589,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - EndScenario
       isEmpty: 0
@@ -17525,7 +17598,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleNoGiftReaction1
     type: 1
-    textLength: 204
+    textLength: 230
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -17570,6 +17643,16 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Param
+      - noGiftReaction = true
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - 
       - Finnigan
       - Neutral
@@ -17582,8 +17665,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - Finnigan
@@ -17597,8 +17680,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - EndScenario
       isEmpty: 0
@@ -17606,7 +17689,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganNoGiftReaction1
     type: 1
-    textLength: 206
+    textLength: 232
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -17868,6 +17951,18 @@ MonoBehaviour:
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Yes
     type: 1
     textLength: 235
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:Sheet1
+    type: 1
+    textLength: 0
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
