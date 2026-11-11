@@ -31,18 +31,30 @@ PrefabInstance:
     - target: {fileID: 6608164409697093777, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6256653302530599632, guid: a8f10495343a82f4296c5fa2de143e46, type: 3}
+      objectReference: {fileID: -6256653302530599632, guid: b49452d17f51bec4d915d6fda2ed8334, type: 3}
     - target: {fileID: 6681966688253307043, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
       propertyPath: m_Name
       value: GiftG
       objectReference: {fileID: 0}
     - target: {fileID: 7112129152224010975, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
+      propertyPath: m_Size.x
+      value: 7.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112129152224010975, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
+      propertyPath: m_Size.y
+      value: 7.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112129152224010975, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6256653302530599632, guid: a8f10495343a82f4296c5fa2de143e46, type: 3}
+      objectReference: {fileID: -6256653302530599632, guid: b49452d17f51bec4d915d6fda2ed8334, type: 3}
     - target: {fileID: 7112129152224010975, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
       propertyPath: m_SortingLayer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112129152224010975, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8974170463241609243, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
       propertyPath: m_Pivot.x
