@@ -8081,6 +8081,172 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Sure, I'll destroy that coffin for you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - '*crushing snake noises*'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisAffectionBarrierYes1
+    type: 1
+    textLength: 209
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - No, I won't help you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I don't hate you enough!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisAffectionBarrierNo1
+    type: 1
+    textLength: 192
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
       - Bramble
       - Neutral
       - 
@@ -8088,7 +8254,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Sure, I'll help you break that barrier!
+      - I hate you so much that I'll break that wall for you!
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -8116,7 +8282,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleAffectionBarrierYes1
     type: 1
-    textLength: 208
+    textLength: 222
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -8186,7 +8352,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - I don't have the right affection!
+      - I don't hate you enough!
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -8199,7 +8365,256 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleAffectionBarrierNo1
     type: 1
-    textLength: 203
+    textLength: 194
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Sure, I'll help you get through that grate!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - '*sliding shark noises*'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganAffectionBarrierYes1
+    type: 1
+    textLength: 216
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - No, I won't help you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I don't like you enough!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganAffectionBarrierNo1
+    type: 1
+    textLength: 196
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Wow, I fixed the elevator.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I won!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FixElevator
+    type: 1
+    textLength: 182
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
     entityIndexTbl: 
@@ -17735,6 +18150,168 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Sure, I'll destroy that coffin for you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - '*crushing snake noises*'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisAffectionBarrierYes1
+    type: 1
+    textLength: 209
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Eyeris
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - No, I won't help you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Eyeris
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I don't hate you enough!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:EyerisAffectionBarrierNo1
+    type: 1
+    textLength: 192
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
       - Bramble
       - Neutral
       - 
@@ -17742,7 +18319,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Sure, I'll help you break that barrier!
+      - I hate you so much that I'll break that wall for you!
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -17770,7 +18347,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleAffectionBarrierYes1
     type: 1
-    textLength: 208
+    textLength: 222
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:
@@ -17838,7 +18415,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - I don't have the right affection!
+      - I don't hate you enough!
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -17851,7 +18428,250 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:BrambleAffectionBarrierNo1
     type: 1
-    textLength: 203
+    textLength: 194
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Sure, I'll help you get through that grate!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - '*sliding shark noises*'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganAffectionBarrierYes1
+    type: 1
+    textLength: 216
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Finnigan
+      - Neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - No, I won't help you!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Finnigan
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I don't like you enough!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FinniganAffectionBarrierNo1
+    type: 1
+    textLength: 196
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Bg
+      - TempLobby
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Param
+      - conversationNeedsEvaluation = false
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Wow, I fixed the elevator.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - Abe Normale
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I won!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/FemmeFatale/Scenarios/FemmeFatale.xls:FixElevator
+    type: 1
+    textLength: 182
     headerRow: 0
     sourceAssetInEditor: {fileID: 102900000, guid: 5edbe1e9889507740a86b18eaf060779, type: 3}
   - rows:

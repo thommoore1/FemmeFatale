@@ -291,6 +291,33 @@ namespace FemmeFatale
             Debug.Log("no gifts found!");
             return false;
         }
+
+        public bool InventoryContainsElevatorItems()
+        {
+            if (InventoryContains("CallButton") && InventoryContains("Indicator") &&
+                InventoryContains("ElevatorButton"))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private bool InventoryContains(string itemName)
+        {
+            foreach (InventorySlot slot in _slots)
+            {
+                if (slot.currentItem != null)
+                {
+                    if (slot.currentItem.GetComponent<Item>().itemName == itemName)
+                    {
+                        Debug.Log("found the " + itemName);
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
         
         private static string NormalizeItemName(string itemName)
         {
