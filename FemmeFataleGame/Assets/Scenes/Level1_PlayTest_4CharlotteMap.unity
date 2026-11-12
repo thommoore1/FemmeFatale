@@ -69784,7 +69784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d177e376ec84477b43ea212c7320d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAffection
-  affectionId: Eyris
+  affectionId: Eyeris
   startingAffection: 0
   patrolSpeedCurve:
     serializedVersion: 2
