@@ -113,7 +113,7 @@ namespace FemmeFatale
             Debug.Log("OnAfterLoad called in MonsterAI");
             Debug.Log("Affection Bramble: " + AffectionManager.Instance.Get("Bramble"));
             Debug.Log("Affection Finnigan: " + AffectionManager.Instance.Get("Finnigan"));
-            Debug.Log("Affection Eyris: " + AffectionManager.Instance.Get("Eyris"));
+            Debug.Log("Affection Eyeris: " + AffectionManager.Instance.Get("Eyeris"));
             if (isFrozen && AffectionManager.Instance._potJail)
             {
                 Debug.Log("POT JAIL");
