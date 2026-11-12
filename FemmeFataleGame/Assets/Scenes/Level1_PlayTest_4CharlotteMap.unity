@@ -69736,7 +69736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7916570755441779138, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: m_Name
-      value: Eyris
+      value: Eyeris
       objectReference: {fileID: 0}
     - target: {fileID: 7916570755441779138, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: m_IsActive
