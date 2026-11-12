@@ -58785,7 +58785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8477200166111257933, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: DeclineToHelpScenarioLabel
-      value: FinniganAffectionBarrierNo1
+      value: FinniganAffectionBarrierNo2
       objectReference: {fileID: 0}
     - target: {fileID: 8827099238041389765, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: feedbackText
@@ -72424,7 +72424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8477200166111257933, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: DeclineToHelpScenarioLabel
-      value: EyerisAffectionBarrierNo1
+      value: EyerisAffectionBarrierNo2
       objectReference: {fileID: 0}
     - target: {fileID: 8827099238041389765, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: feedbackText
@@ -74494,6 +74494,10 @@ PrefabInstance:
     - target: {fileID: 8477200166111257933, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: AgreeToHelpScenarioLabel
       value: BrambleAffectionBarrierYes2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477200166111257933, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
+      propertyPath: DeclineToHelpScenarioLabel
+      value: BrambleAffectionBarrierNo2
       objectReference: {fileID: 0}
     - target: {fileID: 8827099238041389765, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: feedbackText
