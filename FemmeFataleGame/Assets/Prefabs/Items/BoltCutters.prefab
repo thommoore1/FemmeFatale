@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9109157170870767294
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2754824698075914030, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: id
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -2754824698075914030, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: destroyIfMissingFromSave
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 16.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 28.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 294064161980283871, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307660072926199829, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: itemName
+      value: BoltCutters
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395721502721508759, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -178223462882490404, guid: c28bc45b6728e194eac1f1c9b1a2b9e7, type: 3}
+    - target: {fileID: 6451814736168605853, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_Size.x
+      value: 19.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451814736168605853, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_Size.y
+      value: 7.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451814736168605853, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -178223462882490404, guid: c28bc45b6728e194eac1f1c9b1a2b9e7, type: 3}
+    - target: {fileID: 6451814736168605853, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451814736168605853, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 95dae4de3c02040d1ba3da372996c6d3, type: 2}
+    - target: {fileID: 6644404031110909794, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
+      propertyPath: m_Name
+      value: BoltCutters Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}

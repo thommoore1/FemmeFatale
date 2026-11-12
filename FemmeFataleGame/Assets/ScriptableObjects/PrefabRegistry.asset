@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: PrefabRegistry
   m_EditorClassIdentifier: Assembly-CSharp::FemmeFatale.Save.PrefabRegistry
   prefabs:
+  - {fileID: -4536808833216330959, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
+  - {fileID: 819429369081713830, guid: 1328a18dcf2f6e64aa67f6bac7fe66a0, type: 3}
   - {fileID: 444288319344714271, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
   - {fileID: 7166165165059543708, guid: fa180ee939cf241f989ba8e63eab98cc, type: 3}
+  - {fileID: 2859468723260108396, guid: 28d4dc782e425b34cbf58a1ee269b24d, type: 3}
+  - {fileID: 2104264959291922595, guid: c56a58153d667bb45b7f7daf867b98af, type: 3}
+  - {fileID: 1216179714649734660, guid: 063d4ab9231a7f045960ebd0149cf4e6, type: 3}
   - {fileID: 7120556060924804925, guid: dc27a70744cb2664e97ff263e475b979, type: 3}
   - {fileID: 8837832466834667916, guid: 0a219c4484db5c242ab8792dcb83130c, type: 3}
   - {fileID: 7958492223366155190, guid: 672fa29eaea360b469580531b27932c2, type: 3}
@@ -28,7 +33,11 @@ MonoBehaviour:
   - {fileID: 4003203115156329841, guid: eecca0837e1deda40b1e94f88ba1069f, type: 3}
   - {fileID: 5459786686821128450, guid: e6e41f848b133bc40a1e23f80a1be8fc, type: 3}
   - {fileID: 8542032672541283629, guid: 00f27a884d52dcd40a5380e58ac162f7, type: 3}
+  - {fileID: 956950444841445672, guid: 559ac47e67a100640b7aca0fd9e902eb, type: 3}
+  - {fileID: 426754844454831746, guid: 7eab614aaa20d488ca9d8c971c397230, type: 3}
   - {fileID: -2754824698075914030, guid: d3e9f3f0c6c2a48aea4edd983e1883c6, type: 3}
   - {fileID: 6203932320798723018, guid: dd03c8b6f8117534c8f4dac07592c44c, type: 3}
   - {fileID: 1741332041811511337, guid: 347682bc8dbec3c4dbfbdf837e6e79f1, type: 3}
+  - {fileID: 813573645028954204, guid: 00487371d41914ea9ae4fe22a3d13f1c, type: 3}
+  - {fileID: 2986932102234015667, guid: a842ea1fec22a3145b6f6f81893b08fe, type: 3}
   - {fileID: -3335580621665890266, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}

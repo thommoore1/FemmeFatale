@@ -24,6 +24,8 @@ namespace FemmeFatale
         private LayerMask puzzleElementLayer;
         [SerializeField]
         private LayerMask directionalDoorElementLayer;
+        [SerializeField]
+        private LayerMask elevatorLayer;
 
         [SerializeField] private LayerMask affectionBarrierElementLayer;
         
@@ -81,6 +83,13 @@ namespace FemmeFatale
                 {
                     hitCollider.GetComponent<AffectionBarrier>().Interact();
                 }
+            }
+            
+            hitCollider = Physics2D.OverlapCircle(transform.position, checkRadius, elevatorLayer);
+            if (hitCollider)
+            {
+                Debug.Log($"Interacted with directional door");
+                hitCollider.GetComponent<ElevatorInteraction>().FixElevator(_inventoryController);
             }
         }
 
