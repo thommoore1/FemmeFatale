@@ -59142,7 +59142,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5024411992043767153, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: affectionId
-      value: GoopShark
+      value: Finnigan
       objectReference: {fileID: 0}
     - target: {fileID: -3335580621665890266, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: id
@@ -59366,7 +59366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7916570755441779138, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: m_Name
-      value: GameObject
+      value: Finnigan
       objectReference: {fileID: 0}
     - target: {fileID: 8726979725678759746, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: m_Sprite
@@ -60533,7 +60533,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5024411992043767153, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: affectionId
-      value: GoopShark
+      value: Bramble
       objectReference: {fileID: 0}
     - target: {fileID: -3335580621665890266, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: id
@@ -60769,7 +60769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7916570755441779138, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: m_Name
-      value: BatThing
+      value: Bramble
       objectReference: {fileID: 0}
     - target: {fileID: 7916570755441779138, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: m_IsActive
@@ -69784,7 +69784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d177e376ec84477b43ea212c7320d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAffection
-  affectionId: slime
+  affectionId: Eyris
   startingAffection: 0
   patrolSpeedCurve:
     serializedVersion: 2
