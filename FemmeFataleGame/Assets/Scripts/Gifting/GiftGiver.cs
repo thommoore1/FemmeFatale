@@ -8,7 +8,10 @@ public class GiftGiver : MonoBehaviour
     public DialogueLoader loader;
     public string mapSceneToLoad;
     public string dialogueSceneToLoad;
-    
+
+    [SerializeField] int negAmount = -100;
+    [SerializeField] int posAmount = 10;
+    [SerializeField] int neutralAmount = 0;
     
 
     public void GiftGiveTo()
@@ -31,21 +34,21 @@ public class GiftGiver : MonoBehaviour
                 if (inventory.GetSelectedItem().GetComponent<Gift>().likedByEyeris == 0)
                 {
                     print("Eyeris hates the gift! Decrease affection");
-                    Debug.Log("Affection Before: " + AffectionManager.Instance.Get("Eyeris"));
-                    AffectionManager.Instance.Add("Eyeris", -25f);
-                    Debug.Log("Affection After: " + AffectionManager.Instance.Get("Eyeris"));
+                    AffectionManager.Instance.Add("Eyeris", negAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.negativeGiftReactionEyerisConversationLabels));
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
                 }
                 else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByEyeris == 1)
                 {
                     print("Eyeris is neutral about the gift. No change in affection");
+                    AffectionManager.Instance.Add("Eyeris", neutralAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.neutralGiftReactionEyerisConversationLabels));
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
                 }
                 else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByEyeris == 2)
                 {
                     print("Eyeris loves the gift! Increase affection");
+                    AffectionManager.Instance.Add("Eyeris", posAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.positiveGiftReactionEyerisConversationLabels));
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
                 }
@@ -59,21 +62,21 @@ public class GiftGiver : MonoBehaviour
             case "Bramble":
                 if (inventory.GetSelectedItem().GetComponent<Gift>().likedByBramble == 0)
                 {
-                    Debug.Log("Affection Before: " + AffectionManager.Instance.Get("Bramble"));
-                    AffectionManager.Instance.Add("Bramble", -100f);
-                    Debug.Log("Affection After: " + AffectionManager.Instance.Get("Bramble"));
+                    AffectionManager.Instance.Add("Bramble", negAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.negativeGiftReactionBrambleConversationLabels));
                     print("Bramble hates the gift! Decrease affection");
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
                 }
                 else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByBramble == 1)
                 {
+                    AffectionManager.Instance.Add("Bramble", neutralAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.neutralGiftReactionBrambleConversationLabels));
                     print("Bramble is neutral about the gift. No change in affection");
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
                 }
                 else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByBramble == 2)
                 {
+                    AffectionManager.Instance.Add("Bramble", posAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.positiveGiftReactionBrambleConversationLabels));
                     print("Bramble loves the gift! Increase affection");
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
@@ -88,18 +91,21 @@ public class GiftGiver : MonoBehaviour
             case "Finnigan":
                 if (inventory.GetSelectedItem().GetComponent<Gift>().likedByFinnigan == 0)
                 {
+                    AffectionManager.Instance.Add("Finnigan", negAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.negativeGiftReactionFinniganConversationLabels));
                     print("Finnigan hates the gift! Decrease affection");
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
                 }
                 else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByFinnigan == 1)
                 {
+                    AffectionManager.Instance.Add("Finnigan", neutralAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.neutralGiftReactionFinniganConversationLabels));
                     print("Finnigan is neutral about the gift. No change in affection");
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
                 }
                 else if (inventory.GetSelectedItem().GetComponent<Gift>().likedByFinnigan == 2)
                 {
+                    AffectionManager.Instance.Add("Finnigan", posAmount);
                     loader.UpdateScenarioLable(getRandomElement(loader.positiveGiftReactionFinniganConversationLabels));
                     print("Finnigan loves the gift! Increase affection");
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);

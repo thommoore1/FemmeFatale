@@ -26,8 +26,10 @@ namespace FemmeFatale.Save
         public string sceneName;
         public string savedAtUtc;
         public List<EntityRecord> entities = new List<EntityRecord>();
-        
+
         public InventorySaveData inventory;
+        
+        public string affectionJson;
     }
     
     [Serializable]

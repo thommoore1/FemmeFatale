@@ -59883,6 +59883,22 @@ PrefabInstance:
       propertyPath: affectionId
       value: Bramble
       objectReference: {fileID: 0}
+    - target: {fileID: -5024411992043767153, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: rangeCurve.m_Curve.Array.data[0].time
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5024411992043767153, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: rangeCurve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5024411992043767153, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: rangeCurve.m_Curve.Array.data[0].value
+      value: 2.5006027
+      objectReference: {fileID: 0}
+    - target: {fileID: -5024411992043767153, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
+      propertyPath: rangeCurve.m_Curve.Array.data[2].value
+      value: 0.27644044
+      objectReference: {fileID: 0}
     - target: {fileID: -3335580621665890266, guid: 80dfa6e2bd67144ad85cac89673dfddc, type: 3}
       propertyPath: id
       value: b75b45fcf48b43e49f84b43074c76475
