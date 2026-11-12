@@ -56,7 +56,6 @@ namespace FemmeFatale
         private bool patrolDestinationSet;
         private float searchTimer;
         private bool hasCaughtPlayer;
-        private bool isDialogue = false;
         public bool isFrozen = false;
         
         [SerializeField]
@@ -112,7 +111,7 @@ namespace FemmeFatale
         private void OnAfterLoad()
         {
             Debug.Log("OnAfterLoad called in MonsterAI");
-            Debug.Log("IsDialogue: " + isDialogue);
+            Debug.Log("Affection: " + AffectionManager.Instance.Get("Bramble"));
             if (isFrozen && AffectionManager.Instance._potJail)
             {
                 Debug.Log("POT JAIL");
@@ -125,7 +124,6 @@ namespace FemmeFatale
             {
                 StartCoroutine(WaitForFrozen());
             }
-            isDialogue = false;
         }
 
         private void SendToPotJail()
@@ -281,8 +279,7 @@ namespace FemmeFatale
             agent.ResetPath();
             agent.velocity = Vector3.zero;
             Debug.Log(config.monsterName);
-
-            isDialogue = true;
+            
             isFrozen = true;
             
             onPlayerCaught2?.Invoke(config.monsterName, affection.Affection); //Idk when this was added, but I believe we can do this without two events

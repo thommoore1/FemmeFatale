@@ -22,7 +22,6 @@ namespace FemmeFatale.Save
     public class SaveFile
     {
         public const int CurrentVersion = 1;
-
         public int version = CurrentVersion;
         public string sceneName;
         public string savedAtUtc;

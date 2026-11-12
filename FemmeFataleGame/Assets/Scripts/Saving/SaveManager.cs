@@ -253,7 +253,6 @@ namespace FemmeFatale.Save
                 return false;
             }
             
-            //var all = FindObjectsByType<InventoryController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
             var all = FindObjectsByType<InventoryController>(FindObjectsInactive.Exclude);
 
             Debug.Log($"[Save] Controllers in scene: {all.Length}. Using: {inventoryController.name} " +
@@ -303,7 +302,7 @@ namespace FemmeFatale.Save
             {
                 Debug.Log("[Save] Inventory saved to slot 4.");
             }
-
+            
             return success;
         }
         

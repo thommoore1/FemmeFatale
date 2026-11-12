@@ -31,6 +31,9 @@ public class GiftGiver : MonoBehaviour
                 if (inventory.GetSelectedItem().GetComponent<Gift>().likedByEyeris == 0)
                 {
                     print("Eyeris hates the gift! Decrease affection");
+                    Debug.Log("Affection Before: " + AffectionManager.Instance.Get("Eyeris"));
+                    AffectionManager.Instance.Add("Eyeris", -25f);
+                    Debug.Log("Affection After: " + AffectionManager.Instance.Get("Eyeris"));
                     loader.UpdateScenarioLable(getRandomElement(loader.negativeGiftReactionEyerisConversationLabels));
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
                 }
@@ -56,6 +59,9 @@ public class GiftGiver : MonoBehaviour
             case "Bramble":
                 if (inventory.GetSelectedItem().GetComponent<Gift>().likedByBramble == 0)
                 {
+                    Debug.Log("Affection Before: " + AffectionManager.Instance.Get("Bramble"));
+                    AffectionManager.Instance.Add("Bramble", -100f);
+                    Debug.Log("Affection After: " + AffectionManager.Instance.Get("Bramble"));
                     loader.UpdateScenarioLable(getRandomElement(loader.negativeGiftReactionBrambleConversationLabels));
                     print("Bramble hates the gift! Decrease affection");
                     UnityEngine.SceneManagement.SceneManager.LoadScene(dialogueSceneToLoad);
