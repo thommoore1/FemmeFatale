@@ -22,13 +22,14 @@ namespace FemmeFatale.Save
     public class SaveFile
     {
         public const int CurrentVersion = 1;
-
         public int version = CurrentVersion;
         public string sceneName;
         public string savedAtUtc;
         public List<EntityRecord> entities = new List<EntityRecord>();
-        
+
         public InventorySaveData inventory;
+        
+        public string affectionJson;
     }
     
     [Serializable]

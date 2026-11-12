@@ -62,6 +62,9 @@ namespace FemmeFatale.Save
                 };
                 Debug.Log($"[Save] Captured {file.inventory.itemIds.Count} inventory items.");
             }
+            
+            if (AffectionManager.Instance != null)
+                file.affectionJson = AffectionManager.Instance.ToJson();
 
             foreach (var entity in FindEntities())
             {
@@ -183,9 +186,9 @@ namespace FemmeFatale.Save
             foreach (var pair in matched.Values)
                 pair.entity.Restore(pair.record);
             
-            foreach (var pair in matched.Values)
-                pair.entity.Restore(pair.record);
-
+            if (!string.IsNullOrEmpty(file.affectionJson) && AffectionManager.Instance != null)
+                AffectionManager.Instance.FromJson(file.affectionJson);
+            
             if (file.inventory != null)
             {
                 var inventoryController = FindAnyObjectByType<InventoryController>(FindObjectsInactive.Include);
@@ -199,6 +202,7 @@ namespace FemmeFatale.Save
                 else
                     Debug.LogWarning("[Load] No InventoryController found to restore inventory into.");
             }
+            
 
             Debug.Log($"[Save] Loaded {matched.Count} entities.");
         }
@@ -253,7 +257,6 @@ namespace FemmeFatale.Save
                 return false;
             }
             
-            //var all = FindObjectsByType<InventoryController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
             var all = FindObjectsByType<InventoryController>(FindObjectsInactive.Exclude);
 
             Debug.Log($"[Save] Controllers in scene: {all.Length}. Using: {inventoryController.name} " +
@@ -273,7 +276,7 @@ namespace FemmeFatale.Save
         public bool SaveInventoryToSlot4()
         {
             const int targetSlot = 4;
-            
+
             if (!SaveFileIO.TryRead(targetSlot, out SaveFile file))
             {
                 Debug.LogWarning(
@@ -290,18 +293,29 @@ namespace FemmeFatale.Save
                 Debug.LogError("[Save] Could not find InventoryController.");
                 return false;
             }
-            
+
             file.inventory = new InventorySaveData
             {
                 itemIds = inventoryController.CaptureSlotItemIds(),
                 selectedIndex = inventoryController.GetSelectedIndex()
             };
-            
+
+            // Save monster affection (all ids/values the manager currently holds)
+            if (AffectionManager.Instance != null)
+            {
+                file.affectionJson = AffectionManager.Instance.ToJson();
+                Debug.Log($"[Save] Captured affection: {file.affectionJson}");
+            }
+            else
+            {
+                Debug.LogWarning("[Save] No AffectionManager found; affection not saved.");
+            }
+
             bool success = SaveFileIO.Write(targetSlot, file);
 
             if (success)
             {
-                Debug.Log("[Save] Inventory saved to slot 4.");
+                Debug.Log("[Save] Inventory and affection saved to slot 4.");
             }
 
             return success;
