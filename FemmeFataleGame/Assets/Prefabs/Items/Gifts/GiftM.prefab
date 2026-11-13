@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: id
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 444288319344714271, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
+      propertyPath: prefabId
+      value: 00f27a884d52dcd40a5380e58ac162f7
+      objectReference: {fileID: 0}
     - target: {fileID: 2244659564122826648, guid: 09d489e75c91bdd4f929d92149e8ec3a, type: 3}
       propertyPath: itemName
       value: GiftM
