@@ -58765,7 +58765,7 @@ PrefabInstance:
       objectReference: {fileID: 207562301}
     - target: {fileID: 8477200166111257933, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: affectionNumber
-      value: 100
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 8477200166111257933, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: failedToOpenHint
@@ -74483,6 +74483,10 @@ PrefabInstance:
       propertyPath: feedbackText
       value: 
       objectReference: {fileID: 207562301}
+    - target: {fileID: 8477200166111257933, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
+      propertyPath: affectionNumber
+      value: -50
+      objectReference: {fileID: 0}
     - target: {fileID: 8477200166111257933, guid: 931304e3cabba1a4d8ba3dcde3d83fe5, type: 3}
       propertyPath: failedToOpenHint
       value: It doesn't seem like he's angry enough to break it...
